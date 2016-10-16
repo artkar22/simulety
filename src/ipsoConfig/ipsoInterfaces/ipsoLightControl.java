@@ -15,7 +15,7 @@ public interface ipsoLightControl {
 //    static final int MAX_DIMMER = 100;
 //    static final int MIN_DIMMER = 0;
    // protected String colour = WHITE;
-     static final int id = IPSO_LIGHT_CONTROL;
+    int id = IPSO_LIGHT_CONTROL;
     int getId();
     boolean getOn_Off_Status();
 

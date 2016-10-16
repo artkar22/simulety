@@ -1,21 +1,19 @@
 package modules;
 
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 public abstract class Simulet extends JPanel {
 
 	
-	protected ArrayList<BufferedImage> images;
-	protected BufferedImage currentImage;
+	protected ArrayList<ImageIcon> images;
+	protected ImageIcon currentImage;
 	private String nameOfSimulet;
 
 	public Simulet(String nameOfSimulet)
@@ -33,28 +31,25 @@ public abstract class Simulet extends JPanel {
 	private void setCurrentImage() 
 	{
 		currentImage = images.get(0);
-		Dimension dimension = new Dimension(currentImage.getWidth(), currentImage.getHeight());
+		Dimension dimension = new Dimension(currentImage.getIconWidth(), currentImage.getIconHeight());
 		setPreferredSize(dimension);
 	}
 
 	private void loadPictures()
 	{
-		images =  new ArrayList<BufferedImage>();
+		images =  new ArrayList<>();
 		File directory = new File("pictures/"+nameOfSimulet);
 		if(directory.isDirectory())
 		{
 			File[] files = directory.listFiles();
 			for(File file: files)
 			{
-				try {
-					images.add(ImageIO.read(file));
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
+					ImageIcon icon = new ImageIcon(file.getAbsolutePath());
+					images.add(icon);
 			}
 		}
 	}
-	public ArrayList<BufferedImage> getImages()
+	public ArrayList<ImageIcon> getImages()
 	{
 		return images;
 	}
@@ -62,6 +57,6 @@ public abstract class Simulet extends JPanel {
 	@Override
 	public void paintComponent(Graphics g) {
 		Graphics2D g2d = (Graphics2D) g;
-		g2d.drawImage(currentImage, 0, 0, this);
+		g2d.drawImage(currentImage.getImage(), 0, 0, this);
 	}
 }

@@ -16,16 +16,23 @@ import java.util.Enumeration;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
+import modules.Lampka.LampkaActionListener;
 import modules.Lampka.resources.StatusResource;
+import modules.Radio.Radio;
+import modules.Radio.RadioActionListener;
+import modules.Samochod.Samochod;
+import modules.Samochod.SamochodActionListener;
+import modules.Simulet;
+import modules.Wiatraczek.Wiatraczek;
+import modules.Wiatraczek.WiatraczekActionListener;
+import modules.resources.DigitalOutputStateResource;
 import modules.listOfAvailableModules;
-import modules.Budzik.Budzik;
 import modules.Lampka.Lampka;
 
 import modules.resources.IdResource;
 import org.eclipse.californium.core.CoapServer;
 import org.eclipse.californium.core.network.CoapEndpoint;
 
-import serverResources.BudzikResource;
 import configParser.ConfigParser;
 
 public class Menu extends JFrame implements ActionListener {
@@ -34,8 +41,8 @@ public class Menu extends JFrame implements ActionListener {
     private int serverPort;
     private ArrayList<BufferedImage> images;
     private JButton button;
-    private Lampka lampka;
-    private Budzik budzik;
+    private Simulet simulet;
+    //    private Budzik budzik;
     private CoapServer server;
     private InetSocketAddress simuletsAddress;
 
@@ -48,10 +55,10 @@ public class Menu extends JFrame implements ActionListener {
     }
 
     private void configurateWindow() {
-//		button = new JButton("testButton");
+//        button = new JButton("testButton");
         this.setBounds(0, 0, 1024, 768);
         this.setLayout(new GridLayout());
-//		this.add(button);
+//        this.add(button);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle(nameOfSimulet);
         this.setVisible(true);
@@ -101,29 +108,65 @@ public class Menu extends JFrame implements ActionListener {
     private void startModule() {
         if (nameOfSimulet.equals(listOfAvailableModules.LAMPKA)) {
 
-            lampka = new Lampka(nameOfSimulet,simuletsAddress);
-            createCOAPServer(lampka.getId());
-//			LampkaActionListener listener = new LampkaActionListener(lampka,this);
-//			button.addActionListener(listener);
-            this.add(lampka);
+            simulet = new Lampka(nameOfSimulet, simuletsAddress);
+            createCOAPServer(((Lampka) simulet).getId());
+//            LampkaActionListener listener = new LampkaActionListener((Lampka) simulet, this);
+//            button.addActionListener(listener);
+            this.add(simulet);
             this.pack();
-            IdResource idResource = new IdResource(lampka);
+            IdResource idResource = new IdResource((Lampka) simulet);
             server.add(idResource);
-            StatusResource on_off_Resource = new StatusResource(lampka,this);
+            StatusResource on_off_Resource = new StatusResource((Lampka) simulet, this);
             server.add(on_off_Resource);
             //images = lampka.getImages();
 //            LampkaResource lampkaResource = new LampkaResource(lampka, this);
 //            server.add(lampkaResource);
         }
-        if (nameOfSimulet.equals(listOfAvailableModules.BUDZIK)) {
+        else if (nameOfSimulet.equals(listOfAvailableModules.WIATRACZEK)) {
 
-            budzik = new Budzik(nameOfSimulet);
-            createCOAPServer(budzik.getId());
-            this.add(budzik);
+            simulet = new Wiatraczek(nameOfSimulet, simuletsAddress);
+            createCOAPServer(((Wiatraczek) simulet).getId());
+//            WiatraczekActionListener listener = new WiatraczekActionListener((Wiatraczek) simulet, this);
+//            button.addActionListener(listener);
+            this.add(simulet);
             this.pack();
+            IdResource idResource = new IdResource((Wiatraczek) simulet);
+            server.add(idResource);
+            DigitalOutputStateResource on_off_Resource = new DigitalOutputStateResource((Wiatraczek) simulet, this);
+            server.add(on_off_Resource);
             //images = lampka.getImages();
-            BudzikResource budzikResource = new BudzikResource(budzik, this);
-            server.add(budzikResource);
+//            LampkaResource lampkaResource = new LampkaResource(lampka, this);
+//            server.add(lampkaResource);
+        } else if (nameOfSimulet.equals(listOfAvailableModules.RADIO)) {
+
+            simulet = new Radio(nameOfSimulet, simuletsAddress);
+            createCOAPServer(((Radio) simulet).getId());
+//            RadioActionListener listener = new RadioActionListener((Radio) simulet, this);
+//            button.addActionListener(listener);
+            this.add(simulet);
+            this.pack();
+            IdResource idResource = new IdResource((Radio) simulet);
+            server.add(idResource);
+            DigitalOutputStateResource on_off_Resource = new DigitalOutputStateResource((Radio) simulet, this);
+            server.add(on_off_Resource);
+            //images = lampka.getImages();
+//            LampkaResource lampkaResource = new LampkaResource(lampka, this);
+//            server.add(lampkaResource);
+        } else if (nameOfSimulet.equals(listOfAvailableModules.SAMOCHOD)) {
+
+            simulet = new Samochod(nameOfSimulet, simuletsAddress);
+            createCOAPServer(((Samochod) simulet).getId());
+//            SamochodActionListener listener = new SamochodActionListener((Samochod) simulet, this);
+//            button.addActionListener(listener);
+            this.add(simulet);
+            this.pack();
+            IdResource idResource = new IdResource((Samochod) simulet);
+            server.add(idResource);
+            DigitalOutputStateResource on_off_Resource = new DigitalOutputStateResource((Samochod) simulet, this);
+            server.add(on_off_Resource);
+            //images = lampka.getImages();
+//            LampkaResource lampkaResource = new LampkaResource(lampka, this);
+//            server.add(lampkaResource);
         }
     }
 

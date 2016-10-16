@@ -19,14 +19,14 @@ public class Budzik extends Simulet {
     public void switchOn() {
         setStatus(LAMP_SWITCHED_ON);
         currentImage = images.get(LAMP_SWITCHED_ON);
-        Dimension dimension = new Dimension(currentImage.getWidth(), currentImage.getHeight());
+        Dimension dimension = new Dimension(currentImage.getIconWidth(), currentImage.getIconHeight());
         setPreferredSize(dimension);
     }
 
     public void switchOff() {
         setStatus(LAMP_SWITCHED_OFF);
         currentImage = images.get(LAMP_SWITCHED_OFF);
-        Dimension dimension = new Dimension(currentImage.getWidth(), currentImage.getHeight());
+        Dimension dimension = new Dimension(currentImage.getIconWidth(), currentImage.getIconHeight());
         setPreferredSize(dimension);
     }
 

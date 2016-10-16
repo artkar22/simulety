@@ -32,14 +32,14 @@ public class Lampka extends Simulet implements ipsoLightControl {
     public void switchOn() {
         setStatus(LAMP_SWITCHED_ON);
         currentImage = images.get(1);
-        Dimension dimension = new Dimension(currentImage.getWidth(), currentImage.getHeight());
+        Dimension dimension = new Dimension(currentImage.getIconWidth(), currentImage.getIconHeight());
         setPreferredSize(dimension);
     }
 
     public void switchOff() {
         setStatus(LAMP_SWITCHED_OFF);
         currentImage = images.get(0);
-        Dimension dimension = new Dimension(currentImage.getWidth(), currentImage.getHeight());
+        Dimension dimension = new Dimension(currentImage.getIconWidth(), currentImage.getIconHeight());
         setPreferredSize(dimension);
     }
 
