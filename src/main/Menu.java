@@ -1,43 +1,38 @@
 package main;
 
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.net.Inet4Address;
-import java.net.InetAddress;
-import java.net.InetSocketAddress;
-import java.net.NetworkInterface;
-import java.net.SocketException;
-import java.net.UnknownHostException;
-import java.util.ArrayList;
-import java.util.Enumeration;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-
-import modules.Lampka.LampkaActionListener;
+import configParser.ConfigParser;
+import modules.Lampka.Lampka;
 import modules.Lampka.resources.StatusResource;
 import modules.Radio.Radio;
-import modules.Radio.RadioActionListener;
 import modules.Samochod.Samochod;
-import modules.Samochod.SamochodActionListener;
 import modules.Simulet;
+import modules.Trigger.Trigger;
+import modules.Trigger.TriggerActionListener;
 import modules.Wiatraczek.Wiatraczek;
-import modules.Wiatraczek.WiatraczekActionListener;
-import modules.resources.DigitalOutputStateResource;
 import modules.listOfAvailableModules;
-import modules.Lampka.Lampka;
-
+import modules.listOfAvailableModulesTypes;
+import modules.resources.DigitalInputStateResource;
+import modules.resources.DigitalOutputStateResource;
 import modules.resources.IdResource;
 import org.eclipse.californium.core.CoapServer;
 import org.eclipse.californium.core.network.CoapEndpoint;
 
-import configParser.ConfigParser;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.net.*;
+import java.util.ArrayList;
+import java.util.Enumeration;
+
+import static modules.listOfAvailableModulesTypes.TRIGGER;
 
 public class Menu extends JFrame implements ActionListener {
 
-    private String nameOfSimulet;
+
+    private final String nameOfSimulet;
+    private final String simuletsType;
     private int serverPort;
     private ArrayList<BufferedImage> images;
     private JButton button;
@@ -46,8 +41,9 @@ public class Menu extends JFrame implements ActionListener {
     private CoapServer server;
     private InetSocketAddress simuletsAddress;
 
-    public Menu(String nameOfSimulet) {
+    public Menu(final String nameOfSimulet, final String simuletsType) {
         this.nameOfSimulet = nameOfSimulet;
+        this.simuletsType = simuletsType;
         configurateWindow();
         loadConfiguration();
         startModule();
@@ -58,7 +54,10 @@ public class Menu extends JFrame implements ActionListener {
 //        button = new JButton("testButton");
         this.setBounds(0, 0, 1024, 768);
         this.setLayout(new GridLayout());
-//        this.add(button);
+        if (TRIGGER.equals(simuletsType)) {
+            button = new JButton("testButton");
+            this.add(button);
+        }
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle(nameOfSimulet);
         this.setVisible(true);
@@ -106,10 +105,19 @@ public class Menu extends JFrame implements ActionListener {
     }
 
     private void startModule() {
+        if (listOfAvailableModulesTypes.SIMULET.equals(simuletsType)) {
+            startSimuletModule();
+        } else {
+            startTriggerModule();
+        }
+    }
+
+    private void startSimuletModule() {
         if (nameOfSimulet.equals(listOfAvailableModules.LAMPKA)) {
 
-            simulet = new Lampka(nameOfSimulet, simuletsAddress);
+            simulet = new Lampka(nameOfSimulet);
             createCOAPServer(((Lampka) simulet).getId());
+            ((Lampka)simulet).setSimuletsAddress(simuletsAddress);
 //            LampkaActionListener listener = new LampkaActionListener((Lampka) simulet, this);
 //            button.addActionListener(listener);
             this.add(simulet);
@@ -121,8 +129,7 @@ public class Menu extends JFrame implements ActionListener {
             //images = lampka.getImages();
 //            LampkaResource lampkaResource = new LampkaResource(lampka, this);
 //            server.add(lampkaResource);
-        }
-        else if (nameOfSimulet.equals(listOfAvailableModules.WIATRACZEK)) {
+        } else if (nameOfSimulet.equals(listOfAvailableModules.WIATRACZEK)) {
 
             simulet = new Wiatraczek(nameOfSimulet, simuletsAddress);
             createCOAPServer(((Wiatraczek) simulet).getId());
@@ -156,7 +163,7 @@ public class Menu extends JFrame implements ActionListener {
 
             simulet = new Samochod(nameOfSimulet, simuletsAddress);
             createCOAPServer(((Samochod) simulet).getId());
-//            SamochodActionListener listener = new SamochodActionListener((Samochod) simulet, this);
+//            TriggerActionListener listener = new TriggerActionListener((Samochod) simulet, this);
 //            button.addActionListener(listener);
             this.add(simulet);
             this.pack();
@@ -164,6 +171,27 @@ public class Menu extends JFrame implements ActionListener {
             server.add(idResource);
             DigitalOutputStateResource on_off_Resource = new DigitalOutputStateResource((Samochod) simulet, this);
             server.add(on_off_Resource);
+            //images = lampka.getImages();
+//            LampkaResource lampkaResource = new LampkaResource(lampka, this);
+//            server.add(lampkaResource);
+        }
+    }
+
+    private void startTriggerModule() {
+        if (nameOfSimulet.equals(listOfAvailableModules.TRIGGER_1) ||
+                nameOfSimulet.equals(listOfAvailableModules.TRIGGER_2)) {
+            simulet = new Trigger(nameOfSimulet);
+            createCOAPServer(((Trigger) simulet).getId());
+            ((Trigger)simulet).setSimuletsAddress(simuletsAddress);
+            IdResource idResource = new IdResource((Trigger) simulet);
+            server.add(idResource);
+            DigitalInputStateResource on_off_Resource = new DigitalInputStateResource((Trigger) simulet, this);
+            on_off_Resource.setObservable(true);
+            server.add(on_off_Resource);
+            TriggerActionListener listener = new TriggerActionListener((Trigger) simulet, on_off_Resource, this);
+            button.addActionListener(listener);
+            this.add(simulet);
+            this.pack();
             //images = lampka.getImages();
 //            LampkaResource lampkaResource = new LampkaResource(lampka, this);
 //            server.add(lampkaResource);

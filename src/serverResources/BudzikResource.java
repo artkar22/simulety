@@ -4,7 +4,6 @@ import main.Menu;
 import modules.Budzik.Budzik;
 
 import org.eclipse.californium.core.CoapResource;
-import org.eclipse.californium.core.coap.CoAP.Code;
 import org.eclipse.californium.core.coap.CoAP.ResponseCode;
 import org.eclipse.californium.core.server.resources.CoapExchange;
 
@@ -23,13 +22,13 @@ public class BudzikResource extends CoapResource {
 	@Override
 	public void handleGET(CoapExchange exchange) 
 	{
-		if(budzik.getCurrentStatus()==Budzik.LAMP_SWITCHED_ON)
+		if(budzik.getCurrentStatus()==Budzik.BUDZIK_SWITCHED_ON)
 		{
-			exchange.respond(ResponseCode.CONTENT, Integer.toString(Budzik.LAMP_SWITCHED_ON));
+			exchange.respond(ResponseCode.CONTENT, Integer.toString(Budzik.BUDZIK_SWITCHED_ON));
 		}
-		else if(budzik.getCurrentStatus()==Budzik.LAMP_SWITCHED_OFF)
+		else if(budzik.getCurrentStatus()==Budzik.BUDZIK_SWITCHED_OFF)
 		{
-			exchange.respond(ResponseCode.CONTENT, Integer.toString(Budzik.LAMP_SWITCHED_OFF));
+			exchange.respond(ResponseCode.CONTENT, Integer.toString(Budzik.BUDZIK_SWITCHED_OFF));
 		}
 	}
 	@Override

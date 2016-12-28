@@ -23,13 +23,13 @@ public class LampkaResource extends CoapResource {
 	@Override
 	public void handleGET(CoapExchange exchange) 
 	{
-//		if(lampka.getCurrentStatus()==Lampka.LAMP_SWITCHED_ON)
+//		if(lampka.getCurrentStatus()==Lampka.BUDZIK_SWITCHED_ON)
 //		{
-//			exchange.respond(ResponseCode.CONTENT, Integer.toString(Lampka.LAMP_SWITCHED_ON));
+//			exchange.respond(ResponseCode.CONTENT, Integer.toString(Lampka.BUDZIK_SWITCHED_ON));
 //		}
-//		else if(lampka.getCurrentStatus()==Lampka.LAMP_SWITCHED_OFF)
+//		else if(lampka.getCurrentStatus()==Lampka.BUDZIK_SWITCHED_OFF)
 //		{
-//			exchange.respond(ResponseCode.CONTENT, Integer.toString(Lampka.LAMP_SWITCHED_OFF));
+//			exchange.respond(ResponseCode.CONTENT, Integer.toString(Lampka.BUDZIK_SWITCHED_OFF));
 //		}
 	}
 	@Override
