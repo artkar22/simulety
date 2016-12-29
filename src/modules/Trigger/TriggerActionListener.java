@@ -1,5 +1,6 @@
 package modules.Trigger;
 
+import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
 import main.Menu;
 import modules.resources.DigitalInputStateResource;
 
@@ -28,7 +29,15 @@ public class TriggerActionListener implements ActionListener {
     }
 
     private void sendTriggerChange() {
+        on_off_resource.setButtonActionFlagTrue();
+        final IpsoDigitalInputImpl digitalInput = on_off_resource.getDigitalInput();
+        if (digitalInput.getState() == digitalInput.SWITCHED_ON) {
+            digitalInput.setState(digitalInput.SWITCHED_OFF);
+        } else if (digitalInput.getState() == digitalInput.SWITCHED_OFF) {
+            digitalInput.setState(digitalInput.SWITCHED_ON);
+        }
         on_off_resource.changed();
+        on_off_resource.setButtonActionFlagFalse();
 //        server.add(on_off_Resource);
 //        server.get
 //        if (trigger.getMobileAppAddress() != null) {

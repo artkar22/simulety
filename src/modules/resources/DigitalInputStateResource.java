@@ -13,6 +13,8 @@ public class DigitalInputStateResource extends CoapResource {
     private IpsoDigitalInputImpl digitalInput;
     private Menu menu;
     private static final String STATUS = "on_off";
+    private boolean buttonActionFlag = false;
+    private static final String NO_ACTION_FLAG = "no_action";
 
     public DigitalInputStateResource(IpsoDigitalInputImpl digitalInput, Menu menu) {
         super(STATUS);
@@ -23,11 +25,25 @@ public class DigitalInputStateResource extends CoapResource {
     @Override
     public void handleGET(CoapExchange exchange) {
         System.out.println("Status get");
+        if(buttonActionFlag == false){
+            exchange.respond(ResponseCode.CONTENT, NO_ACTION_FLAG);
+        }
         if (digitalInput.getState() == digitalInput.SWITCHED_ON) {
             exchange.respond(ResponseCode.CONTENT, Boolean.toString(Trigger.TRIGGER_SWITCHED_ON));
         } else if (digitalInput.getState() == digitalInput.SWITCHED_OFF) {
             exchange.respond(ResponseCode.CONTENT, Boolean.toString(Trigger.TRIGGER_SWITCHED_OFF));
         }
+    }
+
+    public IpsoDigitalInputImpl getDigitalInput() {
+        return digitalInput;
+    }
+
+    public void setButtonActionFlagTrue(){
+        this.buttonActionFlag = true;
+    }
+    public void setButtonActionFlagFalse(){
+        this.buttonActionFlag = false;
     }
 
     @Override
