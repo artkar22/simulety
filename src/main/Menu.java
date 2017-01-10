@@ -56,6 +56,7 @@ public class Menu extends JFrame implements ActionListener {
         this.setLayout(new GridLayout());
         if (TRIGGER.equals(simuletsType)) {
             button = new JButton("testButton");
+            //
             this.add(button);
         }
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
