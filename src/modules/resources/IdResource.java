@@ -2,23 +2,23 @@ package modules.resources;
 
 import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
 import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
-import modules.Lampka.IpsoLightControlImpl;
+import modules.Lampka.IpsoLightControl;
 import org.eclipse.californium.core.CoapResource;
 import org.eclipse.californium.core.coap.CoAP.ResponseCode;
 import org.eclipse.californium.core.server.resources.CoapExchange;
 
 public class IdResource extends CoapResource {
 
-    private IpsoLightControlImpl ipsoLightControlImpl;
+    private IpsoLightControl ipsoLightControl;
     private IpsoDigitalOutputImpl digitalOutput;
     private IpsoDigitalInputImpl digitalInput;
     private int simuletsId;
     private final static String ID = "id";
 
-    public IdResource(IpsoLightControlImpl ipsoLightControlImpl) {
+    public IdResource(IpsoLightControl ipsoLightControl) {
         super(ID);
-        this.ipsoLightControlImpl = ipsoLightControlImpl;
-        this.simuletsId = ipsoLightControlImpl.getId();
+        this.ipsoLightControl = ipsoLightControl;
+        this.simuletsId = ipsoLightControl.getId();
     }
     public IdResource(IpsoDigitalOutputImpl digitalOutput) {
         super(ID);

@@ -7,17 +7,17 @@ import main.Menu;
 
 public class LampkaActionListener implements ActionListener {
 
-	private IpsoLightControlImpl ipsoLightControlImpl;
+	private IpsoLightControl ipsoLightControl;
 	private Menu menu;
-	public LampkaActionListener(IpsoLightControlImpl ipsoLightControlImpl, Menu menu) {
-		this.ipsoLightControlImpl = ipsoLightControlImpl;
+	public LampkaActionListener(IpsoLightControl ipsoLightControl, Menu menu) {
+		this.ipsoLightControl = ipsoLightControl;
 		this.menu = menu;
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) 
 	{
-		ipsoLightControlImpl.switchOn();
+		ipsoLightControl.switchOn();
 		menu.repaint();
 	}
 

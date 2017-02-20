@@ -11,7 +11,4 @@ public interface ipsoDigitalInput {
 
     int getId();
 
-    boolean getState();
-
-    void setState(boolean newState);
 }

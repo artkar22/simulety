@@ -1,52 +1,28 @@
 package ipsoConfig.ipsoInterfaces.implementation;
 
-import ipsoConfig.ipsoInterfaces.ipsoDigitalOutput;
+import modules.PossibleStatesListWrapper;
 import modules.Simulet;
-
-import java.awt.*;
-import java.net.InetSocketAddress;
+import modules.SimuletsState;
 
 /**
  * Created by Artur Karolak on 2016-10-16.
  */
-public class IpsoDigitalOutputImpl extends Simulet implements ipsoDigitalOutput {
-    private InetSocketAddress simuletsAddress;
-    public static final boolean SWITCHED_ON = true;
-    public static final boolean SWITCHED_OFF = false;
-    private boolean Digital_Output_State;
+public class IpsoDigitalOutputImpl extends Simulet {
+    public static final String SWITCHED_ON = "ON";
+    public static final String SWITCHED_OFF = "OFF";
 
-    public IpsoDigitalOutputImpl(final String nameOfSimulet, final InetSocketAddress simuletsAddress) {
-        super(nameOfSimulet);
-        setState(SWITCHED_OFF);
-
+    public IpsoDigitalOutputImpl(final String nameOfSimulet, final String className, final SimuletsState currentState, final PossibleStatesListWrapper possibleStates) {
+        super(nameOfSimulet, className, currentState, possibleStates);
     }
 
     public void switchOn() {
-        setState(SWITCHED_ON);
-        currentImage = images.get(1);
-        Dimension dimension = new Dimension(currentImage.getIconWidth(), currentImage.getIconHeight());
-        setPreferredSize(dimension);
+        this.setCurrentState(possibleStates.getStateById(SWITCHED_ON));
+        setCurrentImage();
     }
 
     public void switchOff() {
-        setState(SWITCHED_OFF);
-        currentImage = images.get(0);
-        Dimension dimension = new Dimension(currentImage.getIconWidth(), currentImage.getIconHeight());
-        setPreferredSize(dimension);
+        this.setCurrentState(possibleStates.getStateById(SWITCHED_OFF));
+        setCurrentImage();
     }
 
-    @Override
-    public int getId() {
-        return id;
-    }
-
-    @Override
-    public boolean getState() {
-        return Digital_Output_State;
-    }
-
-    @Override
-    public void setState(boolean newState) {
-        this.Digital_Output_State = newState;
-    }
 }

@@ -353,7 +353,7 @@ public class ReliabilityLayer extends AbstractLayer {
 				} else if (failedCount <= max_retransmit) {
 					LOGGER.log(Level.FINER, "Timeout: retransmit message, failed: {0}, message: {1}", new Object[]{failedCount, message});
 					
-					// Trigger MessageObservers
+					// BistableTrigger MessageObservers
 					message.retransmitting();
 					
 					// MessageObserver might have canceled

@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <company>
 	<Simulet id="Trigger_1">
-		<classname>Trigger</classname>
+		<classname>BistableTrigger</classname>
 		<serverport>11116</serverport>
+		<states>
+			<state>ON</state>
+			<state>OFF</state>
+		</states>
 	</Simulet>
 </company>

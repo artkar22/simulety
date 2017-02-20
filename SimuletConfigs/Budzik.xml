@@ -3,5 +3,9 @@
 	<Simulet id="Budzik">
 		<className>IpsoDigitalOutput</className>
 		<serverport>11113</serverport>
+		<states>
+			<state>ON</state>
+			<state>OFF</state>
+		</states>
 	</Simulet>
 </company>

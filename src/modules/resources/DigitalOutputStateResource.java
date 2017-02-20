@@ -3,7 +3,7 @@ package modules.resources;
 import Protocol.Comm_Protocol;
 import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
 import main.Menu;
-import modules.Lampka.IpsoLightControlImpl;
+import modules.Lampka.IpsoLightControl;
 import org.eclipse.californium.core.CoapResource;
 import org.eclipse.californium.core.coap.CoAP.ResponseCode;
 import org.eclipse.californium.core.server.resources.CoapExchange;
@@ -24,9 +24,9 @@ public class DigitalOutputStateResource extends CoapResource {
     public void handleGET(CoapExchange exchange) {
         System.out.println("Status get");
         if (digitalOutput.getState() == digitalOutput.SWITCHED_ON) {
-            exchange.respond(ResponseCode.CONTENT, Boolean.toString(IpsoLightControlImpl.LAMP_SWITCHED_ON));
+            exchange.respond(ResponseCode.CONTENT, Boolean.toString(IpsoLightControl.LAMP_SWITCHED_ON));
         } else if (digitalOutput.getState() == digitalOutput.SWITCHED_OFF) {
-            exchange.respond(ResponseCode.CONTENT, Boolean.toString(IpsoLightControlImpl.LAMP_SWITCHED_OFF));
+            exchange.respond(ResponseCode.CONTENT, Boolean.toString(IpsoLightControl.LAMP_SWITCHED_OFF));
         }
     }
 

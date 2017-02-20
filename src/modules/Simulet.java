@@ -1,25 +1,23 @@
 package modules;
 
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.util.ArrayList;
-
-import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
+
 
 public abstract class Simulet extends JPanel {
 
-
-    protected ArrayList<ImageIcon> images;
+    protected final PossibleStatesListWrapper possibleStates;
+    final String className;
     protected ImageIcon currentImage;
+    private SimuletsState currentState;
     private String nameOfSimulet;
 
-    public Simulet(String nameOfSimulet) {
+
+    public Simulet(final String nameOfSimulet, final String className, final SimuletsState currentState, final PossibleStatesListWrapper possibleStates) {
         this.nameOfSimulet = nameOfSimulet;
-        loadPictures();
+        this.className = className;
+        this.currentState = currentState;
+        this.possibleStates = possibleStates;
         setCurrentImage();
     }
 
@@ -27,28 +25,12 @@ public abstract class Simulet extends JPanel {
         return nameOfSimulet;
     }
 
-    private void setCurrentImage() {
-        if (images.size() > 0) {
-            currentImage = images.get(0);
+    protected void setCurrentImage() {
+        if (currentState.getPicture() != null) {
+            currentImage = currentState.getPicture();
             Dimension dimension = new Dimension(currentImage.getIconWidth(), currentImage.getIconHeight());
             setPreferredSize(dimension);
         }
-    }
-
-    private void loadPictures() {
-        images = new ArrayList<>();
-        File directory = new File("pictures/" + nameOfSimulet);
-        if (directory.isDirectory()) {
-            File[] files = directory.listFiles();
-            for (File file : files) {
-                ImageIcon icon = new ImageIcon(file.getAbsolutePath());
-                images.add(icon);
-            }
-        }
-    }
-
-    public ArrayList<ImageIcon> getImages() {
-        return images;
     }
 
     @Override
@@ -59,5 +41,20 @@ public abstract class Simulet extends JPanel {
         }
     }
 
+    public String getClassName() {
+        return className;
+    }
 
+    public SimuletsState getCurrentState() {
+        return currentState;
+    }
+
+    public void setCurrentState(SimuletsState currentState) {
+        this.currentState = currentState;
+        setCurrentImage();
+    }
+
+    public PossibleStatesListWrapper getPossibleStates() {
+        return possibleStates;
+    }
 }

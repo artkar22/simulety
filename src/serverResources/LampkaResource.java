@@ -1,7 +1,7 @@
 package serverResources;
 
 import main.Menu;
-import modules.Lampka.IpsoLightControlImpl;
+import modules.Lampka.IpsoLightControl;
 
 import org.eclipse.californium.core.CoapResource;
 import org.eclipse.californium.core.coap.CoAP.ResponseCode;
@@ -11,38 +11,38 @@ import Protocol.Comm_Protocol;
 
 public class LampkaResource extends CoapResource {
 
-	private IpsoLightControlImpl ipsoLightControlImpl;
+	private IpsoLightControl ipsoLightControl;
 	private Menu menu;
-	public LampkaResource(IpsoLightControlImpl ipsoLightControlImpl, Menu menu) {
+	public LampkaResource(IpsoLightControl ipsoLightControl, Menu menu) {
 		super("IPSO");//TODO
-		this.ipsoLightControlImpl = ipsoLightControlImpl;
+		this.ipsoLightControl = ipsoLightControl;
 		this.menu = menu;
 	}
 
 	@Override
 	public void handleGET(CoapExchange exchange) 
 	{
-//		if(ipsoLightControlImpl.getCurrentStatus()==IpsoLightControlImpl.BUDZIK_SWITCHED_ON)
+//		if(ipsoLightControl.getCurrentStatus()==IpsoLightControl.BUDZIK_SWITCHED_ON)
 //		{
-//			exchange.respond(ResponseCode.CONTENT, Integer.toString(IpsoLightControlImpl.BUDZIK_SWITCHED_ON));
+//			exchange.respond(ResponseCode.CONTENT, Integer.toString(IpsoLightControl.BUDZIK_SWITCHED_ON));
 //		}
-//		else if(ipsoLightControlImpl.getCurrentStatus()==IpsoLightControlImpl.BUDZIK_SWITCHED_OFF)
+//		else if(ipsoLightControl.getCurrentStatus()==IpsoLightControl.BUDZIK_SWITCHED_OFF)
 //		{
-//			exchange.respond(ResponseCode.CONTENT, Integer.toString(IpsoLightControlImpl.BUDZIK_SWITCHED_OFF));
+//			exchange.respond(ResponseCode.CONTENT, Integer.toString(IpsoLightControl.BUDZIK_SWITCHED_OFF));
 //		}
 	}
 	@Override
 	public void handlePUT(CoapExchange exchange) 
 	{
 		if(exchange.getRequestText().equals(Comm_Protocol.SWITCHED_ON)){
-		ipsoLightControlImpl.switchOn();
+		ipsoLightControl.switchOn();
 		menu.repaint();
 		exchange.respond(ResponseCode.CHANGED);
 		
 		}
 		else if(exchange.getRequestText().equals(Comm_Protocol.SWITCHED_OFF))
 		{
-			ipsoLightControlImpl.switchOff();
+			ipsoLightControl.switchOff();
 			menu.repaint();
 			exchange.respond(ResponseCode.CHANGED);
 

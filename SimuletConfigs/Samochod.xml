@@ -3,5 +3,9 @@
 	<Simulet id="Samochod">
 		<classname>IpsoDigitalOutput</classname>
 		<serverport>11114</serverport>
+		<states>
+			<state>ON</state>
+			<state>OFF</state>
+		</states>
 	</Simulet>
 </company>
