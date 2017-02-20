@@ -19,11 +19,12 @@ public class TriggerResource extends CoapResource {
 
     @Override
     public void handleGET(CoapExchange exchange) {
-        if (bistableTrigger.getState() == BistableTrigger.TRIGGER_SWITCHED_ON) {
-            exchange.respond(ResponseCode.CONTENT, Boolean.toString(BistableTrigger.TRIGGER_SWITCHED_ON));
-        } else if (bistableTrigger.getState() == BistableTrigger.TRIGGER_SWITCHED_OFF) {
-            exchange.respond(ResponseCode.CONTENT, Boolean.toString(BistableTrigger.TRIGGER_SWITCHED_OFF));
-        }
+        exchange.respond(ResponseCode.CONTENT, bistableTrigger.getCurrentState().getStateId());
+//        if (bistableTrigger.getState() == BistableTrigger.TRIGGER_SWITCHED_ON) {
+//            exchange.respond(ResponseCode.CONTENT, Boolean.toString(BistableTrigger.TRIGGER_SWITCHED_ON));
+//        } else if (bistableTrigger.getState() == BistableTrigger.TRIGGER_SWITCHED_OFF) {
+//            exchange.respond(ResponseCode.CONTENT, Boolean.toString(BistableTrigger.TRIGGER_SWITCHED_OFF));
+//        }
     }
 
 //    @Override

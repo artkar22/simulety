@@ -30,6 +30,7 @@ public abstract class Simulet extends JPanel {
             currentImage = currentState.getPicture();
             Dimension dimension = new Dimension(currentImage.getIconWidth(), currentImage.getIconHeight());
             setPreferredSize(dimension);
+
         }
     }
 

@@ -8,7 +8,6 @@ import java.net.InetSocketAddress;
 
 public class IpsoLightControl extends Simulet {
 
-
     public static final String LAMP_SWITCHED_ON = "ON";
     public static final String LAMP_SWITCHED_OFF = "OFF";
     private InetSocketAddress simuletsAddress;

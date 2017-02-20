@@ -3,7 +3,7 @@
 	<Simulet id="Radio">
 		<classname>IpsoDigitalOutput</classname>
 		<serverport>11113</serverport>
-		<states>
+		<states initial="OFF">
 			<state>ON</state>
 			<state>OFF</state>
 		</states>

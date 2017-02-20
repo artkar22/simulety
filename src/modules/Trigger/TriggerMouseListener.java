@@ -1,28 +1,52 @@
 package modules.Trigger;
 
 import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
+import main.Menu;
 import modules.resources.DigitalInputStateResource;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import static modules.listOfAvailableModules.BISTABLE_TRIGGER;
 
 /**
- * Created by Artur Karolak on 2016-10-16.
+ * Created by Inni on 2017-01-11.
  */
-public class TriggerActionListener implements ActionListener {
+public class TriggerMouseListener implements MouseListener {
+
+    private BistableTrigger trigger;
+    private Menu menu;
     private DigitalInputStateResource on_off_resource;
 
-    public TriggerActionListener(final DigitalInputStateResource on_off_resource) {
+    public TriggerMouseListener(final BistableTrigger trigger, final DigitalInputStateResource on_off_resource, final Menu menu) {
+        this.trigger = trigger;
         this.on_off_resource = on_off_resource;
+        this.menu = menu;
     }
 
     @Override
-    public void actionPerformed(ActionEvent arg0) {
+    public void mouseClicked(MouseEvent e) {
         sendTriggerChange();
-//        bistableTrigger.switchOn();
-//        menu.repaint();
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+
     }
 
     private void sendTriggerChange() {
@@ -35,6 +59,7 @@ public class TriggerActionListener implements ActionListener {
                 digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_ON));
             }
         }
+        menu.repaint();
 //        if (digitalInput.getState() == digitalInput.SWITCHED_ON) {
 //            digitalInput.setState(digitalInput.SWITCHED_OFF);
 //        } else if (digitalInput.getState() == digitalInput.SWITCHED_OFF) {
@@ -42,20 +67,12 @@ public class TriggerActionListener implements ActionListener {
 //        }
         on_off_resource.changed();
         on_off_resource.setButtonActionFlagFalse();
-//        server.add(on_off_Resource);
-//        server.get
-//        if (bistableTrigger.getMobileAppAddress() != null) {
-//            final Endpoint myEndpoint = server.getEndpoint(bistableTrigger.getSimuletsAddress());
-//            myEndpoint.
-//            myEndpoint.sendRequest(request());
-//            myEndpoint.
-//        }
     }
 
 //    private Request request() {
 //        final Response resp = Response.createResponse();
 //        try {
-//            request.setURI(new URI(bistableTrigger.getMobileAppAddress().toString() +":"+ Integer.toString(bistableTrigger.getMobileAppPort())));
+//            request.setURI(new URI(trigger.getMobileAppAddress().toString() +":"+ Integer.toString(trigger.getMobileAppPort())));
 //        } catch (URISyntaxException e) {
 //            e.printStackTrace();
 //        }
@@ -63,4 +80,3 @@ public class TriggerActionListener implements ActionListener {
 //        return request;
 //    }
 }
-

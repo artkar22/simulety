@@ -3,7 +3,7 @@
 	<Simulet id="Trigger_2">
 		<classname>BistableTrigger</classname>
 		<serverport>11117</serverport>
-		<states>
+		<states initial="OFF">
 			<state>ON</state>
 			<state>OFF</state>
 		</states>

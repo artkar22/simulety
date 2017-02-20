@@ -1,39 +1,30 @@
 package modules.resources;
 
 import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
-import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
-import modules.Lampka.IpsoLightControl;
 import org.eclipse.californium.core.CoapResource;
 import org.eclipse.californium.core.coap.CoAP.ResponseCode;
 import org.eclipse.californium.core.server.resources.CoapExchange;
 
 public class IdResource extends CoapResource {
 
-    private IpsoLightControl ipsoLightControl;
-    private IpsoDigitalOutputImpl digitalOutput;
     private IpsoDigitalInputImpl digitalInput;
-    private int simuletsId;
+    private final int simuletsId;
     private final static String ID = "id";
 
-    public IdResource(IpsoLightControl ipsoLightControl) {
+    public IdResource(final int simuletsId) {
         super(ID);
-        this.ipsoLightControl = ipsoLightControl;
-        this.simuletsId = ipsoLightControl.getId();
+        this.simuletsId = simuletsId;
     }
-    public IdResource(IpsoDigitalOutputImpl digitalOutput) {
+
+    public IdResource(final int simuletsId, final IpsoDigitalInputImpl digitalInput) {
         super(ID);
-        this.digitalOutput = digitalOutput;
-        this.simuletsId = digitalOutput.getId();
-    }
-    public IdResource(IpsoDigitalInputImpl digitalInput) {
-        super(ID);
+        this.simuletsId = simuletsId;
         this.digitalInput = digitalInput;
-        this.simuletsId = digitalInput.getId();
     }
 
     @Override
     public void handleGET(CoapExchange exchange) {
-        if(digitalInput != null){
+        if (digitalInput != null) {
             digitalInput.setMobileAppAddress(exchange.getSourceAddress());
             digitalInput.setMobileAppPort(exchange.getSourcePort());
         }

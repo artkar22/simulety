@@ -23,11 +23,7 @@ public class DigitalOutputStateResource extends CoapResource {
     @Override
     public void handleGET(CoapExchange exchange) {
         System.out.println("Status get");
-        if (digitalOutput.getState() == digitalOutput.SWITCHED_ON) {
-            exchange.respond(ResponseCode.CONTENT, Boolean.toString(IpsoLightControl.LAMP_SWITCHED_ON));
-        } else if (digitalOutput.getState() == digitalOutput.SWITCHED_OFF) {
-            exchange.respond(ResponseCode.CONTENT, Boolean.toString(IpsoLightControl.LAMP_SWITCHED_OFF));
-        }
+        exchange.respond(ResponseCode.CONTENT, digitalOutput.getCurrentState().getStateId());
     }
 
     @Override

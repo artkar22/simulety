@@ -3,7 +3,7 @@
 	<Simulet id="Samochod">
 		<classname>IpsoDigitalOutput</classname>
 		<serverport>11114</serverport>
-		<states>
+		<states initial="OFF">
 			<state>ON</state>
 			<state>OFF</state>
 		</states>

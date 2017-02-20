@@ -22,11 +22,7 @@ public class StatusResource extends CoapResource {
     @Override
     public void handleGET(CoapExchange exchange) {
         System.out.println("Status get");
-        if (ipsoLightControl.getOn_Off_Status() == IpsoLightControl.LAMP_SWITCHED_ON) {
-            exchange.respond(ResponseCode.CONTENT, Boolean.toString(IpsoLightControl.LAMP_SWITCHED_ON));
-        } else if (ipsoLightControl.getOn_Off_Status() == IpsoLightControl.LAMP_SWITCHED_OFF) {
-            exchange.respond(ResponseCode.CONTENT, Boolean.toString(IpsoLightControl.LAMP_SWITCHED_OFF));
-        }
+        exchange.respond(ResponseCode.CONTENT, ipsoLightControl.getCurrentState().getStateId());
     }
 
     @Override

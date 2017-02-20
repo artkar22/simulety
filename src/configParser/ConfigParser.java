@@ -82,7 +82,7 @@ public class ConfigParser {
     }
 
     private ImageIcon loadPictures(final String stateName) {
-        final File directory = new File("pictures/" + documentName + stateName + "/main");
+        final File directory = new File("pictures/" + documentName + "/" + stateName + "/main");
         if (directory.isDirectory()) {
             final File[] files = directory.listFiles();
             if (files.length > 0) {
