@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <company>
 	<Simulet id="Trigger_1">
+		<classname>Trigger</classname>
 		<serverport>11116</serverport>
 	</Simulet>
 </company>

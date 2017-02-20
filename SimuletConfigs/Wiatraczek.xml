@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <company>
 	<Simulet id="Wiatraczek">
+		<classname>IpsoDigitalOutput</classname>
 		<serverport>11112</serverport>
 	</Simulet>
 </company>

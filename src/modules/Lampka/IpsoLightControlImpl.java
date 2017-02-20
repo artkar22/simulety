@@ -9,7 +9,7 @@ import modules.Simulet;
 
 import static ipsoConfig.ipsoDefinitions.IPSO_LIGHT_CONTROL;
 
-public class Lampka extends Simulet implements ipsoLightControl {
+public class IpsoLightControlImpl extends Simulet implements ipsoLightControl {
 
 
     private InetSocketAddress simuletsAddress;
@@ -22,7 +22,7 @@ public class Lampka extends Simulet implements ipsoLightControl {
         return simuletsAddress;
     }
 
-    public Lampka(String nameOfSimulet) {
+    public IpsoLightControlImpl(String nameOfSimulet) {
         super(nameOfSimulet);
         setStatus(LAMP_SWITCHED_OFF);
     }

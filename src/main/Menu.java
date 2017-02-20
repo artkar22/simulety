@@ -1,16 +1,13 @@
 package main;
 
 import configParser.ConfigParser;
-import modules.Lampka.Lampka;
+import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
+import modules.Lampka.IpsoLightControlImpl;
 import modules.Lampka.resources.StatusResource;
-import modules.Radio.Radio;
-import modules.Samochod.Samochod;
 import modules.Simulet;
 import modules.Trigger.Trigger;
 import modules.Trigger.TriggerActionListener;
-import modules.Wiatraczek.Wiatraczek;
 import modules.listOfAvailableModules;
-import modules.listOfAvailableModulesTypes;
 import modules.resources.DigitalInputStateResource;
 import modules.resources.DigitalOutputStateResource;
 import modules.resources.IdResource;
@@ -22,18 +19,24 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
-import java.net.*;
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Enumeration;
 
-import static modules.listOfAvailableModulesTypes.TRIGGER;
+import static modules.listOfAvailableModules.TRIGGER;
+
 
 public class Menu extends JFrame implements ActionListener {
 
 
     private final String nameOfSimulet;
-    private final String simuletsType;
     private int serverPort;
+    private String className;
     private ArrayList<BufferedImage> images;
     private JButton button;
     private Simulet simulet;
@@ -41,12 +44,15 @@ public class Menu extends JFrame implements ActionListener {
     private CoapServer server;
     private InetSocketAddress simuletsAddress;
 
-    public Menu(final String nameOfSimulet, final String simuletsType) {
+    public Menu(final String nameOfSimulet) {
         this.nameOfSimulet = nameOfSimulet;
-        this.simuletsType = simuletsType;
         configurateWindow();
         loadConfiguration();
-        startModule();
+        if (TRIGGER.equals(className)) {
+            button = new JButton("testButton");
+            this.add(button);
+        }
+        startSimuletModule();
         server.start();
     }
 
@@ -54,11 +60,6 @@ public class Menu extends JFrame implements ActionListener {
 //        button = new JButton("testButton");
         this.setBounds(0, 0, 1024, 768);
         this.setLayout(new GridLayout());
-        if (TRIGGER.equals(simuletsType)) {
-            button = new JButton("testButton");
-            //
-            this.add(button);
-        }
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle(nameOfSimulet);
         this.setVisible(true);
@@ -68,6 +69,7 @@ public class Menu extends JFrame implements ActionListener {
         ConfigParser parser = new ConfigParser(nameOfSimulet);
         parser.Parse();
         serverPort = parser.getPort();
+        className = parser.getClassName();
     }
 
     private void createCOAPServer(int id) {
@@ -105,77 +107,74 @@ public class Menu extends JFrame implements ActionListener {
         return null;
     }
 
-    private void startModule() {
-        if (listOfAvailableModulesTypes.SIMULET.equals(simuletsType)) {
-            startSimuletModule();
-        } else {
-            startTriggerModule();
-        }
-    }
-
     private void startSimuletModule() {
-        if (nameOfSimulet.equals(listOfAvailableModules.LAMPKA)) {
+        if (listOfAvailableModules.LAMPKA.equals(className)) {
 
-            simulet = new Lampka(nameOfSimulet);
-            createCOAPServer(((Lampka) simulet).getId());
-            ((Lampka)simulet).setSimuletsAddress(simuletsAddress);
-//            LampkaActionListener listener = new LampkaActionListener((Lampka) simulet, this);
+            simulet = new IpsoLightControlImpl(nameOfSimulet);
+            createCOAPServer(((IpsoLightControlImpl) simulet).getId());
+            ((IpsoLightControlImpl) simulet).setSimuletsAddress(simuletsAddress);
+//            LampkaActionListener listener = new LampkaActionListener((IpsoLightControlImpl) simulet, this);
 //            button.addActionListener(listener);
             this.add(simulet);
             this.pack();
-            IdResource idResource = new IdResource((Lampka) simulet);
+            IdResource idResource = new IdResource((IpsoLightControlImpl) simulet);
             server.add(idResource);
-            StatusResource on_off_Resource = new StatusResource((Lampka) simulet, this);
+            StatusResource on_off_Resource = new StatusResource((IpsoLightControlImpl) simulet, this);
             server.add(on_off_Resource);
             //images = lampka.getImages();
 //            LampkaResource lampkaResource = new LampkaResource(lampka, this);
 //            server.add(lampkaResource);
-        } else if (nameOfSimulet.equals(listOfAvailableModules.WIATRACZEK)) {
+        } else if (listOfAvailableModules.IpsoDigitalOutput.equals(className)
+            //nameOfSimulet.equals(listOfAvailableModules.WIATRACZEK) || nameOfSimulet.equals(listOfAvailableModules.RADIO) || nameOfSimulet.equals(listOfAvailableModules.SAMOCHOD)
+                ) {
 
-            simulet = new Wiatraczek(nameOfSimulet, simuletsAddress);
-            createCOAPServer(((Wiatraczek) simulet).getId());
+            simulet = new IpsoDigitalOutputImpl(nameOfSimulet, simuletsAddress);
+            createCOAPServer(((IpsoDigitalOutputImpl) simulet).getId());
 //            WiatraczekActionListener listener = new WiatraczekActionListener((Wiatraczek) simulet, this);
 //            button.addActionListener(listener);
             this.add(simulet);
             this.pack();
-            IdResource idResource = new IdResource((Wiatraczek) simulet);
+            IdResource idResource = new IdResource((IpsoDigitalOutputImpl) simulet);
             server.add(idResource);
-            DigitalOutputStateResource on_off_Resource = new DigitalOutputStateResource((Wiatraczek) simulet, this);
+            DigitalOutputStateResource on_off_Resource = new DigitalOutputStateResource((IpsoDigitalOutputImpl) simulet, this);
             server.add(on_off_Resource);
             //images = lampka.getImages();
 //            LampkaResource lampkaResource = new LampkaResource(lampka, this);
 //            server.add(lampkaResource);
-        } else if (nameOfSimulet.equals(listOfAvailableModules.RADIO)) {
-
-            simulet = new Radio(nameOfSimulet, simuletsAddress);
-            createCOAPServer(((Radio) simulet).getId());
-//            RadioActionListener listener = new RadioActionListener((Radio) simulet, this);
-//            button.addActionListener(listener);
-            this.add(simulet);
-            this.pack();
-            IdResource idResource = new IdResource((Radio) simulet);
-            server.add(idResource);
-            DigitalOutputStateResource on_off_Resource = new DigitalOutputStateResource((Radio) simulet, this);
-            server.add(on_off_Resource);
-            //images = lampka.getImages();
-//            LampkaResource lampkaResource = new LampkaResource(lampka, this);
-//            server.add(lampkaResource);
-        } else if (nameOfSimulet.equals(listOfAvailableModules.SAMOCHOD)) {
-
-            simulet = new Samochod(nameOfSimulet, simuletsAddress);
-            createCOAPServer(((Samochod) simulet).getId());
-//            TriggerActionListener listener = new TriggerActionListener((Samochod) simulet, this);
-//            button.addActionListener(listener);
-            this.add(simulet);
-            this.pack();
-            IdResource idResource = new IdResource((Samochod) simulet);
-            server.add(idResource);
-            DigitalOutputStateResource on_off_Resource = new DigitalOutputStateResource((Samochod) simulet, this);
-            server.add(on_off_Resource);
-            //images = lampka.getImages();
-//            LampkaResource lampkaResource = new LampkaResource(lampka, this);
-//            server.add(lampkaResource);
+        } else if (TRIGGER.equals(className)) {
+            startTriggerModule();
         }
+//        else if (nameOfSimulet.equals(listOfAvailableModules.RADIO)) {
+//
+//            simulet = new Radio(nameOfSimulet, simuletsAddress);
+//            createCOAPServer(((Radio) simulet).getId());
+////            RadioActionListener listener = new RadioActionListener((Radio) simulet, this);
+////            button.addActionListener(listener);
+//            this.add(simulet);
+//            this.pack();
+//            IdResource idResource = new IdResource((Radio) simulet);
+//            server.add(idResource);
+//            DigitalOutputStateResource on_off_Resource = new DigitalOutputStateResource((Radio) simulet, this);
+//            server.add(on_off_Resource);
+//            //images = lampka.getImages();
+////            LampkaResource lampkaResource = new LampkaResource(lampka, this);
+////            server.add(lampkaResource);
+//        } else if (nameOfSimulet.equals(listOfAvailableModules.SAMOCHOD)) {
+//
+//            simulet = new Samochod(nameOfSimulet, simuletsAddress);
+//            createCOAPServer(((Samochod) simulet).getId());
+////            TriggerActionListener listener = new TriggerActionListener((Samochod) simulet, this);
+////            button.addActionListener(listener);
+//            this.add(simulet);
+//            this.pack();
+//            IdResource idResource = new IdResource((Samochod) simulet);
+//            server.add(idResource);
+//            DigitalOutputStateResource on_off_Resource = new DigitalOutputStateResource((Samochod) simulet, this);
+//            server.add(on_off_Resource);
+//            //images = lampka.getImages();
+////            LampkaResource lampkaResource = new LampkaResource(lampka, this);
+////            server.add(lampkaResource);
+//        }
     }
 
     private void startTriggerModule() {
@@ -183,7 +182,7 @@ public class Menu extends JFrame implements ActionListener {
                 nameOfSimulet.equals(listOfAvailableModules.TRIGGER_2)) {
             simulet = new Trigger(nameOfSimulet);
             createCOAPServer(((Trigger) simulet).getId());
-            ((Trigger)simulet).setSimuletsAddress(simuletsAddress);
+            ((Trigger) simulet).setSimuletsAddress(simuletsAddress);
             IdResource idResource = new IdResource((Trigger) simulet);
             server.add(idResource);
             DigitalInputStateResource on_off_Resource = new DigitalInputStateResource((Trigger) simulet, this);

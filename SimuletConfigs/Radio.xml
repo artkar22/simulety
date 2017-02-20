@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <company>
 	<Simulet id="Radio">
+		<classname>IpsoDigitalOutput</classname>
 		<serverport>11113</serverport>
 	</Simulet>
 </company>

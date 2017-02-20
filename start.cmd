@@ -1,10 +1,9 @@
-
-	START Simulet.jar Lampka Simulet
-	START Simulet.jar Samochod Simulet
-	START Simulet.jar Radio Simulet
-	START Simulet.jar Wiatraczek Simulet
-	START Simulet.jar Trigger_1 Trigger
-	START Simulet.jar Trigger_2 Trigger
+START Simulet.jar Lampka 
+START Simulet.jar Samochod 
+START Simulet.jar Radio 
+START Simulet.jar Wiatraczek 
+START Simulet.jar Trigger_1 
+START Simulet.jar Trigger_2 
 
 
 

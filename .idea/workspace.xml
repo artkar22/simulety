@@ -7,8 +7,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba7df919-9d38-4f4f-8cbd-0310d1c33f49" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/main/StartSimulet$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/modules/Lampka/Lampka.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/listOfAvailableModulesTypes.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/modules/Lampka/Lampka.java" afterPath="$PROJECT_DIR$/src/modules/Lampka/IpsoLightControlImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulet.jar" afterPath="$PROJECT_DIR$/Simulet.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/configParser/ConfigParser.class" afterPath="$PROJECT_DIR$/bin/configParser/ConfigParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ipsoConfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.class" afterPath="$PROJECT_DIR$/bin/ipsoConfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/main/Menu.class" afterPath="$PROJECT_DIR$/bin/main/Menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/main/StartSimulet.class" afterPath="$PROJECT_DIR$/bin/main/StartSimulet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/modules/Lampka/LampkaActionListener.class" afterPath="$PROJECT_DIR$/bin/modules/Lampka/LampkaActionListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/modules/Lampka/resources/StatusResource.class" afterPath="$PROJECT_DIR$/bin/modules/Lampka/resources/StatusResource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/modules/Radio/Radio.class" afterPath="$PROJECT_DIR$/bin/modules/Radio/Radio.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/modules/Samochod/Samochod.class" afterPath="$PROJECT_DIR$/bin/modules/Samochod/Samochod.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/modules/Wiatraczek/Wiatraczek.class" afterPath="$PROJECT_DIR$/bin/modules/Wiatraczek/Wiatraczek.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/modules/listOfAvailableModules.class" afterPath="$PROJECT_DIR$/bin/modules/listOfAvailableModules.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/modules/resources/DigitalOutputStateResource.class" afterPath="$PROJECT_DIR$/bin/modules/resources/DigitalOutputStateResource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/modules/resources/IdResource.class" afterPath="$PROJECT_DIR$/bin/modules/resources/IdResource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/serverResources/LampkaResource.class" afterPath="$PROJECT_DIR$/bin/serverResources/LampkaResource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/simulets/simulets.jar" afterPath="$PROJECT_DIR$/classes/artifacts/simulets/simulets.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimuletConfigs/Budzik.xml" afterPath="$PROJECT_DIR$/SimuletConfigs/Budzik.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimuletConfigs/Lampka.xml" afterPath="$PROJECT_DIR$/SimuletConfigs/Lampka.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimuletConfigs/Misio.xml" afterPath="$PROJECT_DIR$/SimuletConfigs/Misio.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimuletConfigs/Radio.xml" afterPath="$PROJECT_DIR$/SimuletConfigs/Radio.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimuletConfigs/Samochod.xml" afterPath="$PROJECT_DIR$/SimuletConfigs/Samochod.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimuletConfigs/Trigger_1.xml" afterPath="$PROJECT_DIR$/SimuletConfigs/Trigger_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimuletConfigs/Trigger_2.xml" afterPath="$PROJECT_DIR$/SimuletConfigs/Trigger_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimuletConfigs/Wiatraczek.xml" afterPath="$PROJECT_DIR$/SimuletConfigs/Wiatraczek.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/configParser/ConfigParser.java" afterPath="$PROJECT_DIR$/src/configParser/ConfigParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ipsoConfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.java" afterPath="$PROJECT_DIR$/src/ipsoConfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Menu.java" afterPath="$PROJECT_DIR$/src/main/Menu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/StartSimulet.java" afterPath="$PROJECT_DIR$/src/main/StartSimulet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/Lampka/LampkaActionListener.java" afterPath="$PROJECT_DIR$/src/modules/Lampka/LampkaActionListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/Lampka/resources/StatusResource.java" afterPath="$PROJECT_DIR$/src/modules/Lampka/resources/StatusResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/Radio/Radio.java" afterPath="$PROJECT_DIR$/src/modules/Radio/Radio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/Radio/RadioActionListener.java" afterPath="$PROJECT_DIR$/src/modules/Radio/RadioActionListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/Samochod/Samochod.java" afterPath="$PROJECT_DIR$/src/modules/Samochod/Samochod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/Samochod/SamochodActionListener.java" afterPath="$PROJECT_DIR$/src/modules/Samochod/SamochodActionListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/Wiatraczek/Wiatraczek.java" afterPath="$PROJECT_DIR$/src/modules/Wiatraczek/Wiatraczek.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/Wiatraczek/WiatraczekActionListener.java" afterPath="$PROJECT_DIR$/src/modules/Wiatraczek/WiatraczekActionListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/listOfAvailableModules.java" afterPath="$PROJECT_DIR$/src/modules/listOfAvailableModules.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/resources/DigitalOutputStateResource.java" afterPath="$PROJECT_DIR$/src/modules/resources/DigitalOutputStateResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/resources/IdResource.java" afterPath="$PROJECT_DIR$/src/modules/resources/IdResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/serverResources/LampkaResource.java" afterPath="$PROJECT_DIR$/src/serverResources/LampkaResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start.bat" afterPath="$PROJECT_DIR$/start.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start.cmd" afterPath="$PROJECT_DIR$/start.cmd" />
     </list>
     <ignored path="Simulet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,8 +67,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/simulety$Trigger_jar.coverage" NAME="Trigger.jar Coverage Results" MODIFIED="1482920365525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/simulety$Lampka_jar.coverage" NAME="Lampka.jar Coverage Results" MODIFIED="1482849827893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/simulety$Trigger_jar.coverage" NAME="Trigger.jar Coverage Results" MODIFIED="1482920365525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -35,11 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+            <state relative-caret-position="229">
+              <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,106 +91,94 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lampka.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/Lampka/Lampka.java">
+      <file leaf-file-name="ConfigParser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/configParser/ConfigParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="238">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Simulet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/Simulet.java">
+      <file leaf-file-name="Radio.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/Radio/Radio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="306">
+              <caret line="18" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Trigger.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/Trigger/Trigger.java">
+      <file leaf-file-name="RadioActionListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/Radio/RadioActionListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="16" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listOfAvailableModules.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/listOfAvailableModules.java">
+      <file leaf-file-name="Budzik.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/Budzik/Budzik.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="40" />
+            <state relative-caret-position="238">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartSimulet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/StartSimulet.java">
+      <file leaf-file-name="Samochod.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/Samochod/Samochod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="22" column="3" selection-start-line="0" selection-start-column="2" selection-end-line="22" selection-end-column="3" />
               <folding>
-                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#0#710#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoapResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/eclipse/californium/core/CoapResource.java">
+      <file leaf-file-name="SamochodActionListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/Samochod/SamochodActionListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14630">
-              <caret line="765" column="72" selection-start-line="765" selection-start-column="72" selection-end-line="765" selection-end-column="72" />
+            <state relative-caret-position="357">
+              <caret line="21" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DigitalInputStateResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/resources/DigitalInputStateResource.java">
+      <file leaf-file-name="IpsoDigitalOutputImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ipsoConfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="16" column="59" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TriggerActionListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/Trigger/TriggerActionListener.java">
+      <file leaf-file-name="Wiatraczek.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/Wiatraczek/Wiatraczek.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="459">
+              <caret line="27" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IdResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/resources/IdResource.java">
+      <file leaf-file-name="WiatraczekActionListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/Wiatraczek/WiatraczekActionListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1693#1694#0" expanded="false" />
-                <element signature="e#1749#1750#0" expanded="false" />
-                <element signature="e#1816#1817#0" expanded="false" />
-                <element signature="e#1872#1873#0" expanded="false" />
-                <element signature="e#1941#1942#0" expanded="false" />
-                <element signature="e#1997#1998#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="22" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -173,44 +205,46 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ipsoConfig/ipsoUtilities.java" />
-        <option value="$PROJECT_DIR$/src/main/StartSimulet.java" />
         <option value="$PROJECT_DIR$/src/org/eclipse/californium/core/CoapServer.java" />
         <option value="$PROJECT_DIR$/src/modules/Lampka/resources/LampkaResource.java" />
         <option value="$PROJECT_DIR$/src/serverResources/LampkaResource.java" />
         <option value="$PROJECT_DIR$/src/modules/Lampka/resources/On_off_resource.java" />
         <option value="$PROJECT_DIR$/src/modules/Lampka/resources/StatusResource.java" />
         <option value="$PROJECT_DIR$/src/ipsoConfig/ipsoInterfaces/ipsoLightControl.java" />
-        <option value="$PROJECT_DIR$/src/modules/Wiatraczek/WiatraczekActionListener.java" />
         <option value="$PROJECT_DIR$/src/ipsoConfig/ipsoInterfaces/ipsoDigitalOutput.java" />
         <option value="$PROJECT_DIR$/src/modules/Wiatraczek/resources/StatusResource.java" />
         <option value="$PROJECT_DIR$/src/modules/Wiatraczek/resources/DigitalOutputState.java" />
         <option value="$PROJECT_DIR$/SimuletConfigs/Wiatraczek.xml" />
         <option value="$PROJECT_DIR$/src/modules/Radio/Wiatraczek.java" />
-        <option value="$PROJECT_DIR$/src/ipsoConfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.java" />
-        <option value="$PROJECT_DIR$/src/modules/Radio/Radio.java" />
-        <option value="$PROJECT_DIR$/src/modules/Wiatraczek/Wiatraczek.java" />
         <option value="$PROJECT_DIR$/src/modules/Wiatraczek/resources/DigitalOutputStateResource.java" />
-        <option value="$PROJECT_DIR$/src/modules/Radio/RadioActionListener.java" />
         <option value="$PROJECT_DIR$/SimuletConfigs/Radio.xml" />
         <option value="$PROJECT_DIR$/SimuletConfigs/Samochod.xml" />
-        <option value="$PROJECT_DIR$/src/modules/Samochod/Samochod.java" />
-        <option value="$PROJECT_DIR$/src/modules/Samochod/SamochodActionListener.java" />
         <option value="$PROJECT_DIR$/src/modules/resources/DigitalOutputStateResource.java" />
         <option value="$PROJECT_DIR$/src/modules/Budzik/Budzik.java" />
         <option value="$PROJECT_DIR$/src/serverResources/TriggerResource.java" />
         <option value="$PROJECT_DIR$/src/ipsoConfig/ipsoDefinitions.java" />
         <option value="$PROJECT_DIR$/src/ipsoConfig/ipsoInterfaces/ipsoDigitalInput.java" />
         <option value="$PROJECT_DIR$/src/modules/Simulet.java" />
-        <option value="$PROJECT_DIR$/src/modules/Lampka/Lampka.java" />
         <option value="$PROJECT_DIR$/src/modules/Trigger/Trigger.java" />
         <option value="$PROJECT_DIR$/src/Protocol/Comm_Protocol.java" />
         <option value="$PROJECT_DIR$/src/modules/resources/IdResource.java" />
         <option value="$PROJECT_DIR$/src/ipsoConfig/ipsoInterfaces/implementation/IpsoDigitalInputImpl.java" />
         <option value="C:/Program Files (x86)/Java/jdk1.8.0_45/jre/lib/rt.jar!/com/sun/jndi/toolkit/url/Uri.class" />
-        <option value="$PROJECT_DIR$/src/modules/listOfAvailableModules.java" />
         <option value="$PROJECT_DIR$/src/modules/resources/DigitalInputStateResource.java" />
         <option value="$PROJECT_DIR$/src/modules/Trigger/TriggerActionListener.java" />
+        <option value="$PROJECT_DIR$/src/modules/Lampka/Lampka.java" />
+        <option value="$PROJECT_DIR$/src/modules/Lampka/IpsoLightControlImpl.java" />
+        <option value="$PROJECT_DIR$/src/ipsoConfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.java" />
+        <option value="$PROJECT_DIR$/src/configParser/ConfigParser.java" />
+        <option value="$PROJECT_DIR$/src/main/StartSimulet.java" />
+        <option value="$PROJECT_DIR$/src/modules/listOfAvailableModules.java" />
         <option value="$PROJECT_DIR$/src/main/Menu.java" />
+        <option value="$PROJECT_DIR$/src/modules/Wiatraczek/Wiatraczek.java" />
+        <option value="$PROJECT_DIR$/src/modules/Wiatraczek/WiatraczekActionListener.java" />
+        <option value="$PROJECT_DIR$/src/modules/Samochod/Samochod.java" />
+        <option value="$PROJECT_DIR$/src/modules/Samochod/SamochodActionListener.java" />
+        <option value="$PROJECT_DIR$/src/modules/Radio/Radio.java" />
+        <option value="$PROJECT_DIR$/src/modules/Radio/RadioActionListener.java" />
       </list>
     </option>
   </component>
@@ -231,10 +265,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -247,7 +281,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -260,7 +294,191 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wiatraczek" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Samochod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Radio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lampka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simulet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/classes/artifacts/simulets/simulets.jar" />
@@ -271,6 +489,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="SONARLINT_ISSUES_VIEW_SCOPE" value="Current File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -290,7 +509,7 @@
       <recent name="C:\inżynierka\inzynierka\Simulet\pictures\Wiatraczek" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.Trigger.jar">
+  <component name="RunManager" selected="JAR Application.Wiatraczek.jar">
     <configuration default="false" name="StartLampka" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -314,7 +533,7 @@
     <configuration default="false" name="Lampka.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="JAR_PATH" value="$PROJECT_DIR$/classes/artifacts/simulets/simulets.jar" />
-      <option name="PROGRAM_PARAMETERS" value="Lampka Simulet" />
+      <option name="PROGRAM_PARAMETERS" value="Lampka" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <envs />
       <method />
@@ -385,133 +604,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -526,15 +618,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="depsClasspath" value="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -600,9 +683,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -634,12 +714,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -698,28 +772,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
     <configuration default="false" name="StartWiatraczek" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="main.StartSimulet" />
@@ -774,13 +826,50 @@
       <envs />
       <method />
     </configuration>
-    <list size="6">
+    <configuration default="false" name="Trigger_2" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/classes/artifacts/simulets/simulets.jar" />
+      <option name="PROGRAM_PARAMETERS" value="Trigger_2 Trigger" />
+      <option name="WORKING_DIRECTORY" value="C:\inżynierka\inzynierka\Simulet" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Samochod.jar" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/classes/artifacts/simulets/simulets.jar" />
+      <option name="PROGRAM_PARAMETERS" value="Samochod" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Radio.jar" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/classes/artifacts/simulets/simulets.jar" />
+      <option name="PROGRAM_PARAMETERS" value="Radio" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Wiatraczek.jar" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/classes/artifacts/simulets/simulets.jar" />
+      <option name="PROGRAM_PARAMETERS" value="Wiatraczek" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="10">
       <item index="0" class="java.lang.String" itemvalue="Application.StartWiatraczek" />
       <item index="1" class="java.lang.String" itemvalue="Application.StartSamochod" />
       <item index="2" class="java.lang.String" itemvalue="Application.StartRadio" />
-      <item index="3" class="java.lang.String" itemvalue="JAR Application.Trigger.jar" />
-      <item index="4" class="java.lang.String" itemvalue="Application.StartLampka" />
-      <item index="5" class="java.lang.String" itemvalue="JAR Application.Lampka.jar" />
+      <item index="3" class="java.lang.String" itemvalue="Application.StartLampka" />
+      <item index="4" class="java.lang.String" itemvalue="JAR Application.Trigger.jar" />
+      <item index="5" class="java.lang.String" itemvalue="JAR Application.Trigger_2" />
+      <item index="6" class="java.lang.String" itemvalue="JAR Application.Samochod.jar" />
+      <item index="7" class="java.lang.String" itemvalue="JAR Application.Radio.jar" />
+      <item index="8" class="java.lang.String" itemvalue="JAR Application.Wiatraczek.jar" />
+      <item index="9" class="java.lang.String" itemvalue="JAR Application.Lampka.jar" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -825,36 +914,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52625823" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.048958335" sideWeight="0.49429038" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16411379" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16359697" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32502708" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24786781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47995666" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.048958335" sideWeight="0.50570965" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -902,42 +991,42 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/serverResources/LampkaResource.java</url>
-          <line>23</line>
+          <line>22</line>
           <properties class="serverResources.LampkaResource" method="handleGET" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/serverResources/LampkaResource.java</url>
-          <line>24</line>
+          <line>23</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/serverResources/LampkaResource.java</url>
-          <line>25</line>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/serverResources/LampkaResource.java</url>
-          <line>27</line>
+          <line>26</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/serverResources/LampkaResource.java</url>
-          <line>30</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/serverResources/LampkaResource.java</url>
-          <line>29</line>
+          <line>28</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/serverResources/LampkaResource.java</url>
-          <line>31</line>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -949,19 +1038,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
-          <line>126</line>
+          <line>120</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
-          <line>127</line>
+          <line>121</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/modules/resources/IdResource.java</url>
-          <line>45</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -1039,30 +1128,114 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
-          <line>111</line>
-          <properties />
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
-          <line>181</line>
+          <line>180</line>
           <properties />
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
-          <line>183</line>
+          <line>182</line>
           <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/configParser/ConfigParser.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/configParser/ConfigParser.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/configParser/ConfigParser.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/configParser/ConfigParser.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/configParser/ConfigParser.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
+          <line>143</line>
+          <properties />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
+          <line>134</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
+          <line>137</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Menu.java</url>
+          <line>138</line>
+          <properties />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/modules/resources/IdResource.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/modules/resources/IdResource.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/modules/resources/IdResource.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="65" />
+      <option name="time" value="94" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1071,14 +1244,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_77/jre/lib/plugin.jar!/com/sun/deploy/uitoolkit/impl/awt/AWTErrorPanel.class" />
-    <entry file="file://$PROJECT_DIR$/src/org/eclipse/californium/core/CoapResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-759">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/eclipse/californium/core/CoapClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15202">
@@ -1143,13 +1308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Wiatraczek/WiatraczekActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ipsoConfig/ipsoInterfaces/ipsoLightControl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -1173,21 +1331,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_77/src.zip!/javax/swing/ImageIcon.java" />
-    <entry file="file://$PROJECT_DIR$/src/modules/Radio/Radio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Radio/RadioActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SimuletConfigs/Wiatraczek.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1206,33 +1349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Wiatraczek/Wiatraczek.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="28" column="1" selection-start-line="14" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#705#706#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Samochod/SamochodActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Samochod/Samochod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,32 +1395,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ipsoConfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="46" column="45" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/eclipse/californium/core/CoapServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="290" column="20" selection-start-line="290" selection-start-column="20" selection-end-line="290" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/serverResources/BudzikResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Budzik/Budzik.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1315,42 +1409,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_45/jre/lib/rt.jar!/com/sun/jndi/toolkit/url/Uri.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_45/jre/lib/rt.jar!/com/sun/jndi/toolkit/url/Uri.class" />
     <entry file="file://$PROJECT_DIR$/src/org/eclipse/californium/core/network/EndpointObserver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-452">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/StartSimulet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#265#266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/listOfAvailableModules.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/resources/DigitalOutputStateResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1368,7 +1431,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/eclipse/californium/core/CoapResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14630">
+        <state relative-caret-position="11305">
           <caret line="765" column="72" selection-start-line="765" selection-start-column="72" selection-end-line="765" selection-end-column="72" />
           <folding />
         </state>
@@ -1376,7 +1439,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/Trigger/TriggerActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
+        <state relative-caret-position="646">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1389,66 +1452,184 @@
         <state relative-caret-position="220">
           <caret line="16" column="59" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/resources/IdResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1693#1694#0" expanded="false" />
-            <element signature="e#1749#1750#0" expanded="false" />
-            <element signature="e#1816#1817#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="false" />
-            <element signature="e#1941#1942#0" expanded="false" />
-            <element signature="e#1997#1998#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/configParser/ConfigParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Lampka/Lampka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Trigger/Trigger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/Simulet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="306">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Lampka/IpsoLightControlImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <marker date="1487582948451" expanded="false" signature="1301:1312" placeholder=" { " />
+            <marker date="1487582948451" expanded="false" signature="1367:1378" placeholder=" { " />
+            <marker date="1487582948451" expanded="false" signature="1445:1456" placeholder=" { " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Trigger/Trigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_77/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/listOfAvailableModulesTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/listOfAvailableModules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/StartSimulet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#177#178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/eclipse/californium/core/CoapServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/resources/DigitalOutputStateResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/resources/IdResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ipsoConfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Wiatraczek/Wiatraczek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Wiatraczek/WiatraczekActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Samochod/Samochod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="3" selection-start-line="0" selection-start-column="2" selection-end-line="22" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Samochod/SamochodActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Radio/Radio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Radio/RadioActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Budzik/Budzik.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+        <state relative-caret-position="229">
+          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/configParser/ConfigParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

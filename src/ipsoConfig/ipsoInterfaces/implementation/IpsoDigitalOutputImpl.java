@@ -10,12 +10,15 @@ import java.net.InetSocketAddress;
  * Created by Artur Karolak on 2016-10-16.
  */
 public class IpsoDigitalOutputImpl extends Simulet implements ipsoDigitalOutput {
+    private InetSocketAddress simuletsAddress;
     public static final boolean SWITCHED_ON = true;
     public static final boolean SWITCHED_OFF = false;
     private boolean Digital_Output_State;
 
-    public IpsoDigitalOutputImpl(String nameOfSimulet) {
+    public IpsoDigitalOutputImpl(final String nameOfSimulet, final InetSocketAddress simuletsAddress) {
         super(nameOfSimulet);
+        setState(SWITCHED_OFF);
+
     }
 
     public void switchOn() {
