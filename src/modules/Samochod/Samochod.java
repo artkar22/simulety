@@ -1,6 +1,6 @@
 //package modules.Samochod;
 //
-//import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
+//import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
 //
 //import java.net.InetSocketAddress;
 //

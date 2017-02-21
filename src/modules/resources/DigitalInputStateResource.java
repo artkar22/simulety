@@ -1,7 +1,6 @@
 package modules.resources;
 
-import Protocol.Comm_Protocol;
-import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
+import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
 import main.Menu;
 import org.eclipse.californium.core.CoapResource;
 import org.eclipse.californium.core.coap.CoAP.ResponseCode;

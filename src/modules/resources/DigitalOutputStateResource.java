@@ -1,9 +1,8 @@
 package modules.resources;
 
 import Protocol.Comm_Protocol;
-import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
+import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
 import main.Menu;
-import modules.Lampka.IpsoLightControl;
 import org.eclipse.californium.core.CoapResource;
 import org.eclipse.californium.core.coap.CoAP.ResponseCode;
 import org.eclipse.californium.core.server.resources.CoapExchange;

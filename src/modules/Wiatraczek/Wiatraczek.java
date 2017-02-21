@@ -3,8 +3,8 @@
 //import java.awt.Dimension;
 //import java.net.InetSocketAddress;
 //
-//import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
-//import ipsoConfig.ipsoInterfaces.ipsoDigitalOutput;
+//import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
+//import ipsoconfig.ipsoInterfaces.ipsoDigitalOutput;
 //import modules.Simulet;
 //
 //

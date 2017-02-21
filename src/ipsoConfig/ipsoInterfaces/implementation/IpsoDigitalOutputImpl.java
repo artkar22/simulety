@@ -1,4 +1,4 @@
-package ipsoConfig.ipsoInterfaces.implementation;
+package ipsoconfig.ipsoInterfaces.implementation;
 
 import modules.PossibleStatesListWrapper;
 import modules.Simulet;

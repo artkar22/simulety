@@ -1,7 +1,7 @@
 //package modules.Radio;
 //
-//import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
-//import ipsoConfig.ipsoInterfaces.ipsoDigitalOutput;
+//import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
+//import ipsoconfig.ipsoInterfaces.ipsoDigitalOutput;
 //import modules.Simulet;
 //
 //import java.awt.*;

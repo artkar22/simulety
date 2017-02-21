@@ -7,4 +7,7 @@ public class ExceptionCodes {
     public static final String NO_SUCH_A_STATE = "BRAK ODPOWIEDNIEGO STANU SIMULETU";
     public static final String NO_PICTURE = "BRAK OBRAZKA GŁÓWNEGO!";
     public static final String NO_MINIATURE = "BRAK MINIATURKI!";
+
+    private ExceptionCodes() {
+    }
 }

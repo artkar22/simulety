@@ -1,4 +1,4 @@
-package configParser;
+package configparser;
 
 import modules.SimuletsState;
 import org.w3c.dom.Document;
@@ -38,7 +38,7 @@ public class ConfigParser {
     /**
      * Parsowanie konfiguracji
      */
-    public ArrayList<ArrayList<String>> Parse() {
+    public ArrayList<ArrayList<String>> parse() {
         ArrayList<ArrayList<String>> table = new ArrayList<ArrayList<String>>();
         serverPort = "";
         className = "";
@@ -46,14 +46,14 @@ public class ConfigParser {
         try {
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc = (Document) dBuilder.parse(fXmlFile);
-            ((org.w3c.dom.Document) doc).getDocumentElement().normalize();
+            Document doc =  dBuilder.parse(fXmlFile);
+            doc.getDocumentElement().normalize();
 
-            NodeList nList = ((org.w3c.dom.Document) doc).getElementsByTagName("Simulet");
+            NodeList nList = doc.getElementsByTagName("Simulet");
 
             for (int temp = 0; temp < nList.getLength(); temp++) {
 
-                Node nNode = (Node) nList.item(temp);
+                Node nNode = nList.item(temp);
 
                 System.out.println("\nCurrent Element :" + nNode.getNodeName());
 

@@ -1,6 +1,6 @@
 package modules.Trigger;
 
-import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
+import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
 import main.Menu;
 import modules.resources.DigitalInputStateResource;
 

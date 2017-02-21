@@ -1,7 +1,7 @@
 package main;
 
-import configParser.ConfigParser;
-import ipsoConfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
+import configparser.ConfigParser;
+import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
 import modules.Lampka.IpsoLightControl;
 import modules.Lampka.resources.StatusResource;
 import modules.PossibleStatesListWrapper;
@@ -24,7 +24,7 @@ import java.awt.event.ActionListener;
 import java.net.*;
 import java.util.Enumeration;
 
-import static ipsoConfig.ipsoDefinitions.*;
+import static ipsoconfig.IpsoDefinitions.*;
 import static modules.listOfAvailableModules.BISTABLE_TRIGGER;
 
 
@@ -60,7 +60,7 @@ public class Menu extends JFrame implements ActionListener {
 
     private void loadConfiguration() {
         final ConfigParser parser = new ConfigParser(nameOfSimulet);
-        parser.Parse();
+        parser.parse();
         serverPort = parser.getPort();
         className = parser.getClassName();
         initialStateName = parser.getInitialStateName();
