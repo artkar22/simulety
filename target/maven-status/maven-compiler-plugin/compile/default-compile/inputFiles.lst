@@ -1,122 +1,123 @@
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\resources\IdResource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\congestioncontrol\PeakhopperRto.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\deduplication\CropRotation.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\RemoteEndpoint.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\observe\ObserveNotificationOrderer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\BlockwiseLayer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\EmptyMessage.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\server\resources\ResourceObserver.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Trigger\BistableTrigger.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\serialization\DataSerializer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\config\NetworkConfigDefaults.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\congestioncontrol\CocoaStrong.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\CoapServer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\Exchange.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\RemoteEndpointManager.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\server\resources\DiscoveryResource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\EndpointObserver.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\serialization\DatagramReader.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\CoAP.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\elements\MessageCallback.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\WebLink.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\server\resources\ConcurrentCoapResource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Lampka\resources\StatusResource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\Response.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\deduplication\DeduplicatorFactory.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Lampka\LampkaActionListener.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\elements\ConnectorFactory.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\Outbox.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\config\NetworkConfigObserver.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\server\resources\RequestProcessor.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Simulet.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\app\StartSimulet.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\OptionNumberRegistry.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\PossibleStatesListWrapper.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\Endpoint.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\config\NetworkConfigObserverAdapter.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\Option.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\server\resources\ResourceAttributes.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\CongestionControlLayer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\server\resources\CoapExchange.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\ipsoconfig\IpsoDefinitions.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\elements\ConnectorBase.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\server\ServerInterface.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\server\MessageDeliverer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\BlockwiseStatus.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\observe\ObserveRelation.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\ipsoconfig\ipsoInterfaces\implementation\IpsoDigitalOutputImpl.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\SimuletsState.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\interceptors\MessageInterceptor.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\observe\ObserveRelationContainer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\Request.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\elements\RawData.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\exceptions\ExceptionCodes.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\LinkFormat.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\Message.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\CoapClient.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\serialization\DataParser.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Samochod\Samochod.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Wiatraczek\Wiatraczek.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\serverResources\LampkaResource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\CoapResource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\serialization\Serializer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\MediaTypeRegistry.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\MessageObserverAdapter.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\ReliabilityLayer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\BlockOption.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\Utils.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\configparser\ConfigParser.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\AbstractLayer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\observe\ObservingEndpoint.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\OptionSet.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\deduplication\Deduplicator.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\ipsoconfig\IpsoUtilities.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\resources\DigitalInputStateResource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Radio\Radio.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\resources\PossibleStatesResource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\interceptors\MessageTracer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\CoapEndpoint.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\coap\MessageObserver.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\elements\RawDataChannel.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\config\NetworkConfig.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\CaliforniumFormatter.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\ExchangeObserver.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\deduplication\NoDeduplicator.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\observe\ObserveManager.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\CoapObserveRelation.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\ipsoconfig\ipsoInterfaces\implementation\IpsoDigitalInputImpl.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\congestioncontrol\Cocoa.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\elements\MapBasedCorrelationContext.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\serverResources\BudzikResource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Wiatraczek\WiatraczekActionListener.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\interceptors\OriginTracer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\listOfAvailableModules.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\ObserveLayer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\EndpointManager.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\observe\ObserveRelationFilter.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\serialization\DatagramWriter.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Radio\RadioActionListener.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\Protocol\Comm_Protocol.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\app\Menu.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\CoapResponse.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\server\ServerMessageDeliverer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\serverResources\TriggerResource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\elements\CorrelationContext.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Samochod\SamochodActionListener.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\CaliforniumLogger.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\elements\UDPConnector.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\CoapStack.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Trigger\TriggerMouseListener.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\congestioncontrol\BasicRto.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\congestioncontrol\LinuxRto.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\server\resources\Resource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\Matcher.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Budzik\Budzik.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\CoapHandler.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\deduplication\SweepDeduplicator.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\elements\Connector.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\resources\DigitalOutputStateResource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\Lampka\IpsoLightControl.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\modules\resources\NameResource.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\core\network\stack\Layer.java
-C:\inżynierka\inzynierka\Simulet\src\main\java\californium\elements\DtlsCorrelationContext.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\LinkFormat.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\ExchangeObserver.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\CoapObserveRelation.java
+E:\praca inzynierska\simulety\src\main\java\californium\elements\UDPConnector.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\congestioncontrol\Cocoa.java
+E:\praca inzynierska\simulety\src\main\java\californium\elements\ConnectorBase.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\deduplication\SweepDeduplicator.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\CongestionControlLayer.java
+E:\praca inzynierska\simulety\src\main\java\modules\PossibleStatesListWrapper.java
+E:\praca inzynierska\simulety\src\main\java\californium\elements\MessageCallback.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\EmptyMessage.java
+E:\praca inzynierska\simulety\src\main\java\modules\Radio\Radio.java
+E:\praca inzynierska\simulety\src\main\java\modules\resources\NameResource.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\config\NetworkConfig.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\congestioncontrol\CocoaStrong.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\OptionNumberRegistry.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\Layer.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\interceptors\MessageInterceptor.java
+E:\praca inzynierska\simulety\src\main\java\modules\Lampka\IpsoLightControl.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\CoapClient.java
+E:\praca inzynierska\simulety\src\main\java\serverResources\BudzikResource.java
+E:\praca inzynierska\simulety\src\main\java\modules\resources\DigitalInputStateResource.java
+E:\praca inzynierska\simulety\src\main\java\app\Menu.java
+E:\praca inzynierska\simulety\src\main\java\app\StartSimulet.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\server\ServerInterface.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\BlockOption.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\observe\ObserveRelationFilter.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\RemoteEndpoint.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\observe\ObserveRelation.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\server\resources\RequestProcessor.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\config\NetworkConfigDefaults.java
+E:\praca inzynierska\simulety\src\main\java\modules\Samochod\SamochodActionListener.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\serialization\DataSerializer.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\MediaTypeRegistry.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\CoapStack.java
+E:\praca inzynierska\simulety\src\main\java\modules\Budzik\Budzik.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\MessageObserver.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\deduplication\DeduplicatorFactory.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\ObserveLayer.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\OptionSet.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\server\resources\CoapExchange.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\server\resources\Resource.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\deduplication\Deduplicator.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\Matcher.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\congestioncontrol\PeakhopperRto.java
+E:\praca inzynierska\simulety\src\main\java\californium\elements\ConnectorFactory.java
+E:\praca inzynierska\simulety\src\main\java\ipsoconfig\ipsoInterfaces\implementation\IpsoDigitalOutputImpl.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\deduplication\CropRotation.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\Message.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\congestioncontrol\LinuxRto.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\config\NetworkConfigObserverAdapter.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\congestioncontrol\BasicRto.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\deduplication\NoDeduplicator.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\observe\ObserveManager.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\CoapResource.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\Utils.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\config\NetworkConfigObserver.java
+E:\praca inzynierska\simulety\src\main\java\modules\Wiatraczek\WiatraczekActionListener.java
+E:\praca inzynierska\simulety\src\main\java\Protocol\Comm_Protocol.java
+E:\praca inzynierska\simulety\src\main\java\modules\Lampka\resources\StatusResource.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\CoapHandler.java
+E:\praca inzynierska\simulety\src\main\java\californium\elements\RawData.java
+E:\praca inzynierska\simulety\src\main\java\modules\Radio\RadioActionListener.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\CaliforniumLogger.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\Request.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\BlockwiseStatus.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\CoapResponse.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\observe\ObserveRelationContainer.java
+E:\praca inzynierska\simulety\src\main\java\californium\elements\DtlsCorrelationContext.java
+E:\praca inzynierska\simulety\src\main\java\modules\Lampka\LampkaActionListener.java
+E:\praca inzynierska\simulety\src\main\java\modules\resources\IdResource.java
+E:\praca inzynierska\simulety\src\main\java\modules\Wiatraczek\Wiatraczek.java
+E:\praca inzynierska\simulety\src\main\java\californium\elements\MapBasedCorrelationContext.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\CoAP.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\server\resources\ConcurrentCoapResource.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\WebLink.java
+E:\praca inzynierska\simulety\src\main\java\serverResources\TriggerResource.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\serialization\DatagramWriter.java
+E:\praca inzynierska\simulety\src\main\java\californium\elements\Connector.java
+E:\praca inzynierska\simulety\src\main\java\configparser\ConfigParser.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\serialization\Serializer.java
+E:\praca inzynierska\simulety\src\main\java\modules\Simulet.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\AbstractLayer.java
+E:\praca inzynierska\simulety\src\main\java\exceptions\ExceptionCodes.java
+E:\praca inzynierska\simulety\src\main\java\modules\Samochod\Samochod.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\BlockwiseLayer.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\server\ServerMessageDeliverer.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\interceptors\MessageTracer.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\observe\ObservingEndpoint.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\MessageObserverAdapter.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\Exchange.java
+E:\praca inzynierska\simulety\src\main\java\californium\elements\CorrelationContext.java
+E:\praca inzynierska\simulety\src\main\java\ipsoconfig\IpsoDefinitions.java
+E:\praca inzynierska\simulety\src\main\java\modules\Trigger\TriggerMouseListener.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\observe\ObserveNotificationOrderer.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\Outbox.java
+E:\praca inzynierska\simulety\src\main\java\modules\resources\MainIconResource.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\RemoteEndpointManager.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\server\resources\DiscoveryResource.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\serialization\DatagramReader.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\server\MessageDeliverer.java
+E:\praca inzynierska\simulety\src\main\java\modules\SimuletsState.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\interceptors\OriginTracer.java
+E:\praca inzynierska\simulety\src\main\java\ipsoconfig\ipsoInterfaces\implementation\IpsoDigitalInputImpl.java
+E:\praca inzynierska\simulety\src\main\java\modules\resources\PossibleStatesResource.java
+E:\praca inzynierska\simulety\src\main\java\modules\Trigger\BistableTrigger.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\Option.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\ReliabilityLayer.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\EndpointManager.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\CoapEndpoint.java
+E:\praca inzynierska\simulety\src\main\java\californium\elements\RawDataChannel.java
+E:\praca inzynierska\simulety\src\main\java\modules\listOfAvailableModules.java
+E:\praca inzynierska\simulety\src\main\java\ipsoconfig\IpsoUtilities.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\coap\Response.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\Endpoint.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\server\resources\ResourceObserver.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\CaliforniumFormatter.java
+E:\praca inzynierska\simulety\src\main\java\serverResources\LampkaResource.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\server\resources\ResourceAttributes.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\CoapServer.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\EndpointObserver.java
+E:\praca inzynierska\simulety\src\main\java\modules\resources\DigitalOutputStateResource.java
+E:\praca inzynierska\simulety\src\main\java\californium\core\network\serialization\DataParser.java

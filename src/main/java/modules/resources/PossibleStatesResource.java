@@ -14,9 +14,9 @@ import java.util.List;
  */
 public class PossibleStatesResource extends CoapResource {
     private PossibleStatesListWrapper possibleStates;
-
-    public PossibleStatesResource(final String name, final PossibleStatesListWrapper possibleStates) {
-        super(name);
+    private static final String NAME = "POSSIBLE_STATES";
+    public PossibleStatesResource(final PossibleStatesListWrapper possibleStates) {
+        super(NAME);
         this.possibleStates = possibleStates;
     }
 

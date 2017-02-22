@@ -6,10 +6,13 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,7 +49,7 @@ public class ConfigParser {
         try {
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc =  dBuilder.parse(fXmlFile);
+            Document doc = dBuilder.parse(fXmlFile);
             doc.getDocumentElement().normalize();
 
             NodeList nList = doc.getElementsByTagName("Simulet");
@@ -94,17 +97,22 @@ public class ConfigParser {
         return new ImageIcon();
     }
 
-    private ImageIcon loadMiniatures(final String stateName) {
-        final File directory = new File("pictures/" + documentName + stateName + "/mini");
+    private BufferedImage loadMiniatures(final String stateName) {
+        final File directory = new File("pictures/" + documentName + "/" + stateName + "/mini");
         if (directory.isDirectory()) {
             final File[] files = directory.listFiles();
             if (files.length > 0) {
-                return new ImageIcon(files[0].getAbsolutePath());
+                BufferedImage buffImg;
+                try {
+                    buffImg = ImageIO.read(files[0]);
+                    return buffImg;
+                } catch (IOException e) {
+                }
             } else {
                 throw new RuntimeException(NO_MINIATURE);
             }
         }
-        return new ImageIcon();
+        return null;
     }
 
     public int getPort() {

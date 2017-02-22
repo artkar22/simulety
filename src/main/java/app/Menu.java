@@ -14,18 +14,20 @@ import modules.Simulet;
 import modules.Trigger.BistableTrigger;
 import modules.Trigger.TriggerMouseListener;
 import modules.listOfAvailableModules;
-import modules.resources.DigitalInputStateResource;
-import modules.resources.DigitalOutputStateResource;
-import modules.resources.IdResource;
-import modules.resources.NameResource;
+import modules.resources.*;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.net.*;
 import java.util.Enumeration;
 
+import static exceptions.ExceptionCodes.NO_MINIATURE;
 import static ipsoconfig.IpsoDefinitions.IPSO_DIGITAL_INPUT;
 import static ipsoconfig.IpsoDefinitions.IPSO_DIGITAL_OUTPUT;
 import static ipsoconfig.IpsoDefinitions.IPSO_LIGHT_CONTROL;
@@ -38,7 +40,6 @@ public class Menu extends JFrame implements ActionListener {
     private final String nameOfSimulet;
     private int serverPort;
     private String className;
-    private JButton button;
     private Simulet simulet;
     private californium.core.CoapServer server;
     private InetSocketAddress simuletsAddress;
@@ -69,6 +70,7 @@ public class Menu extends JFrame implements ActionListener {
         className = parser.getClassName();
         initialStateName = parser.getInitialStateName();
         possibleStates = new PossibleStatesListWrapper(parser.getPossibleStates());
+
     }
 
     private void createCOAPServer(final int id) {
@@ -143,6 +145,10 @@ public class Menu extends JFrame implements ActionListener {
         } else if (BISTABLE_TRIGGER.equals(className)) {
             startTriggerModule();
         }
+        final PossibleStatesResource possibleStatesResource = new PossibleStatesResource(possibleStates);
+        server.add(possibleStatesResource);
+        final MainIconResource mainIconResource = new MainIconResource(loadMainIcon());
+        server.add(mainIconResource);
     }
 
     private void startTriggerModule() {
@@ -162,6 +168,24 @@ public class Menu extends JFrame implements ActionListener {
             this.add(simulet);
             this.pack();
         }
+    }
+
+    private BufferedImage loadMainIcon(){
+        final File directory = new File("pictures/" + nameOfSimulet + "/MAIN");
+        if (directory.isDirectory()) {
+            final File[] files = directory.listFiles();
+            if (files.length > 0) {
+                BufferedImage buffImg;
+                try {
+                    buffImg = ImageIO.read(files[0]);
+                    return buffImg;
+                } catch (IOException e) {
+                }
+            } else {
+                throw new RuntimeException(NO_MINIATURE);
+            }
+        }
+        return null;
     }
 
     @Override
