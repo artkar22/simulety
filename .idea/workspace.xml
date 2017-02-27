@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba7df919-9d38-4f4f-8cbd-0310d1c33f49" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start.cmd" afterPath="$PROJECT_DIR$/start.cmd" />
-    </list>
+    <list default="true" id="ba7df919-9d38-4f4f-8cbd-0310d1c33f49" name="Default" comment="" />
     <ignored path="Simulet.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -1032,12 +1029,12 @@
       <workItem from="1484075702976" duration="2201000" />
       <workItem from="1487609159047" duration="9607000" />
       <workItem from="1487784452425" duration="8581000" />
-      <workItem from="1488217549469" duration="5869000" />
+      <workItem from="1488217549469" duration="6425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50383000" />
+    <option name="totallyTimeSpent" value="50939000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
