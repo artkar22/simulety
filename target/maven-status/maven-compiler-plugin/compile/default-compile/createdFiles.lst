@@ -26,6 +26,7 @@ californium\core\network\CoapEndpoint$InboxImpl.class
 californium\core\network\serialization\DataParser.class
 californium\core\coap\CoAP$Type.class
 californium\core\network\deduplication\Deduplicator.class
+modules\SimuletsStateToSend.class
 californium\core\network\CoapEndpoint$2.class
 Protocol\Comm_Protocol.class
 californium\core\server\MessageDeliverer.class

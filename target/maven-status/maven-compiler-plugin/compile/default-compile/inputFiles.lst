@@ -61,6 +61,7 @@ E:\praca inzynierska\simulety\src\main\java\modules\Lampka\resources\StatusResou
 E:\praca inzynierska\simulety\src\main\java\californium\core\CoapHandler.java
 E:\praca inzynierska\simulety\src\main\java\californium\elements\RawData.java
 E:\praca inzynierska\simulety\src\main\java\modules\Radio\RadioActionListener.java
+E:\praca inzynierska\simulety\src\main\java\modules\SimuletsStateToSend.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\CaliforniumLogger.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\coap\Request.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\BlockwiseStatus.java
