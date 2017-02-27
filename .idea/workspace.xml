@@ -7,28 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba7df919-9d38-4f4f-8cbd-0310d1c33f49" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulet.jar" afterPath="$PROJECT_DIR$/Simulet.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Simulet-1.0.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/Simulet-1.0.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/Menu.class" afterPath="$PROJECT_DIR$/target/classes/app/Menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/StartSimulet.class" afterPath="$PROJECT_DIR$/target/classes/app/StartSimulet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/californium/core/CaliforniumLogger.class" afterPath="$PROJECT_DIR$/target/classes/californium/core/CaliforniumLogger.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/californium/core/network/CoapEndpoint$InboxImpl.class" afterPath="$PROJECT_DIR$/target/classes/californium/core/network/CoapEndpoint$InboxImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/californium/core/network/EndpointManager.class" afterPath="$PROJECT_DIR$/target/classes/californium/core/network/EndpointManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/californium/core/network/RemoteEndpoint.class" afterPath="$PROJECT_DIR$/target/classes/californium/core/network/RemoteEndpoint.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/californium/core/network/interceptors/OriginTracer.class" afterPath="$PROJECT_DIR$/target/classes/californium/core/network/interceptors/OriginTracer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/configparser/ConfigParser.class" afterPath="$PROJECT_DIR$/target/classes/configparser/ConfigParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/PossibleStatesListWrapper.class" afterPath="$PROJECT_DIR$/target/classes/modules/PossibleStatesListWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/SimuletsState.class" afterPath="$PROJECT_DIR$/target/classes/modules/SimuletsState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/resources/PossibleStatesResource.class" afterPath="$PROJECT_DIR$/target/classes/modules/resources/PossibleStatesResource.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Simulet.iml" afterPath="$PROJECT_DIR$/Simulet.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/Menu.java" afterPath="$PROJECT_DIR$/src/main/java/app/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/configparser/ConfigParser.java" afterPath="$PROJECT_DIR$/src/main/java/configparser/ConfigParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/modules/SimuletsState.java" afterPath="$PROJECT_DIR$/src/main/java/modules/SimuletsState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/modules/resources/PossibleStatesResource.java" afterPath="$PROJECT_DIR$/src/main/java/modules/resources/PossibleStatesResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start.cmd" afterPath="$PROJECT_DIR$/start.cmd" />
     </list>
     <ignored path="Simulet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +39,8 @@
       <file leaf-file-name="Menu.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="473">
+              <caret line="150" column="27" selection-start-line="150" selection-start-column="27" selection-end-line="150" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,7 +51,7 @@
       <file leaf-file-name="MainIconResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/modules/resources/MainIconResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="968">
               <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -83,7 +63,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
+            <state relative-caret-position="374">
               <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
               <folding />
             </state>
@@ -93,7 +73,7 @@
       <file leaf-file-name="ConfigParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/configparser/ConfigParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
+            <state relative-caret-position="2024">
               <caret line="109" column="17" selection-start-line="104" selection-start-column="16" selection-end-line="109" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -116,7 +96,7 @@
       <file leaf-file-name="StatusResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/modules/Lampka/resources/StatusResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
+            <state relative-caret-position="352">
               <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -128,7 +108,7 @@
       <file leaf-file-name="SimuletsState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/modules/SimuletsState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
+            <state relative-caret-position="506">
               <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -140,7 +120,7 @@
       <file leaf-file-name="PossibleStatesResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/modules/resources/PossibleStatesResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
+            <state relative-caret-position="418">
               <caret line="26" column="14" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -296,7 +276,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -435,10 +414,11 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane />
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -715,6 +695,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
@@ -902,6 +883,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -973,16 +960,16 @@
     </configuration>
     <configuration default="false" name="Trigger_2" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/classes/artifacts/simulets/simulets.jar" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/Simulet-1.0.0-SNAPSHOT.jar" />
       <option name="PROGRAM_PARAMETERS" value="Trigger_2 Trigger" />
-      <option name="WORKING_DIRECTORY" value="C:\inżynierka\inzynierka\Simulet" />
+      <option name="WORKING_DIRECTORY" value="E:\praca inzynierska\simulety" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <envs />
       <method />
     </configuration>
     <configuration default="false" name="Samochod.jar" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/classes/artifacts/simulets/simulets.jar" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/Simulet-1.0.0-SNAPSHOT.jar" />
       <option name="PROGRAM_PARAMETERS" value="Samochod" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <envs />
@@ -1044,12 +1031,13 @@
       <workItem from="1483018522081" duration="1787000" />
       <workItem from="1484075702976" duration="2201000" />
       <workItem from="1487609159047" duration="9607000" />
-      <workItem from="1487784452425" duration="7989000" />
+      <workItem from="1487784452425" duration="8581000" />
+      <workItem from="1488217549469" duration="5869000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43922000" />
+    <option name="totallyTimeSpent" value="50383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1071,18 +1059,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52625823" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.104166664" sideWeight="0.49429038" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38293216" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.246875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32713348" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34901533" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34901533" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1091,6 +1078,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.048958335" sideWeight="0.50570965" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32713348" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1370,8 +1358,38 @@
           <properties />
           <option name="timeStamp" value="172" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/Menu.java</url>
+          <line>173</line>
+          <properties />
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/Menu.java</url>
+          <line>174</line>
+          <properties />
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/Menu.java</url>
+          <line>175</line>
+          <properties />
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/Menu.java</url>
+          <line>176</line>
+          <properties />
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/Menu.java</url>
+          <line>177</line>
+          <properties />
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="173" />
+      <option name="time" value="179" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1633,7 +1651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1673,7 +1690,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/Lampka/resources/StatusResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
+        <state relative-caret-position="352">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1713,7 +1730,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/resources/PossibleStatesResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="418">
           <caret line="26" column="14" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1723,7 +1740,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/SimuletsState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
+        <state relative-caret-position="506">
           <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1735,13 +1752,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-29590">
           <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/configparser/ConfigParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
+        <state relative-caret-position="2024">
           <caret line="109" column="17" selection-start-line="104" selection-start-column="16" selection-end-line="109" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1754,13 +1770,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
+        <state relative-caret-position="374">
           <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
           <folding />
         </state>
@@ -1768,7 +1783,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/resources/MainIconResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="968">
           <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1778,8 +1793,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="473">
+          <caret line="150" column="27" selection-start-line="150" selection-start-column="27" selection-end-line="150" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
