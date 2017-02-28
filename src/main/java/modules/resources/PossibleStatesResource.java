@@ -27,7 +27,6 @@ public class PossibleStatesResource extends CoapResource {
     public PossibleStatesResource(final PossibleStatesListWrapper possibleStates) {
         super(NAME);
         this.possibleStates = possibleStates;
-
     }
 
     @Override
