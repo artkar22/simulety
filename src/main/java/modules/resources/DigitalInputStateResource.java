@@ -53,7 +53,7 @@ public class DigitalInputStateResource extends CoapResource {
 //        System.out.println("Status put");
 //        if (exchange.getRequestText().equals(Comm_Protocol.SWITCHED_ON)) {
 //            digitalInput.switchOn();
-//            menu.repaint();
+            menu.repaint();
 //            exchange.respond(ResponseCode.CHANGED);
 //
 //        } else if (exchange.getRequestText().equals(Comm_Protocol.SWITCHED_OFF)) {

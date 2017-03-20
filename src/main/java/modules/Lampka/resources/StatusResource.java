@@ -6,6 +6,7 @@ import modules.Lampka.IpsoLightControl;
 import californium.core.CoapResource;
 import californium.core.coap.CoAP.ResponseCode;
 import californium.core.server.resources.CoapExchange;
+import modules.SimuletsState;
 
 public class StatusResource extends CoapResource {
 
@@ -28,19 +29,12 @@ public class StatusResource extends CoapResource {
     @Override
     public void handlePUT(CoapExchange exchange) {
         System.out.println("Status put");
-        if (exchange.getRequestText().equals(Comm_Protocol.SWITCHED_ON)) {
-            ipsoLightControl.switchOn();
+        final SimuletsState newState = ipsoLightControl.getPossibleStates().getStateById(exchange.getRequestText());
+        if(newState!=null){
+            ipsoLightControl.setCurrentState(ipsoLightControl.getPossibleStates().getStateById(exchange.getRequestText()));
             menu.repaint();
             exchange.respond(ResponseCode.CHANGED);
-
-        } else if (exchange.getRequestText().equals(Comm_Protocol.SWITCHED_OFF)) {
-            ipsoLightControl.switchOff();
-            menu.repaint();
-            exchange.respond(ResponseCode.CHANGED);
-
-        }
-        else
-        {
+        }else {
             exchange.respond(ResponseCode.NOT_ACCEPTABLE);
         }
     }

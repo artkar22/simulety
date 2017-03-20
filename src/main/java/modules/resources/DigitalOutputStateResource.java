@@ -6,6 +6,7 @@ import app.Menu;
 import californium.core.CoapResource;
 import californium.core.coap.CoAP.ResponseCode;
 import californium.core.server.resources.CoapExchange;
+import modules.SimuletsState;
 
 public class DigitalOutputStateResource extends CoapResource {
 
@@ -28,18 +29,12 @@ public class DigitalOutputStateResource extends CoapResource {
     @Override
     public void handlePUT(CoapExchange exchange) {
         System.out.println("Status put");
-        if (exchange.getRequestText().equals(Comm_Protocol.SWITCHED_ON)) {
-            digitalOutput.switchOn();
+        final SimuletsState newState = digitalOutput.getPossibleStates().getStateById(exchange.getRequestText());
+        if(newState!=null){
+            digitalOutput.setCurrentState(digitalOutput.getPossibleStates().getStateById(exchange.getRequestText()));
             menu.repaint();
             exchange.respond(ResponseCode.CHANGED);
-
-        } else if (exchange.getRequestText().equals(Comm_Protocol.SWITCHED_OFF)) {
-            digitalOutput.switchOff();
-            menu.repaint();
-            exchange.respond(ResponseCode.CHANGED);
-        }
-        else
-        {
+        }else {
             exchange.respond(ResponseCode.NOT_ACCEPTABLE);
         }
     }
