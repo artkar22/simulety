@@ -13,7 +13,7 @@ import java.io.IOException;
  * Created by Artur Karolak on 2017-02-22.
  */
 public class MainIconResource extends CoapResource {
-    private static final String NAME = "MAIN_ICON";
+    private static final String NAME = "main_icon";
     private final BufferedImage MAIN_ICON;
 
     public MainIconResource(BufferedImage imageIcon) {

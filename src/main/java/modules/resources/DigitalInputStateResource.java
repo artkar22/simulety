@@ -8,7 +8,7 @@ import californium.core.server.resources.CoapExchange;
 
 public class DigitalInputStateResource extends CoapResource {
 
-    private static final String STATUS = "on_off";
+    private static final String STATUS = "current_status";
     private static final String NO_ACTION_FLAG = "no_action";
     private IpsoDigitalInputImpl digitalInput;
     private Menu menu;

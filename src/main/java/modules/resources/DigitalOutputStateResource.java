@@ -12,7 +12,7 @@ public class DigitalOutputStateResource extends CoapResource {
 
     private IpsoDigitalOutputImpl digitalOutput;
     private Menu menu;
-    private static final String STATUS = "on_off";
+    private static final String STATUS = "current_status";
 
     public DigitalOutputStateResource(IpsoDigitalOutputImpl digitalOutput, Menu menu) {
         super(STATUS);

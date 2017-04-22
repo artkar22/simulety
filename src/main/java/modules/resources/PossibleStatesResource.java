@@ -22,7 +22,7 @@ import static exceptions.ExceptionCodes.CONVERT_ERROR;
  */
 public class PossibleStatesResource extends CoapResource {
     private PossibleStatesListWrapper possibleStates;
-    private static final String NAME = "POSSIBLE_STATES";
+    private static final String NAME = "possible_states";
 
     public PossibleStatesResource(final PossibleStatesListWrapper possibleStates) {
         super(NAME);
