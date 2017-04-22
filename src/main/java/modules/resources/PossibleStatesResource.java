@@ -43,7 +43,7 @@ public class PossibleStatesResource extends CoapResource {
         for (int x = 0; x < allStates.size(); x++) {
             SimuletsStateToSend toSend = null;
             try {
-                toSend = new SimuletsStateToSend(allStates.get(x).getStateId(), imageToByteArray(allStates.get(x).getMiniature()));
+                toSend = new SimuletsStateToSend(allStates.get(x).getStateId(), imageToByteArray(allStates.get(x).getMiniature()), imageToByteArray(allStates.get(x).getHighlightedMiniature()));
             } catch (IOException e) {
                 throw new RuntimeException(CONVERT_ERROR);
             }

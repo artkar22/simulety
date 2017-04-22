@@ -74,7 +74,8 @@ public class ConfigParser {
             for (int x = 0; x < states.getLength(); x++) {
                 final SimuletsState state = new SimuletsState(states.item(x).getTextContent(),
                         loadPictures(states.item(x).getTextContent()),
-                        loadMiniatures(states.item(x).getTextContent()));
+                        loadMiniatures(states.item(x).getTextContent()),
+                        loadHighlightedMiniatures(states.item(x).getTextContent()));
                 possibleStates.add(state);
             }
 
@@ -99,6 +100,24 @@ public class ConfigParser {
 
     private BufferedImage loadMiniatures(final String stateName) {
         final File directory = new File("pictures/" + documentName + "/" + stateName + "/mini");
+        if (directory.isDirectory()) {
+            final File[] files = directory.listFiles();
+            if (files.length > 0) {
+                BufferedImage buffImg;
+                try {
+                    buffImg = ImageIO.read(files[0]);
+                    return buffImg;
+                } catch (IOException e) {
+                }
+            } else {
+                throw new RuntimeException(NO_MINIATURE);
+            }
+        }
+        return null;
+    }
+
+    private BufferedImage loadHighlightedMiniatures(final String stateName) {
+        final File directory = new File("pictures/" + documentName + "/" + stateName + "/highlighted_mini");
         if (directory.isDirectory()) {
             final File[] files = directory.listFiles();
             if (files.length > 0) {

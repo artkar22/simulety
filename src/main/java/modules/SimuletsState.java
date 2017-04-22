@@ -12,11 +12,14 @@ public class SimuletsState implements Serializable {
     private final String StateId;
     private final ImageIcon picture;
     private final BufferedImage miniature;
+    private final BufferedImage highlightedMiniature;
 
-    public SimuletsState(final String StateId, final ImageIcon picture, final BufferedImage miniature) {
+    public SimuletsState(final String StateId, final ImageIcon picture,
+                         final BufferedImage miniature, final BufferedImage highlightedMiniature) {
         this.StateId = StateId;
         this.picture = picture;
         this.miniature = miniature;
+        this.highlightedMiniature = highlightedMiniature;
     }
 
     public String getStateId() {
@@ -27,7 +30,10 @@ public class SimuletsState implements Serializable {
         return picture;
     }
 
-    public BufferedImage  getMiniature() {
+    public BufferedImage getMiniature() {
         return miniature;
+    }
+    public BufferedImage getHighlightedMiniature() {
+        return highlightedMiniature;
     }
 }
