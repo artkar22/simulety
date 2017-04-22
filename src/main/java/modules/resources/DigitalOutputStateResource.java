@@ -7,7 +7,7 @@ import californium.core.CoapResource;
 import californium.core.coap.CoAP.ResponseCode;
 import californium.core.server.resources.CoapExchange;
 import modules.SimuletsState;
-
+//SIMULETY - NIE TRIGGERY
 public class DigitalOutputStateResource extends CoapResource {
 
     private IpsoDigitalOutputImpl digitalOutput;
@@ -27,8 +27,8 @@ public class DigitalOutputStateResource extends CoapResource {
     }
 
     @Override
-    public void handlePUT(CoapExchange exchange) {
-        System.out.println("Status put");
+    public void handlePOST(CoapExchange exchange) {
+        System.out.println("Status POST");
         final SimuletsState newState = digitalOutput.getPossibleStates().getStateById(exchange.getRequestText());
         if(newState!=null){
             digitalOutput.setCurrentState(digitalOutput.getPossibleStates().getStateById(exchange.getRequestText()));

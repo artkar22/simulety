@@ -27,8 +27,8 @@ public class StatusResource extends CoapResource {
     }
 
     @Override
-    public void handlePUT(CoapExchange exchange) {
-        System.out.println("Status put");
+    public void handlePOST(CoapExchange exchange) {
+        System.out.println("Status post");
         final SimuletsState newState = ipsoLightControl.getPossibleStates().getStateById(exchange.getRequestText());
         if(newState!=null){
             ipsoLightControl.setCurrentState(ipsoLightControl.getPossibleStates().getStateById(exchange.getRequestText()));

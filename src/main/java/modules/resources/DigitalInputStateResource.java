@@ -48,7 +48,7 @@ public class DigitalInputStateResource extends CoapResource {
     }
 
     @Override
-    public void handlePUT(CoapExchange exchange) {
+    public void handlePOST(CoapExchange exchange) {
         digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(exchange.getRequestText()));
 //        System.out.println("Status put");
 //        if (exchange.getRequestText().equals(Comm_Protocol.SWITCHED_ON)) {
