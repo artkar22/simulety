@@ -158,9 +158,9 @@ public class Menu extends JFrame implements ActionListener {
             createCOAPServer(IPSO_DIGITAL_INPUT);
             ((BistableTrigger) simulet).setSimuletsAddress(simuletsAddress);
             IdResource idResource = new IdResource(IPSO_DIGITAL_INPUT, (BistableTrigger) this.simulet);
-            NameResource nameResource = new NameResource(this.simulet.getNameOfSimulet());
+//            NameResource nameResource = new NameResource(this.simulet.getNameOfSimulet());
             this.server.add(new Resource[]{idResource});
-            this.server.add(new Resource[]{nameResource});
+//            this.server.add(new Resource[]{nameResource});
             DigitalInputStateResource on_off_Resource = new DigitalInputStateResource((BistableTrigger) simulet, this);
             on_off_Resource.setObservable(true);
             server.add(on_off_Resource);
