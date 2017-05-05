@@ -27,6 +27,8 @@ import java.io.IOException;
 import java.net.*;
 import java.util.Enumeration;
 
+import org.apache.mina.util.AvailablePortFinder;
+
 import static exceptions.ExceptionCodes.NO_MINIATURE;
 import static ipsoconfig.IpsoDefinitions.IPSO_DIGITAL_INPUT;
 import static ipsoconfig.IpsoDefinitions.IPSO_DIGITAL_OUTPUT;
@@ -66,11 +68,21 @@ public class Menu extends JFrame implements ActionListener {
     private void loadConfiguration() {
         final ConfigParser parser = new ConfigParser(nameOfSimulet);
         parser.parse();
-        serverPort = parser.getPort();
+        serverPort = getServerPort(parser.getPort());
         className = parser.getClassName();
         initialStateName = parser.getInitialStateName();
         possibleStates = new PossibleStatesListWrapper(parser.getPossibleStates());
 
+    }
+    private int getServerPort(int portFromConfig) {
+        if(portFromConfig != 0 && AvailablePortFinder.available(portFromConfig)){
+            return portFromConfig;
+        } else {
+            while(!AvailablePortFinder.available(portFromConfig)){
+                portFromConfig++;
+            }
+            return portFromConfig;
+        }
     }
 
     private void createCOAPServer(final int id) {

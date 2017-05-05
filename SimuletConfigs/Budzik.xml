@@ -2,7 +2,7 @@
 <company>
 	<Simulet id="Budzik">
 		<className>IpsoDigitalOutput</className>
-		<serverport>11113</serverport>
+		<serverport>11111</serverport>
 		<states>
 			<state>ON</state>
 			<state>OFF</state>

@@ -2,7 +2,7 @@
 <company>
 	<Simulet id="Radio">
 		<classname>IpsoDigitalOutput</classname>
-		<serverport>11113</serverport>
+		<serverport>11111</serverport>
 		<states initial="OFF">
 			<state>ON</state>
 			<state>OFF</state>
