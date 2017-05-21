@@ -1,6 +1,7 @@
 package modules.resources;
 
 import Protocol.Comm_Protocol;
+import californium.core.coap.CoAP;
 import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
 import app.Menu;
 import californium.core.CoapResource;
@@ -27,7 +28,7 @@ public class DigitalOutputStateResource extends CoapResource {
     }
 
     @Override
-    public void handlePOST(CoapExchange exchange) {
+    public void handlePUT(CoapExchange exchange) {
         System.out.println("Status POST");
         final SimuletsState newState = digitalOutput.getPossibleStates().getStateById(exchange.getRequestText());
         if(newState!=null){
@@ -38,4 +39,13 @@ public class DigitalOutputStateResource extends CoapResource {
             exchange.respond(ResponseCode.NOT_ACCEPTABLE);
         }
     }
+    @Override
+    public void handlePOST(CoapExchange exchange) {
+        exchange.respond(CoAP.ResponseCode.FORBIDDEN);
+    }
+    @Override
+    public void handleDELETE(CoapExchange exchange) {
+        exchange.respond(CoAP.ResponseCode.FORBIDDEN);
+    }
+
 }

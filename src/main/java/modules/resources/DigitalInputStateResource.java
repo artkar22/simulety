@@ -1,5 +1,6 @@
 package modules.resources;
 
+import californium.core.coap.CoAP;
 import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
 import app.Menu;
 import californium.core.CoapResource;
@@ -48,7 +49,7 @@ public class DigitalInputStateResource extends CoapResource {
     }
 
     @Override
-    public void handlePOST(CoapExchange exchange) {
+    public void handlePUT(CoapExchange exchange) {
         digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(exchange.getRequestText()));
 //        System.out.println("Status put");
 //        if (exchange.getRequestText().equals(Comm_Protocol.SWITCHED_ON)) {
@@ -67,4 +68,14 @@ public class DigitalInputStateResource extends CoapResource {
 //            exchange.respond(ResponseCode.NOT_ACCEPTABLE);
 //        }
     }
+    @Override
+    public void handlePOST(CoapExchange exchange) {
+        exchange.respond(CoAP.ResponseCode.FORBIDDEN);
+    }
+
+    @Override
+    public void handleDELETE(CoapExchange exchange) {
+        exchange.respond(CoAP.ResponseCode.FORBIDDEN);
+    }
+
 }

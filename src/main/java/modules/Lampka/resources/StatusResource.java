@@ -27,7 +27,7 @@ public class StatusResource extends CoapResource {
     }
 
     @Override
-    public void handlePOST(CoapExchange exchange) {
+    public void handlePUT(CoapExchange exchange) {
         System.out.println("Status post");
         final SimuletsState newState = ipsoLightControl.getPossibleStates().getStateById(exchange.getRequestText());
         if(newState!=null){
@@ -37,5 +37,11 @@ public class StatusResource extends CoapResource {
         }else {
             exchange.respond(ResponseCode.NOT_ACCEPTABLE);
         }
+    }
+    public void handlePOST(CoapExchange exchange) {
+        exchange.respond(ResponseCode.FORBIDDEN);
+    }
+    public void handleDELETE(CoapExchange exchange) {
+        exchange.respond(ResponseCode.FORBIDDEN);
     }
 }

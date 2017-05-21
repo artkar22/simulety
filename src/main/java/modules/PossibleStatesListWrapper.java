@@ -16,7 +16,7 @@ public class PossibleStatesListWrapper {
     }
 
     public SimuletsState getStateById(final String id) {
-        return possibleStates.stream().filter(simuletsState -> id.equals(simuletsState.getStateId())).findAny().orElseThrow(() -> new RuntimeException(NO_SUCH_A_STATE));
+        return possibleStates.stream().filter(simuletsState -> id.equals(simuletsState.getStateId())).findAny().orElse(null);
     }
 
     public List<SimuletsState> getAllStates() {

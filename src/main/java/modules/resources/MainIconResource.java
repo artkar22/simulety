@@ -32,12 +32,12 @@ public class MainIconResource extends CoapResource {
     }
 
     @Override
-    public void handlePUT(CoapExchange exchange) {
+    public void handlePOST(CoapExchange exchange) {
         exchange.respond(CoAP.ResponseCode.FORBIDDEN);
     }
 
     @Override
-    public void handlePOST(CoapExchange exchange) {
+    public void handlePUT(CoapExchange exchange) {
         exchange.respond(CoAP.ResponseCode.FORBIDDEN);
     }
 
