@@ -3,6 +3,7 @@ package modules.resources;
 import californium.core.CoapResource;
 import californium.core.coap.CoAP;
 import californium.core.server.resources.CoapExchange;
+import com.google.gson.Gson;
 import modules.PossibleStatesListWrapper;
 import modules.SimuletsState;
 import modules.SimuletsStateToSend;
@@ -32,10 +33,11 @@ public class PossibleStatesResource extends CoapResource {
     @Override
     public void handleGET(CoapExchange exchange) {
         final SimuletsStateToSend[] arr = convertListOfPossibleStatesToArray(possibleStates.getAllStates());
-        final byte[] dataToSend = SerializationUtils.serialize(arr);
+            final Gson gsonSerializer = new Gson();
+//        final byte[] dataToSend = SerializationUtils.serialize(arr);
 //        YourObject yourObject = (YourObject) SerializationUtils.deserialize(byte[] data)
 
-        exchange.respond(CoAP.ResponseCode.CONTENT, dataToSend);
+        exchange.respond(CoAP.ResponseCode.CONTENT, gsonSerializer.toJson(arr));
     }
 
     private SimuletsStateToSend[] convertListOfPossibleStatesToArray(final List<SimuletsState> allStates) {
