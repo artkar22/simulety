@@ -1,6 +1,5 @@
 package modules.resources;
 
-import Protocol.Comm_Protocol;
 import californium.core.coap.CoAP;
 import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
 import app.Menu;

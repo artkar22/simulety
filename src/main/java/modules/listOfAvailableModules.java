@@ -10,5 +10,6 @@ public abstract class listOfAvailableModules {
     public static final String BISTABLE_TRIGGER = "BistableTrigger";
     public static final String TRIGGER_1 = "Trigger_1";
     public static final String TRIGGER_2 = "Trigger_2";
+    public static final String COUNTER_TRIGGER = "CounterTrigger";
 
 }

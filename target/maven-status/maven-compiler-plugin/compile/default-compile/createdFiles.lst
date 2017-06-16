@@ -13,6 +13,7 @@ californium\elements\ConnectorBase.class
 californium\core\network\serialization\DatagramWriter.class
 californium\core\network\EndpointManager.class
 californium\core\server\resources\ConcurrentCoapResource$1.class
+deserializeres\PossibleStatesDeserializer.class
 californium\core\network\stack\ObserveLayer.class
 configparser\ConfigParser.class
 californium\core\coap\CoAP$ResponseCode.class
@@ -63,6 +64,7 @@ californium\core\observe\ObserveRelationContainer.class
 californium\core\network\stack\Layer$TopDownBuilder.class
 californium\core\server\ServerInterface.class
 californium\core\coap\LinkFormat$1.class
+modules\Trigger\CounterTriggerMouseListener.class
 californium\core\network\stack\ObserveLayer$NotificationController$2.class
 californium\core\network\stack\ReliabilityLayer$2.class
 californium\elements\RawData.class
@@ -110,6 +112,7 @@ californium\core\CoapClient$Builder.class
 californium\core\CoapHandler.class
 modules\Lampka\LampkaActionListener.class
 californium\core\CoapClient$ObserveMessageObserverImpl.class
+modules\Trigger\CounterTriggerMouseListener$1.class
 serverResources\LampkaResource.class
 californium\core\network\Endpoint.class
 californium\elements\Connector.class

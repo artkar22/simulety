@@ -22,17 +22,19 @@ import static exceptions.ExceptionCodes.CONVERT_ERROR;
  * Created by Artur Karolak on 2017-02-20.
  */
 public class PossibleStatesResource extends CoapResource {
+    private final String className;
     private PossibleStatesListWrapper possibleStates;
     private static final String NAME = "possible_states";
 
-    public PossibleStatesResource(final PossibleStatesListWrapper possibleStates) {
+    public PossibleStatesResource(final PossibleStatesListWrapper possibleStates, String className) {
         super(NAME);
         this.possibleStates = possibleStates;
+        this.className = className;
     }
 
     @Override
     public void handleGET(CoapExchange exchange) {
-        final SimuletsStateToSend[] arr = convertListOfPossibleStatesToArray(possibleStates.getAllStates());
+        final SimuletsStateToSend[] arr = convertListOfPossibleStatesToArray(possibleStates.getAllStates(className));
             final Gson gsonSerializer = new Gson();
 //        final byte[] dataToSend = SerializationUtils.serialize(arr);
 //        YourObject yourObject = (YourObject) SerializationUtils.deserialize(byte[] data)

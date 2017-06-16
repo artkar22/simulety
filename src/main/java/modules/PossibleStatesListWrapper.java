@@ -1,6 +1,9 @@
 package modules;
 
+import modules.Trigger.BistableTrigger;
+
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static exceptions.ExceptionCodes.NO_SUCH_A_STATE;
 
@@ -19,7 +22,10 @@ public class PossibleStatesListWrapper {
         return possibleStates.stream().filter(simuletsState -> id.equals(simuletsState.getStateId())).findAny().orElse(null);
     }
 
-    public List<SimuletsState> getAllStates() {
+    public List<SimuletsState> getAllStates(String className) {
+        if(className != null && className.equals("CounterTrigger")){
+            return (possibleStates.stream().filter(simuletsState -> !simuletsState.getStateId().equals(BistableTrigger.TRIGGER_SWITCHED_OFF))).collect(Collectors.toList());
+        }
         return possibleStates;
     }
 }

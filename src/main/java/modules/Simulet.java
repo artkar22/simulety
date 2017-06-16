@@ -8,6 +8,11 @@ public abstract class Simulet extends JPanel {
 
     protected final PossibleStatesListWrapper possibleStates;
     final String className;
+
+    public void setCurrentImage(ImageIcon currentImage) {
+        this.currentImage = currentImage;
+    }
+
     protected ImageIcon currentImage;
     private SimuletsState currentState;
     private String nameOfSimulet;
@@ -26,10 +31,11 @@ public abstract class Simulet extends JPanel {
     }
 
     protected void setCurrentImage() {
-        if (currentState.getPicture() != null) {
-            currentImage = currentState.getPicture();
+        if (currentState !=null && currentState.getPicture() != null) {
+            currentImage = new ImageIcon(currentState.getPicture().getImage());
             Dimension dimension = new Dimension(currentImage.getIconWidth(), currentImage.getIconHeight());
             setPreferredSize(dimension);
+            currentImage.getImage().flush();
 
         }
     }

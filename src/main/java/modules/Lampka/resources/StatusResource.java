@@ -1,6 +1,5 @@
 package modules.Lampka.resources;
 
-import Protocol.Comm_Protocol;
 import app.Menu;
 import modules.Lampka.IpsoLightControl;
 import californium.core.CoapResource;
