@@ -156,8 +156,6 @@ public class Menu extends JFrame implements ActionListener {
         }
         final PossibleStatesResource possibleStatesResource = new PossibleStatesResource(possibleStates, className);
         server.add(possibleStatesResource);
-        final MainIconResource mainIconResource = new MainIconResource(loadMainIcon());
-        server.add(mainIconResource);
     }
 
     private void startCounterTriggerModule() {
