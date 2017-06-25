@@ -63,11 +63,12 @@ public class CounterTriggerMouseListener implements MouseListener {
                 new java.util.TimerTask() {
                     @Override
                     public void run() {
-                        digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_OFF));
                         menu.repaint();
                         on_off_resource.changed();
                         on_off_resource.setButtonActionFlagFalse();
                         clickBlock = false;
+                        digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_OFF));
+
                     }
                 },
                 21500
