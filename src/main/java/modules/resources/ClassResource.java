@@ -1,16 +1,15 @@
 package modules.resources;
 
+import app.Menu;
 import californium.core.CoapResource;
 import californium.core.coap.CoAP;
 import californium.core.server.resources.CoapExchange;
-import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
 
 /**
  * Created by Inni on 2017-01-11.
  */
 public class ClassResource extends CoapResource {
 
-    private IpsoDigitalInputImpl digitalInput;
     private String className;
     private static final String CLASS = "class";
 
@@ -19,18 +18,8 @@ public class ClassResource extends CoapResource {
         this.className = className;
     }
 
-    public ClassResource(String className, final IpsoDigitalInputImpl digitalInput) {
-        super(CLASS);
-        this.className = className;
-        this.digitalInput = digitalInput;
-    }
-
     @Override
     public void handleGET(CoapExchange exchange) {
-        if (digitalInput != null) {
-            digitalInput.setMobileAppAddress(exchange.getSourceAddress());
-            digitalInput.setMobileAppPort(exchange.getSourcePort());
-        }
 
         exchange.respond(CoAP.ResponseCode.CONTENT, className);
     }

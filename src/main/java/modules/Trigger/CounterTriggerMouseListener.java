@@ -1,7 +1,6 @@
 package modules.Trigger;
 
 import app.Menu;
-import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
 import modules.resources.ObservableCurrentStateResource;
 
 import javax.swing.*;
@@ -56,7 +55,7 @@ public class CounterTriggerMouseListener implements MouseListener {
     private void sendTriggerChange() {
         clickBlock = true;
         on_off_resource.setButtonActionFlagTrue();
-        final IpsoDigitalInputImpl digitalInput = on_off_resource.getDigitalInput();
+        final BistableTrigger digitalInput = on_off_resource.getDigitalInput();
         digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_ON));
         menu.repaint();
         new java.util.Timer().schedule(

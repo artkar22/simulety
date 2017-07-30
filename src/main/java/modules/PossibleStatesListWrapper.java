@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static exceptions.ExceptionCodes.NO_SUCH_A_STATE;
+import static modules.listOfAvailableModules.COUNTER_SIMULET;
 
 
 /**
@@ -23,7 +24,7 @@ public class PossibleStatesListWrapper {
     }
 
     public List<SimuletsState> getAllStates(String className) {
-        if(className != null && className.equals("CounterTrigger")){
+        if(className != null && className.equals(COUNTER_SIMULET)){
             return (possibleStates.stream().filter(simuletsState -> !simuletsState.getStateId().equals(BistableTrigger.TRIGGER_SWITCHED_OFF))).collect(Collectors.toList());
         }
         return possibleStates;

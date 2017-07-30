@@ -5,9 +5,9 @@ package exceptions;
  */
 public class ExceptionCodes {
     public static final String NO_SUCH_A_STATE = "BRAK ODPOWIEDNIEGO STANU SIMULETU";
-    public static final String NO_PICTURE = "BRAK OBRAZKA GŁÓWNEGO!";
+    public static final String NO_PICTURE = "BRAK OBRAZKA GLOWNEGO!";
     public static final String NO_MINIATURE = "BRAK MINIATURKI!";
-    public static final String CONVERT_ERROR = "BŁĄD KONWERSJI OBRAZKA";
+    public static final String CONVERT_ERROR = "BLAD KONWERSJI OBRAZKA";
 
     private ExceptionCodes() {
     }

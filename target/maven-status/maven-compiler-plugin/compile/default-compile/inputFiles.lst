@@ -40,7 +40,6 @@ E:\praca inzynierska\simulety\src\main\java\californium\core\network\deduplicati
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\Matcher.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\congestioncontrol\PeakhopperRto.java
 E:\praca inzynierska\simulety\src\main\java\californium\elements\ConnectorFactory.java
-E:\praca inzynierska\simulety\src\main\java\ipsoconfig\ipsoInterfaces\implementation\IpsoDigitalOutputImpl.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\deduplication\CropRotation.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\coap\Message.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\congestioncontrol\LinuxRto.java
@@ -91,7 +90,6 @@ E:\praca inzynierska\simulety\src\main\java\californium\core\network\serializati
 E:\praca inzynierska\simulety\src\main\java\californium\core\server\MessageDeliverer.java
 E:\praca inzynierska\simulety\src\main\java\modules\SimuletsState.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\interceptors\OriginTracer.java
-E:\praca inzynierska\simulety\src\main\java\ipsoconfig\ipsoInterfaces\implementation\IpsoDigitalInputImpl.java
 E:\praca inzynierska\simulety\src\main\java\modules\resources\PossibleStatesResource.java
 E:\praca inzynierska\simulety\src\main\java\modules\Trigger\BistableTrigger.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\coap\Option.java

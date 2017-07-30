@@ -1,23 +1,26 @@
 package modules.resources;
 
 import californium.core.coap.CoAP;
-import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
 import app.Menu;
 import californium.core.CoapResource;
 import californium.core.coap.CoAP.ResponseCode;
 import californium.core.server.resources.CoapExchange;
+import modules.Simulet;
 import modules.SimuletsState;
 //SIMULETY - NIE TRIGGERY
 public class CurrentStateResource extends CoapResource {
 
-    private IpsoDigitalOutputImpl digitalOutput;
+    private Simulet digitalOutput;
     private Menu menu;
+    private Integer timeToResetToInitial;
     private static final String STATUS = "current_state";
 
-    public CurrentStateResource(IpsoDigitalOutputImpl digitalOutput, Menu menu) {
+    public CurrentStateResource(Simulet digitalOutput, String timeToResetToInitial, Menu menu) {
         super(STATUS);
         this.digitalOutput = digitalOutput;
         this.menu = menu;
+        if(timeToResetToInitial != null)
+            this.timeToResetToInitial = Integer.valueOf(timeToResetToInitial);
     }
 
     @Override
@@ -34,10 +37,30 @@ public class CurrentStateResource extends CoapResource {
             digitalOutput.setCurrentState(digitalOutput.getPossibleStates().getStateById(exchange.getRequestText()));
             menu.repaint();
             exchange.respond(ResponseCode.CHANGED);
+            if(timeToResetToInitial != null) {
+                changeStateToInitialAfterTime();
+            }
         }else {
             exchange.respond(ResponseCode.NOT_ACCEPTABLE);
         }
     }
+
+    private void changeStateToInitialAfterTime() {
+
+        new java.util.Timer().schedule(
+                new java.util.TimerTask() {
+                    @Override
+                    public void run() {
+                        if(menu.getInitialState() != null){
+                            digitalOutput.setCurrentState(menu.getInitialState());
+                        }
+                        menu.repaint();
+                    }
+                },
+                timeToResetToInitial.intValue() * 1000
+        );
+    }
+
     @Override
     public void handlePOST(CoapExchange exchange) {
         exchange.respond(CoAP.ResponseCode.FORBIDDEN);

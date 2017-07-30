@@ -1,6 +1,5 @@
 package modules.resources;
 
-import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
 import californium.core.CoapResource;
 import californium.core.coap.CoAP.ResponseCode;
 import californium.core.server.resources.CoapExchange;

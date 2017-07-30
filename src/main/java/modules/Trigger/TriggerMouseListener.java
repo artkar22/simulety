@@ -1,6 +1,5 @@
 package modules.Trigger;
 
-import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
 import app.Menu;
 import modules.resources.ObservableCurrentStateResource;
 
@@ -17,6 +16,7 @@ public class TriggerMouseListener implements MouseListener {
     private BistableTrigger trigger;
     private Menu menu;
     private ObservableCurrentStateResource on_off_resource;
+    private boolean clickBlock = false;
 
     public TriggerMouseListener(final BistableTrigger trigger, final ObservableCurrentStateResource on_off_resource, final Menu menu) {
         this.trigger = trigger;
@@ -51,32 +51,49 @@ public class TriggerMouseListener implements MouseListener {
 
     private void sendTriggerChange() {
         on_off_resource.setButtonActionFlagTrue();
-        final IpsoDigitalInputImpl digitalInput = on_off_resource.getDigitalInput();
+        final BistableTrigger digitalInput = on_off_resource.getDigitalInput();
         if (EVENT_SIMULET.equals(digitalInput.getClassName())) {
-            if (BistableTrigger.TRIGGER_SWITCHED_ON.equals(digitalInput.getCurrentState().getStateId())) {
-                digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_OFF));
-            } else if (BistableTrigger.TRIGGER_SWITCHED_OFF.equals(digitalInput.getCurrentState().getStateId())) {
-                digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_ON));
+            if (digitalInput.getPossibleStates().getAllStates(digitalInput.getClassName()).size() == 1){
+                if(!clickBlock)
+                monostableTriggerHandler();
+
+            } else {
+                if (BistableTrigger.TRIGGER_SWITCHED_ON.equals(digitalInput.getCurrentState().getStateId())) {
+                    digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_OFF));
+                } else if (BistableTrigger.TRIGGER_SWITCHED_OFF.equals(digitalInput.getCurrentState().getStateId())) {
+                    digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_ON));
+                }
             }
         }
         menu.repaint();
-//        if (digitalInput.getState() == digitalInput.SWITCHED_ON) {
-//            digitalInput.setState(digitalInput.SWITCHED_OFF);
-//        } else if (digitalInput.getState() == digitalInput.SWITCHED_OFF) {
-//            digitalInput.setState(digitalInput.SWITCHED_ON);
-//        }
         on_off_resource.changed();
         on_off_resource.setButtonActionFlagFalse();
     }
 
-//    private Request request() {
-//        final Response resp = Response.createResponse();
-//        try {
-//            request.setURI(new URI(trigger.getMobileAppAddress().toString() +":"+ Integer.toString(trigger.getMobileAppPort())));
-//        } catch (URISyntaxException e) {
-//            e.printStackTrace();
-//        }
-//        request.setPayload(TRIGGERED);
-//        return request;
-//    }
+    private void monostableTriggerHandler() {
+        clickBlock = true;
+        on_off_resource.setButtonActionFlagTrue();
+        final BistableTrigger digitalInput = on_off_resource.getDigitalInput();
+        digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_ON));
+        menu.repaint();
+        new java.util.Timer().schedule(
+                new java.util.TimerTask() {
+                    @Override
+                    public void run() {
+                        on_off_resource.changed();
+                        on_off_resource.setButtonActionFlagFalse();
+                        if(menu.getInitialState() != null){
+                            digitalInput.setCurrentState(menu.getInitialState());
+                        } else {
+                            digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_OFF));
+                        }
+                        menu.repaint();
+                        clickBlock = false;
+                    }
+                },
+                2000
+        );
+    }
+
+
 }

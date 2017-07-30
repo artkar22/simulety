@@ -1,21 +1,21 @@
 package modules.resources;
 
 import californium.core.coap.CoAP;
-import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
 import app.Menu;
 import californium.core.CoapResource;
 import californium.core.coap.CoAP.ResponseCode;
 import californium.core.server.resources.CoapExchange;
+import modules.Trigger.BistableTrigger;
 
 public class ObservableCurrentStateResource extends CoapResource {
 
     private static final String STATUS = "current_state";
     private static final String NO_ACTION_FLAG = "no_action";
-    private IpsoDigitalInputImpl digitalInput;
+    private BistableTrigger digitalInput;
     private Menu menu;
     private boolean buttonActionFlag = false;
 
-    public ObservableCurrentStateResource(IpsoDigitalInputImpl digitalInput, Menu menu) {
+    public ObservableCurrentStateResource(BistableTrigger digitalInput, Menu menu) {
         super(STATUS);
         this.digitalInput = digitalInput;
         this.menu = menu;
@@ -36,7 +36,7 @@ public class ObservableCurrentStateResource extends CoapResource {
 //        }
     }
 
-    public IpsoDigitalInputImpl getDigitalInput() {
+    public BistableTrigger getDigitalInput() {
         return digitalInput;
     }
 

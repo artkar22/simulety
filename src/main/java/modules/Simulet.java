@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public abstract class Simulet extends JPanel {
+public class Simulet extends JPanel {
 
     protected final PossibleStatesListWrapper possibleStates;
     final String className;
@@ -33,7 +33,7 @@ public abstract class Simulet extends JPanel {
         return nameOfSimulet;
     }
 
-    protected void setCurrentImage() {
+    public void setCurrentImage() {
         if (currentState !=null && currentState.getPicture() != null) {
             currentImage = new ImageIcon(currentState.getPicture().getImage());
             Dimension dimension = new Dimension(currentImage.getIconWidth(), currentImage.getIconHeight());

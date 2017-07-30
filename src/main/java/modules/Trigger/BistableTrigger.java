@@ -1,7 +1,7 @@
 package modules.Trigger;
 
-import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
 import modules.PossibleStatesListWrapper;
+import modules.Simulet;
 import modules.SimuletsState;
 
 import java.net.InetSocketAddress;
@@ -9,7 +9,7 @@ import java.net.InetSocketAddress;
 /**
  * Created by Artur Karolak on 2016-10-16.
  */
-public class BistableTrigger extends IpsoDigitalInputImpl {
+public class BistableTrigger extends Simulet {
     public static final String TRIGGER_SWITCHED_OFF = "OFF";
     public static final String TRIGGER_SWITCHED_ON = "ON";
 

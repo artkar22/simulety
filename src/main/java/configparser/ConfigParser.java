@@ -31,7 +31,9 @@ public class ConfigParser {
     private String serverPort;
     private String configPath;
     private String initialStateName;
+    private String timeToResetToInitial;
     private List<SimuletsState> possibleStates;
+    private SimuletsState initialState;
 
     public ConfigParser(final String docName) {
         documentName = docName;
@@ -67,6 +69,8 @@ public class ConfigParser {
 
                     serverPort = eElement.getElementsByTagName("serverport").item(0).getTextContent();
                     className = eElement.getElementsByTagName("classname").item(0).getTextContent();
+                    if(eElement.getElementsByTagName("timeToResetToInitial").getLength() >0)
+                    timeToResetToInitial = eElement.getElementsByTagName("timeToResetToInitial").item(0).getTextContent();
                 }
             }
 
@@ -80,11 +84,23 @@ public class ConfigParser {
                         loadSound(states.item(x).getTextContent()));
                 possibleStates.add(state);
             }
+            loadInitialState();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
         return table;
+    }
+
+    private void loadInitialState() {
+        final File directory = new File("pictures/" + documentName + "/INITIAL");
+        if(directory != null && directory.isDirectory()){
+            initialState = new SimuletsState("INITIAL",
+                    loadPictures("INITIAL"),
+                    loadMiniatures("INITIAL"),
+                    loadHighlightedMiniatures("INITIAL"),
+                    loadSound("INITIAL"));
+        }
     }
 
     private ImageIcon loadPictures(final String stateName) {
@@ -163,6 +179,14 @@ public class ConfigParser {
 
     public List<SimuletsState> getPossibleStates() {
         return possibleStates;
+    }
+
+    public SimuletsState getInitialState() {
+        return initialState;
+    }
+
+    public String getTimeToResetToInitial() {
+        return timeToResetToInitial;
     }
 
 }

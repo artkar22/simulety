@@ -1,8 +1,0 @@
-<Simulet id="Budzik">
-    <className>ACTION_SIMULET</className>
-    <serverport>11111</serverport>
-    <states>
-        <state>ON</state>
-        <state>OFF</state>
-    </states>
-</Simulet>

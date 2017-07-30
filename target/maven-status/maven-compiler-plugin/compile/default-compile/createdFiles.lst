@@ -31,6 +31,7 @@ deserializeres\PossibleStatesDeserializer.class
 californium\core\coap\EmptyMessage.class
 californium\core\coap\MediaTypeRegistry.class
 californium\core\network\CoapEndpoint$5.class
+modules\Trigger\TriggerMouseListener$1.class
 californium\core\network\stack\ObserveLayer.class
 configparser\ConfigParser.class
 californium\core\CaliforniumFormatter.class
@@ -56,7 +57,6 @@ californium\core\network\serialization\DataParser.class
 californium\core\coap\CoAP$Type.class
 californium\core\network\deduplication\Deduplicator.class
 californium\core\network\stack\CoapStack$1.class
-ipsoconfig\ipsoInterfaces\implementation\IpsoDigitalInputImpl.class
 modules\SimuletsStateToSend.class
 californium\core\network\CoapEndpoint$2.class
 californium\core\server\MessageDeliverer.class
@@ -103,6 +103,7 @@ californium\core\network\stack\BlockwiseLayer.class
 modules\Trigger\BistableTrigger.class
 californium\core\network\stack\BlockwiseLayer$1.class
 californium\core\network\CoapEndpoint$1.class
+modules\resources\CurrentStateResource$1.class
 californium\core\server\resources\ResourceAttributes.class
 modules\resources\IdResource.class
 californium\core\CoapObserveRelation.class
@@ -159,7 +160,6 @@ californium\core\network\RemoteEndpoint$exchangeInfo.class
 californium\core\network\config\NetworkConfigObserverAdapter.class
 californium\core\CaliforniumLogger.class
 californium\core\network\stack\ReliabilityLayer.class
-ipsoconfig\ipsoInterfaces\implementation\IpsoDigitalOutputImpl.class
 exceptions\ExceptionCodes.class
 californium\core\network\RemoteEndpointManager.class
 modules\resources\CurrentStateResource.class

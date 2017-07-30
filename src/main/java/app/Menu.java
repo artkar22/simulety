@@ -5,10 +5,10 @@ package app;
 import californium.core.CoapServer;
 import californium.core.network.CoapEndpoint;
 import configparser.ConfigParser;
-import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
 import javafx.embed.swing.JFXPanel;
 import modules.PossibleStatesListWrapper;
 import modules.Simulet;
+import modules.SimuletsState;
 import modules.Trigger.BistableTrigger;
 import modules.Trigger.CounterTriggerMouseListener;
 import modules.Trigger.TriggerMouseListener;
@@ -39,6 +39,8 @@ public class Menu extends JFrame implements ActionListener {
     private InetSocketAddress simuletsAddress;
     private String initialStateName;
     private PossibleStatesListWrapper possibleStates;
+    private SimuletsState initialState;
+    private String timeToResetToInitial;
 
     public Menu(final String nameOfSimulet) {
         this.nameOfSimulet = nameOfSimulet;
@@ -64,6 +66,8 @@ public class Menu extends JFrame implements ActionListener {
         className = parser.getClassName();
         initialStateName = parser.getInitialStateName();
         possibleStates = new PossibleStatesListWrapper(parser.getPossibleStates());
+        initialState = parser.getInitialState();
+        timeToResetToInitial = parser.getTimeToResetToInitial();
 
     }
     private int getServerPort(int portFromConfig) {
@@ -124,8 +128,16 @@ public class Menu extends JFrame implements ActionListener {
         server.add(possibleStatesResource);
     }
 
+    private SimuletsState getInitialStateForModule(){
+        if(initialState != null){
+            return initialState;
+        } else {
+            return possibleStates.getStateById(initialStateName);
+        }
+    }
     private void startSimuletModule() {
-        simulet = new IpsoDigitalOutputImpl(nameOfSimulet, className, possibleStates.getStateById(initialStateName), possibleStates);
+
+        simulet = new Simulet(nameOfSimulet, className, getInitialStateForModule(), possibleStates);
         createCOAPServer(className);
         this.add(simulet);
         this.pack();
@@ -133,16 +145,16 @@ public class Menu extends JFrame implements ActionListener {
         ClassResource classResource = new ClassResource(this.simulet.getClassName());
         server.add(idResource);
         server.add(classResource);
-        CurrentStateResource on_off_Resource = new CurrentStateResource((IpsoDigitalOutputImpl) simulet, this);
+        CurrentStateResource on_off_Resource = new CurrentStateResource(simulet, timeToResetToInitial, this);
         server.add(on_off_Resource);
     }
 
     private void startCounterTriggerModule() {
-        simulet = new BistableTrigger(nameOfSimulet, className, possibleStates.getStateById(initialStateName), possibleStates);
+        simulet = new BistableTrigger(nameOfSimulet, className, getInitialStateForModule(), possibleStates);
         createCOAPServer(className);
         ((BistableTrigger) simulet).setSimuletsAddress(simuletsAddress);
         IdResource idResource = new IdResource(this.simulet.getNameOfSimulet());
-        ClassResource classResource = new ClassResource(this.simulet.getClassName(), (BistableTrigger) this.simulet);
+        ClassResource classResource = new ClassResource(this.simulet.getClassName());
         this.server.add(idResource);
         this.server.add(classResource);
         ObservableCurrentStateResource on_off_Resource = new ObservableCurrentStateResource((BistableTrigger) simulet, this);
@@ -154,11 +166,11 @@ public class Menu extends JFrame implements ActionListener {
     }
 
     private void startTriggerModule() {
-            simulet = new BistableTrigger(nameOfSimulet, className, possibleStates.getStateById(initialStateName), possibleStates);
+            simulet = new BistableTrigger(nameOfSimulet, className, getInitialStateForModule(), possibleStates);
             createCOAPServer(className);
             ((BistableTrigger) simulet).setSimuletsAddress(simuletsAddress);
             IdResource idResource = new IdResource(this.simulet.getNameOfSimulet());
-            ClassResource classResource = new ClassResource(this.simulet.getClassName(), (BistableTrigger) this.simulet);
+            ClassResource classResource = new ClassResource(this.simulet.getClassName());
             this.server.add(idResource);
             this.server.add(classResource);
             ObservableCurrentStateResource on_off_Resource = new ObservableCurrentStateResource((BistableTrigger) simulet, this);
@@ -173,4 +185,10 @@ public class Menu extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent arg0) {
     }
+
+
+    public SimuletsState getInitialState() {
+        return initialState;
+    }
+
 }

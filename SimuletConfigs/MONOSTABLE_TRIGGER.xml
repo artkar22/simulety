@@ -1,0 +1,8 @@
+<Simulet id="MONOSTABLE_TRIGGER">
+    <classname>EVENT_SIMULET</classname>
+    <serverport>11111</serverport>
+    <states initial="OFF">
+        <state>ON</state>
+    </states>
+    <timeToResetToInitial>3</timeToResetToInitial>
+</Simulet>
