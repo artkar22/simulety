@@ -7,28 +7,17 @@ import californium.core.server.resources.CoapExchange;
 
 public class IdResource extends CoapResource {
 
-    private IpsoDigitalInputImpl digitalInput;
-    private final int simuletsId;
+    private final String simuletsId;
     private final static String ID = "id";
 
-    public IdResource(final int simuletsId) {
+    public IdResource(final String simuletsId) {
         super(ID);
         this.simuletsId = simuletsId;
-    }
-
-    public IdResource(final int simuletsId, final IpsoDigitalInputImpl digitalInput) {
-        super(ID);
-        this.simuletsId = simuletsId;
-        this.digitalInput = digitalInput;
     }
 
     @Override
     public void handleGET(CoapExchange exchange) {
-        if (digitalInput != null) {
-            digitalInput.setMobileAppAddress(exchange.getSourceAddress());
-            digitalInput.setMobileAppPort(exchange.getSourcePort());
-        }
-        exchange.respond(ResponseCode.CONTENT, Integer.toString(simuletsId));
+        exchange.respond(ResponseCode.CONTENT, simuletsId);
     }
 
     @Override

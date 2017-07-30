@@ -25,6 +25,7 @@ californium\core\server\resources\ResourceAttributes$1.class
 californium\core\network\serialization\DatagramWriter.class
 californium\core\network\EndpointManager.class
 californium\core\server\resources\ConcurrentCoapResource$1.class
+modules\resources\ClassResource.class
 californium\core\coap\LinkFormat.class
 deserializeres\PossibleStatesDeserializer.class
 californium\core\coap\EmptyMessage.class
@@ -55,11 +56,9 @@ californium\core\network\serialization\DataParser.class
 californium\core\coap\CoAP$Type.class
 californium\core\network\deduplication\Deduplicator.class
 californium\core\network\stack\CoapStack$1.class
-ipsoconfig\IpsoDefinitions.class
 ipsoconfig\ipsoInterfaces\implementation\IpsoDigitalInputImpl.class
 modules\SimuletsStateToSend.class
 californium\core\network\CoapEndpoint$2.class
-Protocol\Comm_Protocol.class
 californium\core\server\MessageDeliverer.class
 modules\SimuletsState.class
 californium\core\CoapClient$MessageObserverImpl.class
@@ -90,7 +89,6 @@ californium\core\coap\OptionSet.class
 californium\core\server\ServerMessageDeliverer$1.class
 californium\elements\ConnectorFactory.class
 californium\core\network\interceptors\OriginTracer$2.class
-modules\resources\NameResource.class
 californium\core\network\stack\CoapStack$StackBottomAdapter.class
 californium\core\network\ExchangeObserver.class
 californium\core\network\serialization\DatagramReader.class
@@ -151,7 +149,6 @@ californium\core\network\config\NetworkConfigObserver.class
 californium\core\network\deduplication\CropRotation.class
 californium\core\network\deduplication\SweepDeduplicator.class
 californium\core\network\interceptors\MessageInterceptor.class
-ipsoconfig\IpsoUtilities.class
 californium\core\coap\BlockOption.class
 californium\core\server\ServerMessageDeliverer.class
 californium\core\coap\MessageObserver.class

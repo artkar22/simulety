@@ -4,7 +4,6 @@ package app;
 
 import californium.core.CoapServer;
 import californium.core.network.CoapEndpoint;
-import californium.core.server.resources.Resource;
 import configparser.ConfigParser;
 import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
 import javafx.embed.swing.JFXPanel;
@@ -25,8 +24,6 @@ import java.util.Enumeration;
 
 import org.apache.mina.util.AvailablePortFinder;
 
-import static ipsoconfig.IpsoDefinitions.IPSO_DIGITAL_INPUT;
-import static ipsoconfig.IpsoDefinitions.IPSO_DIGITAL_OUTPUT;
 import static modules.listOfAvailableModules.COUNTER_SIMULET;
 import static modules.listOfAvailableModules.EVENT_SIMULET;
 
@@ -80,7 +77,7 @@ public class Menu extends JFrame implements ActionListener {
         }
     }
 
-    private void createCOAPServer(final int id) {
+    private void createCOAPServer(final String id) {
         InetAddress addr;
         try {
             addr = InetAddress.getByName(getIPofCurrentMachine());
@@ -129,23 +126,25 @@ public class Menu extends JFrame implements ActionListener {
 
     private void startSimuletModule() {
         simulet = new IpsoDigitalOutputImpl(nameOfSimulet, className, possibleStates.getStateById(initialStateName), possibleStates);
-        createCOAPServer(IPSO_DIGITAL_OUTPUT);
+        createCOAPServer(className);
         this.add(simulet);
         this.pack();
-        IdResource idResource = new IdResource(IPSO_DIGITAL_OUTPUT);
+        IdResource idResource = new IdResource(this.simulet.getNameOfSimulet());
+        ClassResource classResource = new ClassResource(this.simulet.getClassName());
         server.add(idResource);
+        server.add(classResource);
         CurrentStateResource on_off_Resource = new CurrentStateResource((IpsoDigitalOutputImpl) simulet, this);
         server.add(on_off_Resource);
     }
 
     private void startCounterTriggerModule() {
         simulet = new BistableTrigger(nameOfSimulet, className, possibleStates.getStateById(initialStateName), possibleStates);
-        createCOAPServer(IPSO_DIGITAL_INPUT);
+        createCOAPServer(className);
         ((BistableTrigger) simulet).setSimuletsAddress(simuletsAddress);
-        IdResource idResource = new IdResource(IPSO_DIGITAL_INPUT, (BistableTrigger) this.simulet);
-//            NameResource nameResource = new NameResource(this.simulet.getNameOfSimulet());
-        this.server.add(new Resource[]{idResource});
-//            this.server.add(new Resource[]{nameResource});
+        IdResource idResource = new IdResource(this.simulet.getNameOfSimulet());
+        ClassResource classResource = new ClassResource(this.simulet.getClassName(), (BistableTrigger) this.simulet);
+        this.server.add(idResource);
+        this.server.add(classResource);
         ObservableCurrentStateResource on_off_Resource = new ObservableCurrentStateResource((BistableTrigger) simulet, this);
         on_off_Resource.setObservable(true);
         server.add(on_off_Resource);
@@ -156,12 +155,12 @@ public class Menu extends JFrame implements ActionListener {
 
     private void startTriggerModule() {
             simulet = new BistableTrigger(nameOfSimulet, className, possibleStates.getStateById(initialStateName), possibleStates);
-            createCOAPServer(IPSO_DIGITAL_INPUT);
+            createCOAPServer(className);
             ((BistableTrigger) simulet).setSimuletsAddress(simuletsAddress);
-            IdResource idResource = new IdResource(IPSO_DIGITAL_INPUT, (BistableTrigger) this.simulet);
-//            NameResource nameResource = new NameResource(this.simulet.getNameOfSimulet());
-            this.server.add(new Resource[]{idResource});
-//            this.server.add(new Resource[]{nameResource});
+            IdResource idResource = new IdResource(this.simulet.getNameOfSimulet());
+            ClassResource classResource = new ClassResource(this.simulet.getClassName(), (BistableTrigger) this.simulet);
+            this.server.add(idResource);
+            this.server.add(classResource);
             ObservableCurrentStateResource on_off_Resource = new ObservableCurrentStateResource((BistableTrigger) simulet, this);
             on_off_Resource.setObservable(true);
             server.add(on_off_Resource);
