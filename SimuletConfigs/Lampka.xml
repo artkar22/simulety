@@ -1,5 +1,5 @@
 <Simulet id="Lampka">
-    <classname>IpsoLightControl</classname>
+    <classname>ACTION_SIMULET</classname>
     <serverport>11111</serverport>
     <states initial="OFF">
         <state>ON</state>

@@ -1,5 +1,5 @@
 <Simulet id="Misio">
-    <classname>Simulet</classname>
+    <classname>ACTION_SIMULET</classname>
     <serverport>11112</serverport>
     <states>
         <state>ON</state>

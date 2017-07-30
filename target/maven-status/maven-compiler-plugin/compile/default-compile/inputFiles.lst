@@ -16,10 +16,8 @@ E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\conge
 E:\praca inzynierska\simulety\src\main\java\californium\core\coap\OptionNumberRegistry.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\Layer.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\interceptors\MessageInterceptor.java
-E:\praca inzynierska\simulety\src\main\java\modules\Lampka\IpsoLightControl.java
 E:\praca inzynierska\simulety\src\main\java\modules\resources\CurrentStateResource.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\CoapClient.java
-E:\praca inzynierska\simulety\src\main\java\serverResources\BudzikResource.java
 E:\praca inzynierska\simulety\src\main\java\app\Menu.java
 E:\praca inzynierska\simulety\src\main\java\app\StartSimulet.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\server\ServerInterface.java
@@ -56,7 +54,6 @@ E:\praca inzynierska\simulety\src\main\java\californium\core\Utils.java
 E:\praca inzynierska\simulety\src\main\java\modules\resources\ObservableCurrentStateResource.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\config\NetworkConfigObserver.java
 E:\praca inzynierska\simulety\src\main\java\Protocol\Comm_Protocol.java
-E:\praca inzynierska\simulety\src\main\java\modules\Lampka\resources\StatusResource.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\CoapHandler.java
 E:\praca inzynierska\simulety\src\main\java\californium\elements\RawData.java
 E:\praca inzynierska\simulety\src\main\java\modules\SimuletsStateToSend.java
@@ -66,13 +63,11 @@ E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\Block
 E:\praca inzynierska\simulety\src\main\java\californium\core\CoapResponse.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\observe\ObserveRelationContainer.java
 E:\praca inzynierska\simulety\src\main\java\californium\elements\DtlsCorrelationContext.java
-E:\praca inzynierska\simulety\src\main\java\modules\Lampka\LampkaActionListener.java
 E:\praca inzynierska\simulety\src\main\java\modules\resources\IdResource.java
 E:\praca inzynierska\simulety\src\main\java\californium\elements\MapBasedCorrelationContext.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\coap\CoAP.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\server\resources\ConcurrentCoapResource.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\WebLink.java
-E:\praca inzynierska\simulety\src\main\java\serverResources\TriggerResource.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\serialization\DatagramWriter.java
 E:\praca inzynierska\simulety\src\main\java\californium\elements\Connector.java
 E:\praca inzynierska\simulety\src\main\java\configparser\ConfigParser.java
@@ -112,7 +107,6 @@ E:\praca inzynierska\simulety\src\main\java\californium\core\coap\Response.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\Endpoint.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\server\resources\ResourceObserver.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\CaliforniumFormatter.java
-E:\praca inzynierska\simulety\src\main\java\serverResources\LampkaResource.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\server\resources\ResourceAttributes.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\CoapServer.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\EndpointObserver.java

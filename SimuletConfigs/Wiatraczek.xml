@@ -1,5 +1,5 @@
 <Simulet id="Wiatraczek">
-    <classname>Simulet</classname>
+    <classname>ACTION_SIMULET</classname>
     <serverport>11111</serverport>
     <states initial="OFF">
         <state>ON</state>

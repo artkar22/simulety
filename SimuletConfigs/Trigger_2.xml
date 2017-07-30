@@ -1,5 +1,5 @@
 <Simulet id="Trigger_2">
-    <classname>BistableTrigger</classname>
+    <classname>EVENT_SIMULET</classname>
     <serverport>11111</serverport>
     <states initial="OFF">
         <state>ON</state>

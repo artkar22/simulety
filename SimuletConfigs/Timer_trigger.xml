@@ -1,5 +1,5 @@
 <Simulet id="Timer_trigger">
-    <classname>CounterTrigger</classname>
+    <classname>COUNTER_SIMULET</classname>
     <serverport>11111</serverport>
     <states initial="OFF">
         <state>ON</state>

@@ -8,8 +8,6 @@ import californium.core.server.resources.Resource;
 import configparser.ConfigParser;
 import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
 import javafx.embed.swing.JFXPanel;
-import modules.Lampka.IpsoLightControl;
-import modules.Lampka.resources.StatusResource;
 import modules.PossibleStatesListWrapper;
 import modules.Simulet;
 import modules.Trigger.BistableTrigger;
@@ -29,9 +27,8 @@ import org.apache.mina.util.AvailablePortFinder;
 
 import static ipsoconfig.IpsoDefinitions.IPSO_DIGITAL_INPUT;
 import static ipsoconfig.IpsoDefinitions.IPSO_DIGITAL_OUTPUT;
-import static ipsoconfig.IpsoDefinitions.IPSO_LIGHT_CONTROL;
-import static modules.listOfAvailableModules.BISTABLE_TRIGGER;
-import static modules.listOfAvailableModules.COUNTER_TRIGGER;
+import static modules.listOfAvailableModules.COUNTER_SIMULET;
+import static modules.listOfAvailableModules.EVENT_SIMULET;
 
 
 public class Menu extends JFrame implements ActionListener {
@@ -51,12 +48,11 @@ public class Menu extends JFrame implements ActionListener {
         final JFXPanel fxPanel = new JFXPanel();
         configurateWindow();
         loadConfiguration();
-        startSimuletModule();
+        startModule();
         server.start();
     }
 
     private void configurateWindow() {
-//        button = new JButton("testButton");
         this.setBounds(0, 0, 1024, 768);
         this.setLayout(new GridLayout());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -119,40 +115,27 @@ public class Menu extends JFrame implements ActionListener {
         return null;
     }
 
-    private void startSimuletModule() {
-        if (listOfAvailableModules.LAMPKA.equals(className)) {
-
-            simulet = new IpsoLightControl(nameOfSimulet, className, possibleStates.getStateById(initialStateName), possibleStates);
-            createCOAPServer(IPSO_LIGHT_CONTROL);
-            ((IpsoLightControl) simulet).setSimuletsAddress(simuletsAddress);
-//            LampkaActionListener listener = new LampkaActionListener((IpsoLightControl) simulet, this);
-//            button.addActionListener(listener);
-            this.add(simulet);
-            this.pack();
-            IdResource idResource = new IdResource(IPSO_LIGHT_CONTROL);
-            server.add(idResource);
-            StatusResource on_off_Resource = new StatusResource((IpsoLightControl) simulet, this);
-            server.add(on_off_Resource);
-            //images = lampka.getImages();
-//            LampkaResource lampkaResource = new LampkaResource(lampka, this);
-//            server.add(lampkaResource);
-        } else if (listOfAvailableModules.SIMULET.equals(className)) {
-
-            simulet = new IpsoDigitalOutputImpl(nameOfSimulet, className, possibleStates.getStateById(initialStateName), possibleStates);
-            createCOAPServer(IPSO_DIGITAL_OUTPUT);
-            this.add(simulet);
-            this.pack();
-            IdResource idResource = new IdResource(IPSO_DIGITAL_OUTPUT);
-            server.add(idResource);
-            CurrentStateResource on_off_Resource = new CurrentStateResource((IpsoDigitalOutputImpl) simulet, this);
-            server.add(on_off_Resource);
-        } else if (BISTABLE_TRIGGER.equals(className)) {
+    private void startModule() {
+        if (listOfAvailableModules.ACTION_SIMULET.equals(className)) {
+            startSimuletModule();
+        } else if (EVENT_SIMULET.equals(className)) {
             startTriggerModule();
-        } else if(COUNTER_TRIGGER.equals(className)) {
+        } else if(COUNTER_SIMULET.equals(className)) {
             startCounterTriggerModule();
         }
         final PossibleStatesResource possibleStatesResource = new PossibleStatesResource(possibleStates, className);
         server.add(possibleStatesResource);
+    }
+
+    private void startSimuletModule() {
+        simulet = new IpsoDigitalOutputImpl(nameOfSimulet, className, possibleStates.getStateById(initialStateName), possibleStates);
+        createCOAPServer(IPSO_DIGITAL_OUTPUT);
+        this.add(simulet);
+        this.pack();
+        IdResource idResource = new IdResource(IPSO_DIGITAL_OUTPUT);
+        server.add(idResource);
+        CurrentStateResource on_off_Resource = new CurrentStateResource((IpsoDigitalOutputImpl) simulet, this);
+        server.add(on_off_Resource);
     }
 
     private void startCounterTriggerModule() {

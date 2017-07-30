@@ -7,7 +7,7 @@ import modules.resources.ObservableCurrentStateResource;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-import static modules.listOfAvailableModules.BISTABLE_TRIGGER;
+import static modules.listOfAvailableModules.EVENT_SIMULET;
 
 /**
  * Created by Inni on 2017-01-11.
@@ -52,7 +52,7 @@ public class TriggerMouseListener implements MouseListener {
     private void sendTriggerChange() {
         on_off_resource.setButtonActionFlagTrue();
         final IpsoDigitalInputImpl digitalInput = on_off_resource.getDigitalInput();
-        if (BISTABLE_TRIGGER.equals(digitalInput.getClassName())) {
+        if (EVENT_SIMULET.equals(digitalInput.getClassName())) {
             if (BistableTrigger.TRIGGER_SWITCHED_ON.equals(digitalInput.getCurrentState().getStateId())) {
                 digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_OFF));
             } else if (BistableTrigger.TRIGGER_SWITCHED_OFF.equals(digitalInput.getCurrentState().getStateId())) {
