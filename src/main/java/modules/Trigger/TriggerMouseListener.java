@@ -2,7 +2,7 @@ package modules.Trigger;
 
 import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
 import app.Menu;
-import modules.resources.DigitalInputStateResource;
+import modules.resources.ObservableCurrentStateResource;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -16,9 +16,9 @@ public class TriggerMouseListener implements MouseListener {
 
     private BistableTrigger trigger;
     private Menu menu;
-    private DigitalInputStateResource on_off_resource;
+    private ObservableCurrentStateResource on_off_resource;
 
-    public TriggerMouseListener(final BistableTrigger trigger, final DigitalInputStateResource on_off_resource, final Menu menu) {
+    public TriggerMouseListener(final BistableTrigger trigger, final ObservableCurrentStateResource on_off_resource, final Menu menu) {
         this.trigger = trigger;
         this.on_off_resource = on_off_resource;
         this.menu = menu;

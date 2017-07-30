@@ -7,6 +7,7 @@ import californium.core.network.CoapEndpoint;
 import californium.core.server.resources.Resource;
 import configparser.ConfigParser;
 import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalOutputImpl;
+import javafx.embed.swing.JFXPanel;
 import modules.Lampka.IpsoLightControl;
 import modules.Lampka.resources.StatusResource;
 import modules.PossibleStatesListWrapper;
@@ -17,20 +18,15 @@ import modules.Trigger.TriggerMouseListener;
 import modules.listOfAvailableModules;
 import modules.resources.*;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.net.*;
 import java.util.Enumeration;
 
 import org.apache.mina.util.AvailablePortFinder;
 
-import static exceptions.ExceptionCodes.NO_MINIATURE;
 import static ipsoconfig.IpsoDefinitions.IPSO_DIGITAL_INPUT;
 import static ipsoconfig.IpsoDefinitions.IPSO_DIGITAL_OUTPUT;
 import static ipsoconfig.IpsoDefinitions.IPSO_LIGHT_CONTROL;
@@ -52,6 +48,7 @@ public class Menu extends JFrame implements ActionListener {
 
     public Menu(final String nameOfSimulet) {
         this.nameOfSimulet = nameOfSimulet;
+        final JFXPanel fxPanel = new JFXPanel();
         configurateWindow();
         loadConfiguration();
         startSimuletModule();
@@ -139,7 +136,7 @@ public class Menu extends JFrame implements ActionListener {
             //images = lampka.getImages();
 //            LampkaResource lampkaResource = new LampkaResource(lampka, this);
 //            server.add(lampkaResource);
-        } else if (listOfAvailableModules.IpsoDigitalOutput.equals(className)) {
+        } else if (listOfAvailableModules.SIMULET.equals(className)) {
 
             simulet = new IpsoDigitalOutputImpl(nameOfSimulet, className, possibleStates.getStateById(initialStateName), possibleStates);
             createCOAPServer(IPSO_DIGITAL_OUTPUT);
@@ -147,7 +144,7 @@ public class Menu extends JFrame implements ActionListener {
             this.pack();
             IdResource idResource = new IdResource(IPSO_DIGITAL_OUTPUT);
             server.add(idResource);
-            DigitalOutputStateResource on_off_Resource = new DigitalOutputStateResource((IpsoDigitalOutputImpl) simulet, this);
+            CurrentStateResource on_off_Resource = new CurrentStateResource((IpsoDigitalOutputImpl) simulet, this);
             server.add(on_off_Resource);
         } else if (BISTABLE_TRIGGER.equals(className)) {
             startTriggerModule();
@@ -166,7 +163,7 @@ public class Menu extends JFrame implements ActionListener {
 //            NameResource nameResource = new NameResource(this.simulet.getNameOfSimulet());
         this.server.add(new Resource[]{idResource});
 //            this.server.add(new Resource[]{nameResource});
-        DigitalInputStateResource on_off_Resource = new DigitalInputStateResource((BistableTrigger) simulet, this);
+        ObservableCurrentStateResource on_off_Resource = new ObservableCurrentStateResource((BistableTrigger) simulet, this);
         on_off_Resource.setObservable(true);
         server.add(on_off_Resource);
         this.simulet.addMouseListener(new CounterTriggerMouseListener((BistableTrigger) this.simulet, on_off_Resource, this));
@@ -182,7 +179,7 @@ public class Menu extends JFrame implements ActionListener {
 //            NameResource nameResource = new NameResource(this.simulet.getNameOfSimulet());
             this.server.add(new Resource[]{idResource});
 //            this.server.add(new Resource[]{nameResource});
-            DigitalInputStateResource on_off_Resource = new DigitalInputStateResource((BistableTrigger) simulet, this);
+            ObservableCurrentStateResource on_off_Resource = new ObservableCurrentStateResource((BistableTrigger) simulet, this);
             on_off_Resource.setObservable(true);
             server.add(on_off_Resource);
             this.simulet.addMouseListener(new TriggerMouseListener((BistableTrigger) this.simulet, on_off_Resource, this));
@@ -190,23 +187,6 @@ public class Menu extends JFrame implements ActionListener {
             this.pack();
     }
 
-    private BufferedImage loadMainIcon(){
-        final File directory = new File("pictures/" + nameOfSimulet + "/MAIN");
-        if (directory.isDirectory()) {
-            final File[] files = directory.listFiles();
-            if (files.length > 0) {
-                BufferedImage buffImg;
-                try {
-                    buffImg = ImageIO.read(files[0]);
-                    return buffImg;
-                } catch (IOException e) {
-                }
-            } else {
-                throw new RuntimeException(NO_MINIATURE);
-            }
-        }
-        return null;
-    }
 
     @Override
     public void actionPerformed(ActionEvent arg0) {

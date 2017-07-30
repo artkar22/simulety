@@ -54,7 +54,6 @@ californium\core\network\ExchangeObserver.class
 californium\core\network\stack\CoapStack$StackTopAdapter.class
 californium\core\coap\Response.class
 californium\core\network\interceptors\MessageTracer.class
-modules\resources\DigitalInputStateResource.class
 californium\core\network\stack\BlockwiseLayer.class
 californium\core\network\CoapEndpoint$1.class
 californium\elements\UDPConnector$1.class
@@ -91,6 +90,7 @@ californium\core\network\config\NetworkConfigObserverAdapter.class
 californium\core\CaliforniumLogger.class
 californium\core\network\stack\ReliabilityLayer.class
 exceptions\ExceptionCodes.class
+modules\resources\CurrentStateResource.class
 californium\core\network\stack\ReliabilityLayer$RetransmissionTask.class
 californium\elements\UDPConnector$Sender.class
 californium\core\coap\OptionNumberRegistry.class
@@ -159,7 +159,7 @@ californium\core\network\serialization\DatagramReader.class
 californium\core\network\stack\congestioncontrol\PeakhopperRto.class
 californium\core\network\Matcher$1.class
 californium\core\network\stack\ObserveLayer$NotificationController.class
-modules\resources\DigitalOutputStateResource.class
+modules\resources\ObservableCurrentStateResource.class
 modules\Trigger\BistableTrigger.class
 californium\core\network\stack\BlockwiseLayer$1.class
 californium\core\server\resources\ResourceAttributes.class

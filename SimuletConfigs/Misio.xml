@@ -1,11 +1,8 @@
-<?xml version="1.0"?>
-<company>
-	<Simulet id="Misio">
-		<classname>IpsoDigitalOutput</classname>
-		<serverport>11112</serverport>
-		<states>
-			<state>ON</state>
-			<state>OFF</state>
-		</states>
-	</Simulet>
-</company>
+<Simulet id="Misio">
+    <classname>Simulet</classname>
+    <serverport>11112</serverport>
+    <states>
+        <state>ON</state>
+        <state>OFF</state>
+    </states>
+</Simulet>

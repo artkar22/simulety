@@ -1,11 +1,9 @@
-<?xml version="1.0"?>
-<company>
-	<Simulet id="Lampka">
-		<classname>IpsoLightControl</classname>
-		<serverport>11111</serverport>
-		<states initial="OFF">
-			<state>ON</state>
-			<state>OFF</state>
-		</states>
-	</Simulet>
-</company>
+<Simulet id="Lampka">
+    <classname>IpsoLightControl</classname>
+    <serverport>11111</serverport>
+    <states initial="OFF">
+        <state>ON</state>
+        <state>OFF</state>
+    </states>
+</Simulet>
+

@@ -2,7 +2,7 @@ package modules.Trigger;
 
 import app.Menu;
 import ipsoconfig.ipsoInterfaces.implementation.IpsoDigitalInputImpl;
-import modules.resources.DigitalInputStateResource;
+import modules.resources.ObservableCurrentStateResource;
 
 import javax.swing.*;
 import java.awt.event.MouseEvent;
@@ -18,10 +18,10 @@ public class CounterTriggerMouseListener implements MouseListener {
 
     private BistableTrigger trigger;
     private Menu menu;
-    private DigitalInputStateResource on_off_resource;
+    private ObservableCurrentStateResource on_off_resource;
     private boolean clickBlock = false;
 
-    public CounterTriggerMouseListener(final BistableTrigger trigger, final DigitalInputStateResource on_off_resource, final Menu menu) {
+    public CounterTriggerMouseListener(final BistableTrigger trigger, final ObservableCurrentStateResource on_off_resource, final Menu menu) {
         this.trigger = trigger;
         this.on_off_resource = on_off_resource;
         this.menu = menu;

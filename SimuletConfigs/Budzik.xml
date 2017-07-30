@@ -1,11 +1,8 @@
-<?xml version="1.0"?>
-<company>
-	<Simulet id="Budzik">
-		<className>IpsoDigitalOutput</className>
-		<serverport>11111</serverport>
-		<states>
-			<state>ON</state>
-			<state>OFF</state>
-		</states>
-	</Simulet>
-</company>
+<Simulet id="Budzik">
+    <className>Simulet</className>
+    <serverport>11111</serverport>
+    <states>
+        <state>ON</state>
+        <state>OFF</state>
+    </states>
+</Simulet>

@@ -1,5 +1,6 @@
 package configparser;
 
+import javafx.scene.media.Media;
 import modules.SimuletsState;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -75,7 +76,8 @@ public class ConfigParser {
                 final SimuletsState state = new SimuletsState(states.item(x).getTextContent(),
                         loadPictures(states.item(x).getTextContent()),
                         loadMiniatures(states.item(x).getTextContent()),
-                        loadHighlightedMiniatures(states.item(x).getTextContent()));
+                        loadHighlightedMiniatures(states.item(x).getTextContent()),
+                        loadSound(states.item(x).getTextContent()));
                 possibleStates.add(state);
             }
 
@@ -118,7 +120,7 @@ public class ConfigParser {
 
     private BufferedImage loadHighlightedMiniatures(final String stateName) {
         final File directory = new File("pictures/" + documentName + "/" + stateName + "/highlighted_mini");
-        if (directory.isDirectory()) {
+        if (directory != null && directory.isDirectory()) {
             final File[] files = directory.listFiles();
             if (files.length > 0) {
                 BufferedImage buffImg;
@@ -132,6 +134,19 @@ public class ConfigParser {
             }
         }
         return null;
+    }
+
+    private List<Media> loadSound(final String stateName) {
+        final File directory = new File("sounds/" + documentName + "/" + stateName);
+        final List medias = new ArrayList<>();
+        if(directory != null && directory.isDirectory()) {
+            final File[] files = directory.listFiles();
+            for(File file : files) {
+                medias.add(new Media(file.toURI().toString()));
+            }
+            return medias;
+        }
+        return medias;
     }
 
     public int getPort() {

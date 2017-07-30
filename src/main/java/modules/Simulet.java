@@ -1,5 +1,7 @@
 package modules;
 
+import javafx.scene.media.MediaPlayer;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -16,6 +18,7 @@ public abstract class Simulet extends JPanel {
     protected ImageIcon currentImage;
     private SimuletsState currentState;
     private String nameOfSimulet;
+    private MediaPlayer mediaPlayer;
 
 
     public Simulet(final String nameOfSimulet, final String className, final SimuletsState currentState, final PossibleStatesListWrapper possibleStates) {
@@ -59,6 +62,17 @@ public abstract class Simulet extends JPanel {
     public void setCurrentState(SimuletsState currentState) {
         this.currentState = currentState;
         setCurrentImage();
+        playSound();
+    }
+
+    private void playSound() {
+        if(this.currentState != null && this.currentState.getStatesSounds().size() > 0){
+            mediaPlayer = new MediaPlayer(this.currentState.getStatesSounds().get(0));
+            mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
+            mediaPlayer.play();
+        } else if(mediaPlayer != null) {
+            mediaPlayer.pause();
+        }
     }
 
     public PossibleStatesListWrapper getPossibleStates() {

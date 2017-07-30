@@ -11,7 +11,7 @@ public class StatusResource extends CoapResource {
 
     private IpsoLightControl ipsoLightControl;
     private Menu menu;
-    private static final String STATUS = "current_status";
+    private static final String STATUS = "current_state";
 
     public StatusResource(IpsoLightControl ipsoLightControl, Menu menu) {
         super(STATUS);
