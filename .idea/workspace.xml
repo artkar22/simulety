@@ -7,48 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba7df919-9d38-4f4f-8cbd-0310d1c33f49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pictures/Trąbka/INITIAL/highlighted_mini/radio_off_highlight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pictures/Trąbka/INITIAL/main/radio.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pictures/Trąbka/INITIAL/mini/radio_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pictures/Trąbka/ON/highlighted_mini/radio_on_highlight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pictures/Trąbka/ON/main/radio_gif.gif" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimuletConfigs/Budzik.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pictures/Budzik/main/Lampka-off.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pictures/Budzik/main/Lampka-on.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ipsoconfig/ipsoInterfaces/implementation/IpsoDigitalInputImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ipsoconfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ipsoconfig/ipsoInterfaces/implementation/IpsoDigitalInputImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ipsoconfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Simulet-1.0.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/Simulet-1.0.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/Menu.class" afterPath="$PROJECT_DIR$/target/classes/app/Menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/configparser/ConfigParser.class" afterPath="$PROJECT_DIR$/target/classes/configparser/ConfigParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/exceptions/ExceptionCodes.class" afterPath="$PROJECT_DIR$/target/classes/exceptions/ExceptionCodes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/PossibleStatesListWrapper.class" afterPath="$PROJECT_DIR$/target/classes/modules/PossibleStatesListWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/Simulet.class" afterPath="$PROJECT_DIR$/target/classes/modules/Simulet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/Trigger/BistableTrigger.class" afterPath="$PROJECT_DIR$/target/classes/modules/Trigger/BistableTrigger.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/Trigger/CounterTriggerMouseListener$1.class" afterPath="$PROJECT_DIR$/target/classes/modules/Trigger/CounterTriggerMouseListener$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/Trigger/CounterTriggerMouseListener.class" afterPath="$PROJECT_DIR$/target/classes/modules/Trigger/CounterTriggerMouseListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/Trigger/TriggerMouseListener.class" afterPath="$PROJECT_DIR$/target/classes/modules/Trigger/TriggerMouseListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/resources/ClassResource.class" afterPath="$PROJECT_DIR$/target/classes/modules/resources/ClassResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/resources/CurrentStateResource.class" afterPath="$PROJECT_DIR$/target/classes/modules/resources/CurrentStateResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/resources/IdResource.class" afterPath="$PROJECT_DIR$/target/classes/modules/resources/IdResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/resources/ObservableCurrentStateResource.class" afterPath="$PROJECT_DIR$/target/classes/modules/resources/ObservableCurrentStateResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/modules/resources/PossibleStatesResource.class" afterPath="$PROJECT_DIR$/target/classes/modules/resources/PossibleStatesResource.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pictures/Trąbka/INITIAL/highlighted_mini/radio_off_highlight.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pictures/Trąbka/INITIAL/main/radio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pictures/Trąbka/INITIAL/mini/radio_off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pictures/Trąbka/ON/highlighted_mini/radio_on_highlight.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pictures/Trąbka/ON/main/radio_gif.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/Trąbka/ON/that's that-snoop.mp3" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/Menu.java" afterPath="$PROJECT_DIR$/src/main/java/app/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/configparser/ConfigParser.java" afterPath="$PROJECT_DIR$/src/main/java/configparser/ConfigParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/exceptions/ExceptionCodes.java" afterPath="$PROJECT_DIR$/src/main/java/exceptions/ExceptionCodes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/modules/PossibleStatesListWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/modules/PossibleStatesListWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/modules/Simulet.java" afterPath="$PROJECT_DIR$/src/main/java/modules/Simulet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/modules/Trigger/BistableTrigger.java" afterPath="$PROJECT_DIR$/src/main/java/modules/Trigger/BistableTrigger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/modules/Trigger/CounterTriggerMouseListener.java" afterPath="$PROJECT_DIR$/src/main/java/modules/Trigger/CounterTriggerMouseListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/modules/Trigger/TriggerMouseListener.java" afterPath="$PROJECT_DIR$/src/main/java/modules/Trigger/TriggerMouseListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/modules/resources/ClassResource.java" afterPath="$PROJECT_DIR$/src/main/java/modules/resources/ClassResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/modules/resources/CurrentStateResource.java" afterPath="$PROJECT_DIR$/src/main/java/modules/resources/CurrentStateResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/modules/resources/IdResource.java" afterPath="$PROJECT_DIR$/src/main/java/modules/resources/IdResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/modules/resources/ObservableCurrentStateResource.java" afterPath="$PROJECT_DIR$/src/main/java/modules/resources/ObservableCurrentStateResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimuletConfigs/Trąbka.xml" afterPath="$PROJECT_DIR$/SimuletConfigs/Trąbka.xml" />
     </list>
     <ignored path="Simulet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,7 +46,7 @@
       <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
+            <state relative-caret-position="3234">
               <caret line="147" column="55" selection-start-line="147" selection-start-column="55" selection-end-line="147" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -94,7 +60,7 @@
       <file leaf-file-name="TriggerMouseListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/modules/Trigger/TriggerMouseListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
+            <state relative-caret-position="1562">
               <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="94" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -118,7 +84,7 @@
       <file leaf-file-name="Simulet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/modules/Simulet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
+            <state relative-caret-position="1166">
               <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
@@ -128,7 +94,7 @@
       <file leaf-file-name="ObservableCurrentStateResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/modules/resources/ObservableCurrentStateResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
+            <state relative-caret-position="1232">
               <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -152,7 +118,7 @@
       <file leaf-file-name="ConfigParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/configparser/ConfigParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="1166">
               <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
@@ -325,6 +291,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -479,10 +447,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simulety" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simulety" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pictures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -994,7 +974,7 @@
     <configuration default="false" name="Trąbka.jar" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/Simulet-1.0.0-SNAPSHOT.jar" />
-      <option name="PROGRAM_PARAMETERS" value="Trąbka" />
+      <option name="PROGRAM_PARAMETERS" value="Trabka" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <envs />
       <method />
@@ -1106,12 +1086,13 @@
       <workItem from="1500923415134" duration="1782000" />
       <workItem from="1500980139982" duration="1958000" />
       <workItem from="1500995037848" duration="599000" />
-      <workItem from="1501405515541" duration="21689000" />
+      <workItem from="1501405515541" duration="21985000" />
+      <workItem from="1501490514041" duration="440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157164000" />
+    <option name="totallyTimeSpent" value="157900000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1132,13 +1113,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52625823" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20777027" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38260135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38260135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27280405" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21583334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1156,6 +1136,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15541667" sideWeight="0.5107527" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1603,7 +1584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="5680" column="29" selection-start-line="5680" selection-start-column="29" selection-end-line="5680" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1611,7 +1591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1623,59 +1602,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/MediaPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Samochod/Samochod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Budzik/Budzik.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Radio/RadioActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Radio/Radio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/MediaPlayer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Samochod/Samochod.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Budzik/Budzik.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Radio/RadioActionListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Radio/Radio.java" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_45/javafx-src.zip!/javafx/scene/media/MediaPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="393" column="11" selection-start-line="393" selection-start-column="11" selection-end-line="393" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1696,39 +1632,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Lampka/IpsoLightControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Lampka/LampkaActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Lampka/resources/StatusResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="30" column="80" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Lampka/IpsoLightControl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Lampka/LampkaActionListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/modules/Lampka/resources/StatusResource.java" />
     <entry file="file://$PROJECT_DIR$/SimuletConfigs/Lampka.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1736,7 +1649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1744,47 +1656,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/serverResources/TriggerResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Protocol/Comm_Protocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ipsoconfig/IpsoDefinitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ipsoconfig/IpsoUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/serverResources/TriggerResource.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Protocol/Comm_Protocol.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ipsoconfig/IpsoDefinitions.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ipsoconfig/IpsoUtilities.java" />
     <entry file="file://$PROJECT_DIR$/SimuletConfigs/Trigger_1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1800,7 +1682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="46" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1808,7 +1689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1816,7 +1696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1832,7 +1711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1844,42 +1722,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/Budzik/main/Lampka-on.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/Budzik/main/Lampka-off.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimuletConfigs/Budzik.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/Budzik/main/Lampka-on.jpg" />
+    <entry file="file://$PROJECT_DIR$/pictures/Budzik/main/Lampka-off.jpg" />
+    <entry file="file://$PROJECT_DIR$/SimuletConfigs/Budzik.xml" />
     <entry file="file://$PROJECT_DIR$/SimuletConfigs/Radio.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/Trąbka/MAIN/radio_off.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/Trąbka/MAIN/radio_off.png" />
     <entry file="file://$PROJECT_DIR$/SimuletConfigs/MONOSTABLE_TRIGGER.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="50" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1887,25 +1744,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ipsoconfig/ipsoInterfaces/implementation/IpsoDigitalInputImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ipsoconfig/ipsoInterfaces/implementation/IpsoDigitalInputImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/Trigger/BistableTrigger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1913,9 +1759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#418#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1923,7 +1766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1937,14 +1779,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ipsoconfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ipsoconfig/ipsoInterfaces/implementation/IpsoDigitalOutputImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/resources/ClassResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1957,7 +1792,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/resources/ObservableCurrentStateResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
+        <state relative-caret-position="1232">
           <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1967,7 +1802,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/Trigger/TriggerMouseListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
+        <state relative-caret-position="1562">
           <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="94" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1977,7 +1812,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/configparser/ConfigParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="1166">
           <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
@@ -1995,7 +1830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
+        <state relative-caret-position="3234">
           <caret line="147" column="55" selection-start-line="147" selection-start-column="55" selection-end-line="147" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2007,7 +1842,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/Simulet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
+        <state relative-caret-position="1166">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>

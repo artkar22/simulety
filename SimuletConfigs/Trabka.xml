@@ -1,0 +1,9 @@
+﻿<Simulet id="Trabka">
+    <classname>ACTION_SIMULET</classname>
+    <serverport>11111</serverport>
+    <states initial="OFF">
+        <state>ON</state>
+    </states>
+    <timeToResetToInitial>18</timeToResetToInitial>
+</Simulet>
+
