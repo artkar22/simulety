@@ -63,11 +63,11 @@ public class CurrentStateResource extends CoapResource {
 
     @Override
     public void handlePOST(CoapExchange exchange) {
-        exchange.respond(CoAP.ResponseCode.FORBIDDEN);
+        exchange.respond(ResponseCode.METHOD_NOT_ALLOWED);
     }
     @Override
     public void handleDELETE(CoapExchange exchange) {
-        exchange.respond(CoAP.ResponseCode.FORBIDDEN);
+        exchange.respond(ResponseCode.METHOD_NOT_ALLOWED);
     }
 
 }

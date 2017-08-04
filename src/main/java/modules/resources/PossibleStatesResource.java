@@ -58,17 +58,17 @@ public class PossibleStatesResource extends CoapResource {
 
     @Override
     public void handlePUT(CoapExchange exchange) {
-        exchange.respond(CoAP.ResponseCode.FORBIDDEN);
+        exchange.respond(CoAP.ResponseCode.METHOD_NOT_ALLOWED);
     }
 
     @Override
     public void handlePOST(CoapExchange exchange) {
-        exchange.respond(CoAP.ResponseCode.FORBIDDEN);
+        exchange.respond(CoAP.ResponseCode.METHOD_NOT_ALLOWED);
     }
 
     @Override
     public void handleDELETE(CoapExchange exchange) {
-        exchange.respond(CoAP.ResponseCode.FORBIDDEN);
+        exchange.respond(CoAP.ResponseCode.METHOD_NOT_ALLOWED);
     }
 
     private static byte[] imageToByteArray(BufferedImage image) throws IOException

@@ -19,7 +19,9 @@ public class SimuletsState implements Serializable {
     private final List<Media> statesSounds;
 
     public SimuletsState(final String StateId, final ImageIcon picture,
-                         final BufferedImage miniature, final BufferedImage highlightedMiniature, final List<Media> statesSounds) {
+                         final BufferedImage miniature,
+                         final BufferedImage highlightedMiniature,
+                         final List<Media> statesSounds) {
         this.StateId = StateId;
         this.picture = picture;
         this.miniature = miniature;

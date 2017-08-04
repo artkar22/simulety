@@ -20,22 +20,21 @@ public class ClassResource extends CoapResource {
 
     @Override
     public void handleGET(CoapExchange exchange) {
-
         exchange.respond(CoAP.ResponseCode.CONTENT, className);
     }
 
     @Override
     public void handlePUT(CoapExchange exchange) {
-        exchange.respond(CoAP.ResponseCode.FORBIDDEN);
+        exchange.respond(CoAP.ResponseCode.METHOD_NOT_ALLOWED);
     }
 
     @Override
     public void handlePOST(CoapExchange exchange) {
-        exchange.respond(CoAP.ResponseCode.FORBIDDEN);
+        exchange.respond(CoAP.ResponseCode.METHOD_NOT_ALLOWED);
     }
 
     @Override
     public void handleDELETE(CoapExchange exchange) {
-        exchange.respond(CoAP.ResponseCode.FORBIDDEN);
+        exchange.respond(CoAP.ResponseCode.METHOD_NOT_ALLOWED);
     }
 }

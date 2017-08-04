@@ -21,16 +21,16 @@ public class IdResource extends CoapResource {
 
     @Override
     public void handlePUT(CoapExchange exchange) {
-        exchange.respond(ResponseCode.FORBIDDEN);
+        exchange.respond(ResponseCode.METHOD_NOT_ALLOWED);
     }
 
     @Override
     public void handlePOST(CoapExchange exchange) {
-        exchange.respond(ResponseCode.FORBIDDEN);
+        exchange.respond(ResponseCode.METHOD_NOT_ALLOWED);
     }
 
     @Override
     public void handleDELETE(CoapExchange exchange) {
-        exchange.respond(ResponseCode.FORBIDDEN);
+        exchange.respond(ResponseCode.METHOD_NOT_ALLOWED);
     }
 }
