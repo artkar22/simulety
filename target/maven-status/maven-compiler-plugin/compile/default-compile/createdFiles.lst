@@ -3,7 +3,6 @@ californium\core\network\interceptors\OriginTracer$1.class
 californium\core\CoapResponse.class
 modules\Simulet.class
 californium\core\network\Outbox.class
-modules\Trigger\CounterTriggerMouseListener$1.class
 californium\core\network\Exchange.class
 californium\core\network\Endpoint.class
 californium\core\network\CoapEndpoint$InboxImpl$1.class
@@ -39,6 +38,7 @@ californium\core\coap\CoAP$ResponseCode.class
 californium\core\network\serialization\DataSerializer.class
 californium\core\server\resources\DiscoveryResource.class
 californium\core\network\interceptors\OriginTracer.class
+app\PossibleStatesConsts.class
 californium\core\network\EndpointManager$ClientMessageDeliverer.class
 californium\core\coap\CoAP$Code.class
 modules\resources\MainIconResource.class
@@ -49,6 +49,7 @@ californium\core\CoapResource.class
 californium\core\network\stack\ReliabilityLayer$3.class
 californium\core\network\stack\AbstractLayer.class
 californium\core\network\CoapEndpoint$OutboxImpl$1.class
+modules\resources\CounterSimuletCurrentStateResource$1.class
 californium\core\coap\Option.class
 californium\core\network\CoapEndpoint$InboxImpl.class
 californium\elements\ConnectorBase$Worker.class
@@ -155,6 +156,7 @@ californium\core\server\ServerMessageDeliverer.class
 californium\core\coap\MessageObserver.class
 californium\core\network\stack\BlockwiseLayer$TimeoutForwarder.class
 californium\core\network\Matcher.class
+modules\resources\CounterSimuletCurrentStateResource.class
 californium\core\CoapResource$2.class
 californium\core\network\RemoteEndpoint$exchangeInfo.class
 californium\core\network\config\NetworkConfigObserverAdapter.class

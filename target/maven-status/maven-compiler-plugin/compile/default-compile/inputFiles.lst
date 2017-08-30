@@ -10,6 +10,7 @@ E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\Conge
 E:\praca inzynierska\simulety\src\main\java\modules\PossibleStatesListWrapper.java
 E:\praca inzynierska\simulety\src\main\java\californium\elements\MessageCallback.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\coap\EmptyMessage.java
+E:\praca inzynierska\simulety\src\main\java\app\PossibleStatesConsts.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\config\NetworkConfig.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\stack\congestioncontrol\CocoaStrong.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\coap\OptionNumberRegistry.java
@@ -23,6 +24,7 @@ E:\praca inzynierska\simulety\src\main\java\californium\core\server\ServerInterf
 E:\praca inzynierska\simulety\src\main\java\californium\core\coap\BlockOption.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\observe\ObserveRelationFilter.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\RemoteEndpoint.java
+E:\praca inzynierska\simulety\src\main\java\modules\resources\CounterSimuletCurrentStateResource.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\observe\ObserveRelation.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\server\resources\RequestProcessor.java
 E:\praca inzynierska\simulety\src\main\java\californium\core\network\config\NetworkConfigDefaults.java

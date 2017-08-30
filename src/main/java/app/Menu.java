@@ -157,10 +157,26 @@ public class Menu extends JFrame implements ActionListener {
         ClassResource classResource = new ClassResource(this.simulet.getClassName());
         this.server.add(idResource);
         this.server.add(classResource);
-        ObservableCurrentStateResource on_off_Resource = new ObservableCurrentStateResource((BistableTrigger) simulet, this);
+        CounterSimuletCurrentStateResource on_off_Resource = new CounterSimuletCurrentStateResource((BistableTrigger) simulet, this, initialState);
         on_off_Resource.setObservable(true);
         server.add(on_off_Resource);
-        this.simulet.addMouseListener(new CounterTriggerMouseListener((BistableTrigger) this.simulet, on_off_Resource, this));
+
+        JPanel panel = new JPanel(new GridLayout(4,4,4,4));
+        JButton ten = new JButton("10");
+        JButton five = new JButton("5");
+        JButton three = new JButton("3");
+        ten.addMouseListener(new CounterTriggerMouseListener(10, (BistableTrigger) simulet, possibleStates, nameOfSimulet, this));
+        five.addMouseListener(new CounterTriggerMouseListener(5, (BistableTrigger) simulet, possibleStates, nameOfSimulet, this));
+        three.addMouseListener(new CounterTriggerMouseListener(3, (BistableTrigger) simulet, possibleStates, nameOfSimulet, this));
+        ten.setPreferredSize(new Dimension(40, 40));
+        five.setPreferredSize(new Dimension(40, 40));
+        three.setPreferredSize(new Dimension(40, 40));
+        panel.add(ten);
+        panel.add(five);
+        panel.add(three);
+        this.add(panel);
+
+//        this.simulet.addMouseListener(new CounterTriggerMouseListener((BistableTrigger) this.simulet, on_off_Resource, this));
         this.add(simulet);
         this.pack();
     }

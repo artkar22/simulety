@@ -21,7 +21,7 @@ import static exceptions.ExceptionCodes.NO_MINIATURE;
 import static exceptions.ExceptionCodes.NO_PICTURE;
 
 /**
- * Klasa odpowiadaj�ca za odczytywanie danych z pliku konfiguracyjnego
+ * Klasa odpowiadajaca za odczytywanie danych z pliku konfiguracyjnego
  */
 public class ConfigParser {
 
@@ -81,7 +81,8 @@ public class ConfigParser {
                         loadPictures(states.item(x).getTextContent()),
                         loadMiniatures(states.item(x).getTextContent()),
                         loadHighlightedMiniatures(states.item(x).getTextContent()),
-                        loadSound(states.item(x).getTextContent()));
+                        loadSound(states.item(x).getTextContent()),
+                        setEventType(states.item(x)));
                 possibleStates.add(state);
             }
             loadInitialState();
@@ -92,6 +93,13 @@ public class ConfigParser {
         return table;
     }
 
+    private String setEventType(Node item) {
+        if(item != null && item.hasAttributes()){
+            return item.getAttributes().item(0).getTextContent();
+        }
+        return null;
+    }
+
     private void loadInitialState() {
         final File directory = new File("pictures/" + documentName + "/INITIAL");
         if(directory != null && directory.isDirectory()){
@@ -99,7 +107,8 @@ public class ConfigParser {
                     loadPictures("INITIAL"),
                     loadMiniatures("INITIAL"),
                     loadHighlightedMiniatures("INITIAL"),
-                    loadSound("INITIAL"));
+                    loadSound("INITIAL"),
+                    "INITIAL");
         }
     }
 
@@ -108,7 +117,11 @@ public class ConfigParser {
         if (directory.isDirectory()) {
             final File[] files = directory.listFiles();
             if (files.length > 0) {
-                return new ImageIcon(files[0].getAbsolutePath());
+                for(File file : files){
+                    if(!file.isDirectory()){
+                        return new ImageIcon(file.getAbsolutePath());
+                    }
+                }
             } else {
                 throw new RuntimeException(NO_PICTURE);
             }

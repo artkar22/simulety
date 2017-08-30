@@ -15,7 +15,7 @@ public class PossibleStatesDeserializer implements JsonDeserializer<SimuletsStat
                                            JsonDeserializationContext context) throws JsonParseException {
 
         JsonArray array = json.getAsJsonArray();
-        return new SimuletsStateToSend(array.get(0).getAsString(), array.get(1).getAsString().getBytes(), array.get(2).getAsString().getBytes());
+        return new SimuletsStateToSend(array.get(0).getAsString(), array.get(1).getAsString().getBytes(), array.get(2).getAsString().getBytes(), array.get(3).getAsString());
 
     }
 }

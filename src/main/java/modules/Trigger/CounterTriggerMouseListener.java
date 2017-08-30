@@ -1,7 +1,9 @@
 package modules.Trigger;
 
+
 import app.Menu;
-import modules.resources.ObservableCurrentStateResource;
+import modules.PossibleStatesListWrapper;
+import modules.SimuletsState;
 
 import javax.swing.*;
 import java.awt.event.MouseEvent;
@@ -9,27 +11,39 @@ import java.awt.event.MouseListener;
 import java.io.File;
 
 import static exceptions.ExceptionCodes.NO_PICTURE;
+import static modules.listOfAvailableModules.COUNTER_SIMULET;
+import static modules.resources.CounterSimuletCurrentStateResource.setTime;
 
 /**
  * Created by Inni on 2017-01-11.
  */
 public class CounterTriggerMouseListener implements MouseListener {
 
-    private BistableTrigger trigger;
+    private final int timeToSet;
+    private PossibleStatesListWrapper possibleStates;
+    private BistableTrigger digitalInput;
+    private String documentName;
     private Menu menu;
-    private ObservableCurrentStateResource on_off_resource;
-    private boolean clickBlock = false;
 
-    public CounterTriggerMouseListener(final BistableTrigger trigger, final ObservableCurrentStateResource on_off_resource, final Menu menu) {
-        this.trigger = trigger;
-        this.on_off_resource = on_off_resource;
+    public CounterTriggerMouseListener(final int timeToSet, BistableTrigger digitalInput, PossibleStatesListWrapper possibleStates, String documentName, Menu menu) {
+        this.timeToSet = timeToSet;
+        this.digitalInput = digitalInput;
+        this.possibleStates = possibleStates;
+        this.documentName = documentName;
         this.menu = menu;
     }
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        if(!clickBlock)
-        sendTriggerChange();
+        setTime(timeToSet);
+        menu.getInitialState().setPicture(loadPictures("INITIAL", Integer.valueOf(timeToSet).toString()));
+
+        for(SimuletsState state : possibleStates.getAllStates(COUNTER_SIMULET)){
+            state.setPicture(loadPictures(state.getStateId(), Integer.valueOf(timeToSet).toString()));
+        }
+
+        digitalInput.setCurrentState(menu.getInitialState());
+        menu.repaint();
     }
 
     @Override
@@ -52,30 +66,8 @@ public class CounterTriggerMouseListener implements MouseListener {
 
     }
 
-    private void sendTriggerChange() {
-        clickBlock = true;
-        on_off_resource.setButtonActionFlagTrue();
-        final BistableTrigger digitalInput = on_off_resource.getDigitalInput();
-        digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_ON));
-        menu.repaint();
-        new java.util.Timer().schedule(
-                new java.util.TimerTask() {
-                    @Override
-                    public void run() {
-                        menu.repaint();
-                        on_off_resource.changed();
-                        on_off_resource.setButtonActionFlagFalse();
-                        clickBlock = false;
-                        digitalInput.setCurrentState(digitalInput.getPossibleStates().getStateById(BistableTrigger.TRIGGER_SWITCHED_OFF));
-
-                    }
-                },
-                21500
-        );
-    }
-
-    private ImageIcon loadPictures(final String stateName, final String documentName) {
-        final File directory = new File("pictures/" + documentName + "/" + stateName + "/main");
+    private ImageIcon loadPictures(final String stateName, final String time) {
+        final File directory = new File("pictures/" + documentName + "/" + stateName + "/main" + "/" + time);
         if (directory.isDirectory()) {
             final File[] files = directory.listFiles();
             if (files.length > 0) {
