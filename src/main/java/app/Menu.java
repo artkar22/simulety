@@ -161,21 +161,21 @@ public class Menu extends JFrame implements ActionListener {
         on_off_Resource.setObservable(true);
         server.add(on_off_Resource);
 
-        JPanel panel = new JPanel(new GridLayout(4,4,4,4));
+        JPanel panel = new JPanel(new GridLayout(8,8,8,8));
         JButton ten = new JButton("10");
         JButton five = new JButton("5");
         JButton three = new JButton("3");
         ten.addMouseListener(new CounterTriggerMouseListener(10, (BistableTrigger) simulet, possibleStates, nameOfSimulet, this));
         five.addMouseListener(new CounterTriggerMouseListener(5, (BistableTrigger) simulet, possibleStates, nameOfSimulet, this));
         three.addMouseListener(new CounterTriggerMouseListener(3, (BistableTrigger) simulet, possibleStates, nameOfSimulet, this));
-        ten.setPreferredSize(new Dimension(40, 40));
-        five.setPreferredSize(new Dimension(40, 40));
-        three.setPreferredSize(new Dimension(40, 40));
+        ten.setPreferredSize(new Dimension(10, 10));
+        five.setPreferredSize(new Dimension(10, 10));
+        three.setPreferredSize(new Dimension(10, 10));
         panel.add(ten);
         panel.add(five);
         panel.add(three);
+        panel.setPreferredSize(new Dimension(30,30));
         this.add(panel);
-
 //        this.simulet.addMouseListener(new CounterTriggerMouseListener((BistableTrigger) this.simulet, on_off_Resource, this));
         this.add(simulet);
         this.pack();

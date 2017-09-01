@@ -34,11 +34,22 @@ public class CurrentStateResource extends CoapResource {
         System.out.println("Status POST");
         final SimuletsState newState = digitalOutput.getPossibleStates().getStateById(exchange.getRequestText());
         if(newState!=null){
-            digitalOutput.setCurrentState(digitalOutput.getPossibleStates().getStateById(exchange.getRequestText()));
-            menu.repaint();
-            exchange.respond(ResponseCode.CHANGED);
-            if(timeToResetToInitial != null) {
-                changeStateToInitialAfterTime();
+            if(menu.getInitialState() != null){
+
+                if(digitalOutput.getCurrentState().getStateId().equals(menu.getInitialState().getStateId())){
+                    digitalOutput.setCurrentState(digitalOutput.getPossibleStates().getStateById(exchange.getRequestText()));
+                    menu.repaint();
+                    exchange.respond(ResponseCode.CHANGED);
+                    if(timeToResetToInitial != null) {
+                        changeStateToInitialAfterTime();
+                    }
+                } else{
+                    exchange.respond(ResponseCode.CONTINUE);
+                }
+            } else {
+                digitalOutput.setCurrentState(digitalOutput.getPossibleStates().getStateById(exchange.getRequestText()));
+                menu.repaint();
+                exchange.respond(ResponseCode.CHANGED);
             }
         }else {
             exchange.respond(ResponseCode.NOT_ACCEPTABLE);
